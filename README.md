@@ -1,23 +1,26 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
 
-`DISCIPLINA`
+`Desenvolvimento de uma Aplicação Interativa`
 
-`SEMESTRE`
+`2° Semestre / 2025`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo deste trabalho é desenvolver uma aplicação web voltada para integrar e aproximar os moradores de um mesmo bairro. A proposta é oferecer um espaço digital que permita a troca e a venda de produtos e serviços, incentive a prática de esportes e atividades em grupo, possibilitando o compartilhamento de informações importantes sobre problemas e iniciativas locais e, ao mesmo tempo, estimule a colaboração e o engajamento entre os moradores, fortalecendo o senso de comunidade, ajudando no planejamento de políticas públicas.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Amanda Guedes
+* Emanuel Moreira Reis
+* Gabriel Yuri
+* João Vitor Macedo
+* Luiz Felipe Ribeiro Liquer
+* Nathaliene Cristina Magalhães
 
 ## Orientador
 
-* Nome completo do professor
+* Luciana de Nardin
 
 ## Instruções de Instalação, Execução e Acesso
 
