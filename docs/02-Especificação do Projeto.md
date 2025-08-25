@@ -56,6 +56,19 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
 |RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
 |RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-004| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-005| O sistema deve permitir ao usuário realizar login com e-mail e senha | ALTA |
+|RF-006| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-007| O sistema deve permitir ao usuário interagir nas publicações | ALTA |
+|RF-008| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-009| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-010| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-011| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|RF-012| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+
+
+
+
 
 ### Requisitos não Funcionais
 
@@ -63,6 +76,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser responsiva | MÉDIA | 
 |RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-004| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-005| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-006| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-007| A aplicação deve ser compatível com os principais navegadores     |  ALTA  |
+|RNF-008| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-009| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-010| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-011| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-012| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
