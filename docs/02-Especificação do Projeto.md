@@ -74,18 +74,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-|RNF-003| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-004| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-005| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-006| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-001| 
+|RNF-002| 
+|RNF-003| 
+|RNF-004| 
+|RNF-005| 
+|RNF-006| 
 |RNF-007| A aplicação deve ser compatível com os principais navegadores     |  ALTA  |
-|RNF-008| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-009| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-010| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-011| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
-|RNF-012| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-008| 
+|RNF-009| 
+|RNF-010| 
+|RNF-011| 
+|RNF-012| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
