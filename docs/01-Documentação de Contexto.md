@@ -32,7 +32,7 @@ Apesar de compartilharem ruas, praças, transporte coletivo e comércios, os mor
 
 Avisos, alertas, iniciativas locais e até oportunidades de colaboração acabam se perdendo em pequenos grupos de WhatsApp ou não chegam a todos, causando falta de integração, comunicação falha e menor engajamento entre os vizinhos. De acordo com informações do IBGE (2025), apesar do aumento da urbanização e da proximidade física nos grandes centros, os índices de envolvimento comunitário continuam baixos.
 
-Sendo assim, deseja-se mudar essa situação com uma aplicação web que reúna e organize em um único lugar (avisos, serviços e iniciativas)  interações entre os moradores, com intuito de promover a colaboração e fortalecer os laços dentro da comunidade.
+Sendo assim, deseja-se mudar essa situação com uma aplicação web que reúna e organize em um único lugar (avisos, serviços e iniciativas)  interações entre os moradores, com intuito de promover a colaboração, fortalecer os laços dentro da comunidade, além de seguir as diretrizes das ODS.
 
 Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
 
