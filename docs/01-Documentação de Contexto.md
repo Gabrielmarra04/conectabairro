@@ -28,6 +28,12 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
+Apesar de compartilharem ruas, praças, transporte coletivo e comércios, os moradores acabam isolados por muros, portões e rotinas cada vez mais rápidas. Esse afastamento diminui o senso de comunidade e reduz as chances de interação social. Bauman (2003) observa que a vida urbana atual, caracterizada pela pressa e pelo individualismo, enfraquece as relações sociais e torna mais difícil a criação de laços comunitários duradouros.
+
+Avisos, alertas, iniciativas locais e até oportunidades de colaboração acabam se perdendo em pequenos grupos de WhatsApp ou não chegam a todos, causando falta de integração, comunicação falha e menor engajamento entre os vizinhos. De acordo com informações do IBGE (2025), apesar do aumento da urbanização e da proximidade física nos grandes centros, os índices de envolvimento comunitário continuam baixos.
+
+Sendo assim, deseja-se mudar essa situação com uma aplicação web que reúna e organize em um único lugar (avisos, serviços e iniciativas)  interações entre os moradores, com intuito de promover a colaboração e fortalecer os laços dentro da comunidade.
+
 Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
 
 **Relacione o problema aos Objetivos de Desenvolvimento Sustentável (ODS), indicando quais ODS e subobjetivos são atendidos e descrevendo como o projeto contribui para cada um deles, garantindo coerência entre o impacto mensurado e as metas selecionadas.**
