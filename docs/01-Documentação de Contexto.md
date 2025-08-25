@@ -1,4 +1,7 @@
 # Introdução
+A comunicação é fundamental para uma boa convivência entre a população, especificamente em um bairro. No entanto, mesmo com diversas tecnologias para facilitar as necessidades do dia a dia, ainda é comum observar comunidades e bairros onde a comunicação entre os moradores não são eficazes, ou que acontecem de forma restrita e individualizada através de aplicativos de mensagens, que muitas vezes não alcançam a todos. 
+Diante desse cenário, percebe-se a necessidade de uma aplicação que seja capaz de aproximar os moradores de uma mesma região, com intuito de oferecer um espaço colaborativo entre os participantes para facilitar a troca de informações, divulgação de serviços, compartilhamento de alertas e incentivo a atividades coletivas, como esporte e lazer. 
+Sendo assim, nota-se que tal iniciativa pode contribuir para o desenvolvimento social, econômico e ambiental da região, além de apoiar ações de políticas públicas e de organizações locais, visando o bem-estar de todos os moradores.
 
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
