@@ -42,7 +42,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| 
+|RF-001| Ser possível entrar em contato com o Anunciador Via Chat na própria Aplicação. | ALTA |
 |RF-002| O sistema deve enviar notificação como alteração de Status, comentário e curtida. | ALTA |
 |RF-003| O sistema deve permitir ao usuário criar anúncios e colocar informações. | ALTA |
 |RF-004| Possibilidade de adicionar categorias, imagens e vídeos curtos em cada publicação. | ALTA |
