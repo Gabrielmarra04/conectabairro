@@ -1,37 +1,29 @@
 # Introdução
-A comunicação é fundamental para uma boa convivência entre a população, especificamente em um bairro. No entanto, mesmo com diversas tecnologias para facilitar as necessidades do dia a dia, ainda é comum observar comunidades e bairros onde a comunicação entre os moradores não são eficazes, ou que acontecem de forma restrita e individualizada através de aplicativos de mensagens, que muitas vezes não alcançam a todos. 
-Diante desse cenário, percebe-se a necessidade de uma aplicação que seja capaz de aproximar os moradores de uma mesma região, com intuito de oferecer um espaço colaborativo entre os participantes para facilitar a troca de informações, divulgação de serviços, compartilhamento de alertas e incentivo a atividades coletivas, como esporte e lazer. 
-Sendo assim, nota-se que tal iniciativa pode contribuir para o desenvolvimento social, econômico e ambiental da região, além de apoiar ações de políticas públicas e de organizações locais, visando o bem-estar de todos os moradores.
+
+   A comunicação é fundamental para uma boa convivência entre a população, especificamente em um bairro. No entanto, mesmo com diversas tecnologias para facilitar as necessidades do dia a dia, ainda é comum observar comunidades e bairros onde a comunicação entre os moradores não são eficazes, ou que acontecem de forma restrita e individualizada através de aplicativos de mensagens, que muitas vezes não alcançam a todos. 
+
+<br/>Diante desse cenário, percebe-se a necessidade de uma aplicação que seja capaz de aproximar os moradores de uma mesma região, com intuito de oferecer um espaço colaborativo entre os participantes para facilitar a troca de informações, divulgação de serviços, compartilhamento de alertas e incentivo a atividades coletivas, como esporte e lazer. 
+ Sendo assim, nota-se que tal iniciativa pode contribuir para o desenvolvimento social, econômico e ambiental da região, além de apoiar ações de políticas públicas e de organizações locais, visando o bem-estar de todos os moradores.
 
 
 ## Problema
+
 O problema que motiva este trabalho é a falta de integração e comunicação efetiva entre os moradores de um mesmo bairro, o que resulta em distanciamento social, baixa participação comunitária e dificuldades na resolução de questões coletivas. A ausência de um espaço centralizado para troca de informações, divulgação de serviços, organização de atividades e mobilização social compromete a construção de laços de confiança e cooperação, além de limitar a circulação de oportunidades locais. Essa desconexão impacta diretamente o fortalecimento da comunidade, a valorização do bairro e até mesmo a formulação de políticas públicas alinhadas às reais necessidades da população.
 
-A falta desse espaço centralizado dificulta:
+- A falta desse espaço centralizado dificulta;
 
-A criação de vínculos de confiança entre vizinhos;
+- A criação de vínculos de confiança entre vizinhos;
 
-O fortalecimento da economia local;
+- O fortalecimento da economia local;
 
-O engajamento em atividades comunitárias;
+- O engajamento em atividades comunitárias;
 
-O apoio à gestão pública.
+- O apoio à gestão pública;
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Este trabalho tem como foco o desenvolvimento de uma aplicação web que integra e aproxima os moradores de um mesmo bairro, alinhada principalmente ao ODS 11 (Cidades e comunidades sustentáveis), que busca tornar as comunidades mais inclusivas, seguras e resilientes. A plataforma facilitará a comunicação local, agilizando a troca de informações, serviços e alertas, com impacto também nos ODS 4 (Educação de qualidade), 8 (Trabalho decente e crescimento econômico) e 15 (Vida terrestre).<br/> O sistema oferecerá um espaço digital para a troca e venda de produtos, incentivo a esportes e atividades em grupo, compartilhamento de informações sobre problemas e iniciativas locais, fortalecendo a colaboração e o senso de comunidade, além de auxiliar no planejamento de políticas públicas.
 
 ## Justificativa
 
@@ -41,12 +33,7 @@ Avisos, alertas, iniciativas locais e até oportunidades de colaboração acabam
 
 Sendo assim, deseja-se mudar essa situação com uma aplicação web que reúna e organize em um único lugar (avisos, serviços e iniciativas)  interações entre os moradores, com intuito de promover a colaboração, fortalecer os laços dentro da comunidade, além de seguir as diretrizes das ODS.
 
-Explique de forma clara a relevância da aplicação escolhida, justificando os objetivos específicos e os aspectos do software que serão aprofundados, e quantifique o impacto do problema com dados concretos (números, percentuais, indicadores) obtidos por bases oficiais ou outras fontes confiáveis, sempre citadas no padrão ABNT (no formato [Numérico] ou (AUTOR, ANO)).
 
-**Relacione o problema aos Objetivos de Desenvolvimento Sustentável (ODS), indicando quais ODS e subobjetivos são atendidos e descrevendo como o projeto contribui para cada um deles, garantindo coerência entre o impacto mensurado e as metas selecionadas.**
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
