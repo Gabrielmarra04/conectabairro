@@ -3,12 +3,19 @@ A comunicação é fundamental para uma boa convivência entre a população, es
 Diante desse cenário, percebe-se a necessidade de uma aplicação que seja capaz de aproximar os moradores de uma mesma região, com intuito de oferecer um espaço colaborativo entre os participantes para facilitar a troca de informações, divulgação de serviços, compartilhamento de alertas e incentivo a atividades coletivas, como esporte e lazer. 
 Sendo assim, nota-se que tal iniciativa pode contribuir para o desenvolvimento social, econômico e ambiental da região, além de apoiar ações de políticas públicas e de organizações locais, visando o bem-estar de todos os moradores.
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O problema que motiva este trabalho é a falta de integração e comunicação efetiva entre os moradores de um mesmo bairro, o que resulta em distanciamento social, baixa participação comunitária e dificuldades na resolução de questões coletivas. A ausência de um espaço centralizado para troca de informações, divulgação de serviços, organização de atividades e mobilização social compromete a construção de laços de confiança e cooperação, além de limitar a circulação de oportunidades locais. Essa desconexão impacta diretamente o fortalecimento da comunidade, a valorização do bairro e até mesmo a formulação de políticas públicas alinhadas às reais necessidades da população.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+A falta desse espaço centralizado dificulta:
+
+A criação de vínculos de confiança entre vizinhos;
+
+O fortalecimento da economia local;
+
+O engajamento em atividades comunitárias;
+
+O apoio à gestão pública.
 
 Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
