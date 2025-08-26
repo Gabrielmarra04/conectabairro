@@ -43,12 +43,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| 
-|RF-002| 
-|RF-003| O sistema deve permitir ao usuário criar anúncios e colocar informações | ALTA |
-|RF-004| 
-|RF-005| O sistema deve permitir ao usuário realizar login com e-mail e senha | ALTA |
-|RF-006| Filtrar publicações por categoria, data ou palavra-chave |  ALTA  |
-|RF-007| O sistema deve permitir ao usuário interagir nas publicações | ALTA |
+|RF-002| O sistema deve enviar notificação como alteração de Status, comentário e curtida. | ALTA |
+|RF-003| O sistema deve permitir ao usuário criar anúncios e colocar informações. | ALTA |
+|RF-004| Possibilidade de adicionar categorias, imagens e vídeos curtos em cada publicação. | ALTA |
+|RF-005| O sistema deve permitir ao usuário realizar login com e-mail e senha. | ALTA |
+|RF-006| Filtrar publicações por categoria, data ou palavra-chave. |  ALTA  |
+|RF-007| O sistema deve permitir ao usuário interagir nas publicações. | ALTA |
 |RF-008| 
 |RF-009| 
 |RF-010| 
@@ -65,11 +65,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|-------------------------|----|
 |RNF-001| 
 |RNF-002| 
-|RNF-003| 
-|RNF-004| 
+|RNF-003| O Código deve seguir boas práticas de desenvolvimento com comentários claros e padrões de codificação. |  ALTA  |
+|RNF-004| A consulta das informações no sistema deve demorar no máximo 5 segundos. |  ALTA  |
 |RNF-005| As informações cadastrais dos usuários devem estar disponíveis apenas para eles e os desenvolvedores. |  ALTA  |
-|RNF-006| Interface intuitiva e acessível para todas as idades |  ALTA  |
-|RNF-007| A aplicação deve ser compatível com os principais navegadores     |  ALTA  |
+|RNF-006| Interface intuitiva e acessível para todas as idades. |  ALTA  |
+|RNF-007| A aplicação deve ser compatível com os principais navegadores.     |  ALTA  |
 |RNF-008| 
 |RNF-009| 
 |RNF-010| 
