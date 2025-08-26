@@ -71,12 +71,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do 2° semestre de 2025|
-|02| Não pode ser desenvolvido um módulo de backend        |
-|03| Projeto realizado somente pela equipe pré-definida    |
+|01| O prazo para a entrega do projeto é 07/12/2025|
+|02| Atualmente, não há orçamento definido para o projeto.|
+|03| Nossa equipe é composta por estudantes com diferentes áreas de conhecimento e habilidades complementares.|
 |04|                                   |
-|05|                                   |
-
+|05|           
 
 ## Diagrama de Casos de Uso
 
