@@ -31,7 +31,8 @@ Apesar de compartilharem ruas, praças, transporte coletivo e comércios, os mor
 
 Avisos, alertas, iniciativas locais e até oportunidades de colaboração acabam se perdendo em pequenos grupos de WhatsApp ou não chegam a todos, causando falta de integração, comunicação falha e menor engajamento entre os vizinhos. De acordo com informações do IBGE (2025), apesar do aumento da urbanização e da proximidade física nos grandes centros, os índices de envolvimento comunitário continuam baixos.
 
-Sendo assim, deseja-se mudar essa situação com uma aplicação web que reúna e organize em um único lugar (avisos, serviços e iniciativas)  interações entre os moradores, com intuito de promover a colaboração, fortalecer os laços dentro da comunidade, além de seguir as diretrizes das ODS.
+Diante desse cenário, a proposta de criação de uma aplicação web que centralize e organize informações relevantes como avisos, serviços, alertas e atividades locais, representa uma resposta estratégica para enfrentar os desafios da modernidade urbana. A aplicação permitirá a criação de um ambiente inclusivo e acessível, no qual todos os moradores possam participar ativamente da vida comunitária, compartilhando interesses, apoiando causas comuns e colaborando para melhorias no bairro, juntamente com ONGs e a Prefeitura. Além disso, essa iniciativa alinha-se aos ODS (Objetivo de Desenvolvimento Sustentável) e contribui para transformar o espaço urbano mais conectado e harmônico, tornando a implementação dessa solução como necessária e urgente para reverter os efeitos negativos causados pela falta de comunicação.
+
 
 
 
