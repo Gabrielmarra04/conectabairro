@@ -52,17 +52,17 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| Os formulários devem apresentar mensagens de erro claras e em tempo real, indicando como o usuário pode corrigir. |  ALTA  |
-|RNF-002| O Código deve seguir boas práticas de desenvolvimento com comentários claros e padrões de codificação. |  ALTA  |
-|RNF-003| O sistema deve estar disponível pelo menos 99% das 24 horas do dia, nos 7 dias da semana. |  ALTA  |
-|RNF-004| A consulta das informações no sistema deve demorar no máximo 5 segundos. |  ALTA  |
-|RNF-005| As informações cadastrais dos usuários devem estar disponíveis apenas para eles e os desenvolvedores. |  ALTA  |
-|RNF-006| Interface intuitiva e acessível para todas as idades. |  ALTA  |
-|RNF-007| A aplicação deve ser compatível com os principais navegadores. |  ALTA  |
-|RNF-008| A aplicação deve ter uma opção para modo escuro. |  ALTA  |
-|RNF-009| 
-|RNF-010| 
-|RNF-011| 
-|RNF-012| 
+|RNF-002| O Código deve seguir boas práticas de desenvolvimento de acordo com as Heurísticas de Nielsen. |  ALTA  |
+|RNF-003| As informações cadastrais dos usuários devem estar disponíveis apenas para eles e os desenvolvedores. |  ALTA  |
+|RNF-004| A aplicação deve ser compatível com os principais navegadores. |  ALTA  |
+|RNF-005| A aplicação deve ter uma opção para modo escuro. |  ALTA  |
+|RNF-006| A aplicação deve ser compatível para navegadores em celulares |  ALTA  |
+|RNF-007|  |  ALTA  |
+|RNF-008|  |  ALTA  |
+|RNF-009|  |  ALTA  |
+|RNF-010|  |  ALTA  |
+|RNF-011|  |  ALTA  |
+|RNF-012|  |  ALTA  |
 
 
 ## Restrições
