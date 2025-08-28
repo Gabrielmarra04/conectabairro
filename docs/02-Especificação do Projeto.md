@@ -8,6 +8,7 @@
 | **Matheus Henrique**| 28 anos   | Desempregado                            | - Atualmente sem emprego.<br>- Enfrenta dificuldades para encontrar trabalho em sua região.                                                             | - Procurar emprego ou freelancers.<br>- Divulgar serviço e currículo em um espaço confiável do bairro.                     |
 | **Carlos Mendes**   | 45 anos   | Diretor de Zeladoria Urbana (Prefeitura) | - Responsável por equipes de manutenção da cidade.<br>- Cobrado por resultados pelos superiores e população.                                             | - Monitorar alertas em tempo real.<br>- Responder com status (“Em andamento”, “Resolvido”, “Pendente”).                     |
 | **Andreia Ferreira**| 38 anos   | Auxiliar da ONG                         | - Responsável por dar feedbacks de respostas ao público.<br>- Direcionar grupos e pessoas para voluntários e locais de atenção.                          | - Visualizar alertas criados pela população.<br>- Publicar imagens e dados de trabalhos feitos pela ONG.                    |
+| **José Pereira**| 45 anos   | Comerciante (dono de mercearia do bairro)                         | - Sempre atento às movimentações do bairro para manter o comércio seguro.<br>- Costuma divulgar promoções nas redes sociais, mas sente falta de um meio mais eficiente para alcançar clientes próximos.                          | - Divulgar promoções e serviços para moradores do bairro. 
 
 
 ## Histórias de Usuários
