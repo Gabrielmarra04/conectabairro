@@ -61,8 +61,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| Todas as comunicações entre cliente e servidor devem ser criptografadas via HTTPS/TLS |  ALTA  |
 |RNF-008| A aplicação deve ter uma interface simples, com botões visíveis e textos claros |  ALTA  |
 |RNF-009| Todas as telas do sistema devem seguir o mesmo padrão visual de cores, tipografia e posicionamento de botões. |  ALTA  |
-|RNF-010|  |  ALTA  |
-|RNF-011|  |  ALTA  |
+|RNF-010| Todas as alterações no código devem estar vinculadas a um identificador único de requisito ou ticket de manutenção no sistema de gerenciamento |  ALTA  |
+|RNF-011| O código deve ser estruturado de forma organizada para facilitar futuras atualizações e manutenção |  ALTA  |
 |RNF-012|  |  ALTA  |
 
 
