@@ -34,7 +34,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| A aplicação deve permitir aos usuários criar cadastro | ALTA |
 |RF-002| A aplicação deve permitir ao usuário realizar login com e-mail e senha | ALTA |
 |RF-003| A aplicação deve permitir ao usuário trocar senha de login | ALTA |
-|RF-004| A aplicação deve permitir ao usuário criar anúncios e colocar informações como categorias, imagens e vídeos curtos em cada publicação | ALTA |
+|RF-004| A aplicação deve permitir ao usuário criar e editar anúncios, informações como categorias, imagens e vídeos curtos em cada publicação | ALTA |
 |RF-005| A aplicação deve permitir que usuários interajam em outras publicações | ALTA |
 |RF-006| A aplicação deve enviar notificação como alteração de status, comentários e curtidas |  ALTA  |
 |RF-007| A aplicação deve permitir os usuários filtrarem publicações por categoria, data ou palavra-chave | ALTA |
@@ -58,9 +58,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-004| A aplicação deve ser compatível com os principais navegadores como Chrome, Firefox, Edge e Safari |  ALTA  |
 |RNF-005| A aplicação deve ter uma opção para modo escuro |  ALTA  |
 |RNF-006| A aplicação deve ser totalmente utilizável em smartphones, tablets e computadores, sem perda de funcionalidades |  ALTA  |
-|RNF-007|  |  ALTA  |
-|RNF-008|  |  ALTA  |
-|RNF-009|  |  ALTA  |
+|RNF-007| Todas as comunicações entre cliente e servidor devem ser criptografadas via HTTPS/TLS |  ALTA  |
+|RNF-008| A aplicação deve ter uma interface simples, com botões visíveis e textos claros |  ALTA  |
+|RNF-009| Todas as telas do sistema devem seguir o mesmo padrão visual de cores, tipografia e posicionamento de botões. |  ALTA  |
 |RNF-010|  |  ALTA  |
 |RNF-011|  |  ALTA  |
 |RNF-012|  |  ALTA  |
@@ -75,18 +75,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O prazo para a entrega do projeto é 07/12/2025|
 |02| Atualmente, não há orçamento definido para o projeto.|
 |03| Nossa equipe é composta por estudantes com diferentes áreas de conhecimento e habilidades complementares.|
-|04|                                   |
-|05|           
+
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/dbc59050-89fb-4ae7-a1ba-4fbb1798d923" />
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
