@@ -17,7 +17,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Maria Silva (Moradora)| quero criar alertas com fotos |  para relatar problemas no bairro rapidamente|
+|Maria Silva (Moradora)|quero criar alertas com fotos                       |para relatar problemas no bairro rapidamente
 |Maria Silva (Moradora)| quero receber notificações sobre promoções e serviços|para economizar tempo nas minhas compras do dia a dia e apoiar o comércio local|
 |                       |
 |Dona Ana (Moradora) | quero uma interface simples  | para usar a aplicação sem dificuldades |
@@ -29,8 +29,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Andreia Ferreira (ONG)|quero visualizar alertas criados pelos moradores |para direcionar voluntáris e recursos de forma eficiente|
 |Andreia Ferreira (ONG)|quero publicar imagens e informações sobre os trabalhos realizados pela ONG| para dar um retorno à população e mostrar que os alertas estão gerando resultados concretos|
 |                     |
-|                     |                                               |                                                    |
-|                     |
+|Carlos Mendes - Diretor de Zeladoria Urbana (Prefeitura)|quero visualizar alertas organizados por prioridade|para planejar a manutenção do bairro|
+|Carlos Mendes - Diretor de Zeladoria Urbana (Prefeitura)|quero atualizar o status dos alertas|para manter os moradores informados e reduzir reclamações|
+|                    |
 |José (Comerciante) | quero cadastrar promoções e descontos especiais|para que os moradores do bairro possam ver as ofertas da minha mercearia|
 |José (Comerciante) | quero acompanhar o desempenho das minhas promoções|para entender quais ofertas geram mais interesse e ajustar minhas estratégias para aumentar minhas vendas|
 
