@@ -17,10 +17,22 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Morador  | criar alertas de problemas no bairro           |  para melhorar a segurança e qualidade de vida             |
-|Comerciante       | divulgar meus serviços                 | alcançar mais clientes locais |
-|Prefeitura (Admin)| moderar conteúdos e atualizar status de alertas| manter a comunidade informada e engajada | 
-| ONG | receber alertas relevantes e divulgar minhas ações| fortalecer o engajamento comunitário|
+|Maria Silva (Moradora)| quero criar alertas com fotos |  para relatar problemas no bairro rapidamente|
+|Maria Silva (Moradora)| quero receber notificações sobre promoções e serviços|para economizar tempo nas minhas compras do dia a dia e apoiar o comércio local|
+|                       |
+|Dona Ana (Moradora) | quero uma interface simples  | para usar a aplicação sem dificuldades |
+|Dona Ana (Moradora)| quero poder enviar os alertas que eu criei para meus familiares e vizinhos | para que eles possam me ajudar a acompanhar a resolução e saber o que está acontecendo|
+|                     |
+|Matheus Henrique (Morador)| quero divulgar meu currículo e meus serviços em um espaço de confiança do bairro| para que os comerciantes e moradores possam me encontrar e oferecer trabalhos freelancers ou temporários | 
+| Matheus Henrique (Morador) | quero receber alertas de novas vagas de emprego que sejam relevantes para meu perfil profissional | para não perder nenhuma oportunidade de trabalho na minha região|
+|                       |
+|Andreia Ferreira (ONG)|quero visualizar alertas criados pelos moradores |para direcionar voluntáris e recursos de forma eficiente|
+|Andreia Ferreira (ONG)|quero publicar imagens e informações sobre os trabalhos realizados pela ONG| para dar um retorno à população e mostrar que os alertas estão gerando resultados concretos|
+|                     |
+|                     |                                               |                                                    |
+|                     |
+|José (Comerciante) | quero cadastrar promoções e descontos especiais|para que os moradores do bairro possam ver as ofertas da minha mercearia|
+|José (Comerciante) | quero acompanhar o desempenho das minhas promoções|para entender quais ofertas geram mais interesse e ajustar minhas estratégias para aumentar minhas vendas|
 
 
 ## Requisitos
