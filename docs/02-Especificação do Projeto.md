@@ -1,6 +1,18 @@
 # Especificações do Projeto
 
 ## Personas
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona1.png
+    <figcaption>
+</figure>
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona2.png
+    <figcaption>
+</figure>
+
+
+
+
 | **Nome**            | **Idade** | **Ocupação**                           | **Comportamento**                                                                                                                                      | **Objetivos no sistema**                                                                                               |
 |----------------------|-----------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | **Maria Silva**     | 35 anos   | Professora de ensino fundamental        | - Preocupada com a segurança dos filhos no trajeto escola–casa.<br>- Costuma tirar fotos de buracos, postes apagados ou lixo acumulado.<br>- Consome produtos e serviços do próprio bairro. | - Criar alertas de forma rápida.<br>- Ter retorno sobre problemas que afetam sua família.<br>- Receber promoções e serviços locais. |
