@@ -9,8 +9,22 @@
   <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona2.png
     <figcaption>
 </figure>
-
-
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona3.png
+    <figcaption>
+</figure>
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona4.png
+    <figcaption>
+</figure>
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona5.png
+    <figcaption>
+</figure>
+<figure>
+  <img src=https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/blob/fa5056424fa643286a5ed250540ef196725ed0b0/docs/img/persona6.png
+    <figcaption>
+</figure>
 
 
 | **Nome**            | **Idade** | **Ocupação**                           | **Comportamento**                                                                                                                                      | **Objetivos no sistema**                                                                                               |
