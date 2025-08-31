@@ -29,8 +29,8 @@ O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro 
 
 
 
+https://github.com/user-attachments/assets/ffaf21e2-1460-45a0-ac56-3d4358e84603
 
-https://github.com/user-attachments/assets/20b6340d-d49a-40be-8c38-efd36c16bc4e
 
 
 ## Vídeo de apresentação - Etapa 05
