@@ -23,9 +23,11 @@ O problema que motiva este trabalho é a falta de integração e comunicação e
 
 ## Objetivos
 
-Este trabalho tem como foco o desenvolvimento de uma aplicação web que integra e aproxima os moradores de um mesmo bairro, alinhada principalmente ao ODS 11 (Cidades e comunidades sustentáveis), que busca tornar as comunidades mais inclusivas, seguras e resilientes. A plataforma facilitará a comunicação local, agilizando a troca de informações, serviços e alertas, com impacto também nos ODS 4 (Educação de qualidade), 8 (Trabalho decente e crescimento econômico) e 15 (Vida terrestre).<br/> O sistema oferecerá um espaço digital para a troca e venda de produtos, incentivo a esportes e atividades em grupo, compartilhamento de informações sobre problemas e iniciativas locais, fortalecendo a colaboração e o senso de comunidade, além de auxiliar no planejamento de políticas públicas.
+Este trabalho tem como foco o desenvolvimento de uma aplicação web que integra e aproxima os moradores de um mesmo bairro, alinhada principalmente ao ODS #11 (Cidades e comunidades sustentáveis), que busca tornar as comunidades mais inclusivas, seguras e resilientes. A plataforma facilitará a comunicação local, agilizando a troca de informações, serviços e alertas, com impacto também nos ODS #4 (Educação de qualidade), #8 (Trabalho decente e crescimento econômico) e #15 (Vida terrestre). O sistema oferecerá um espaço digital para a troca e venda de produtos, incentivo a esportes e atividades em grupo, compartilhamento de informações sobre problemas e iniciativas locais, fortalecendo a colaboração e o senso de comunidade, além de auxiliar no planejamento de políticas públicas.
+
 
 ## Justificativa
+
 
 Apesar de compartilharem ruas, praças, transporte coletivo e comércios, os moradores acabam isolados por muros, portões e rotinas cada vez mais rápidas. Esse afastamento diminui o senso de comunidade e reduz as chances de interação social. Bauman (2003) observa que a vida urbana atual, caracterizada pela pressa e pelo individualismo, enfraquece as relações sociais e torna mais difícil a criação de laços comunitários duradouros.
 
