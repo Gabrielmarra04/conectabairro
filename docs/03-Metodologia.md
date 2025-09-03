@@ -9,6 +9,8 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 
 *Apresentação:* https://docs.google.com/presentation/d/1AGUy6Y8OSkpTfX6m-NISEgEpa0XuPXCACSi6d9omp_Y/edit?usp=sharing
 
+*Casos de uso:* https://lucid.app/lucidchart/f3bf7f04-301e-45c9-adba-4d3d7d251cc2/edit?viewport_loc=-829%2C-796%2C4746%2C2682%2C0_0&invitationId=inv_6f3db7af-28fd-4d4c-9833-ec414a54d09c
+
 ## Controle de Versão
 
 A ferramenta de controle de versão adotada no projeto foi o
