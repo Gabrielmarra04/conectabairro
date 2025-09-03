@@ -6,6 +6,7 @@
 Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
 *Figma:* https://www.figma.com/design/OYNhGvJ26zoWCy8DU08G29/CONECTABAIRROS?node-id=0-1&t=FDk1ryJP8fZxIJkk-1
+
 *Apresentação:* https://docs.google.com/presentation/d/1AGUy6Y8OSkpTfX6m-NISEgEpa0XuPXCACSi6d9omp_Y/edit?usp=sharing
 
 ## Controle de Versão
