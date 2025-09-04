@@ -42,6 +42,14 @@ Apresente a divisão de papéis entre os membros do grupo.
 
 ### Processo
 
+Será utilizado o Scrum, uma framework ágil usado para gerenciar projetos, especialmente no desenvolvimento de software. Ele foca na entrega incremental e iterativa. A ferramenta on-line GitHub Project para acompanhar o andamento do projeto e também para o gerenciamento do Kanban.
+- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
+- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
+- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá.
+- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+
+<img width="1912" height="904" alt="image" src="https://github.com/user-attachments/assets/c07837db-97ae-429a-b322-61a1a6a06975" />
+
 Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
  
 > **Links Úteis**:
