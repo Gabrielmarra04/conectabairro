@@ -67,8 +67,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de código fonte         | GitHub                             | |
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro/tree/main/docs|
 | Projeto de Interface                | Figma                              | https://www.figma.com/design/OYNhGvJ26zoWCy8DU08G29/CONECTABAIRROS?node-id=0-1&t=FDk1ryJP8fZxIJkk-1|
-| Diagrama de Caso de Uso        | Lucid                            |
-https://lucid.app/lucidchart/f80d3bd2-4482-4dec-924a-d3c24d1d5c67/edit?viewport_loc=-1958%2C-890%2C2415%2C1288%2C0_0&invitationId=inv_ce2b84b7-61b2-4258-a69e-10e7625fd301|
+| Diagrama de Caso de Uso        | Lucid                      |https://lucid.app/lucidchart/f80d3bd2-4482-4dec-924a-d3c24d1d5c67/edit?viewport_loc=-1958%2C-890%2C2415%2C1288%2C0_0&invitationId=inv_ce2b84b7-61b2-4258-a69e-10e7625fd301|
 | Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2277|
 | Hospedagem                          |                       | |
 
