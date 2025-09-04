@@ -33,13 +33,14 @@ etiquetas:
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- Scrum Master: João Vitor
+- Product Owner: Luiz Felipe
+- Equipe de Desenvolvimento: Amanda Guedes, Emanuel Moreira, Gabriel Yuri, João Vitor, Luiz Felipe, Nathaliene Cristina
+- Equipe de Design: Gabriel Yuri e Luiz Felipe
 
+  
 ### Processo
 
 Será utilizado o Scrum, uma framework ágil usado para gerenciar projetos, especialmente no desenvolvimento de software. Ele foca na entrega incremental e iterativa. A ferramenta on-line GitHub Project para acompanhar o andamento do projeto e também para o gerenciamento do Kanban.
