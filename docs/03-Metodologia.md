@@ -1,15 +1,9 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 Para o desenvolvimento do ConectaBairro, o grupo adotou a metodologia ágil Scrum, adaptada ao contexto acadêmico. Essa abordagem facilita a organização da equipe, promove entregas constantes dentro de um período menor e permite ajustes contínuos conforme as necessidades identificiadas.
 
-*Figma:* https://www.figma.com/design/OYNhGvJ26zoWCy8DU08G29/CONECTABAIRROS?node-id=0-1&t=FDk1ryJP8fZxIJkk-1
-
-*Apresentação:* https://docs.google.com/presentation/d/1AGUy6Y8OSkpTfX6m-NISEgEpa0XuPXCACSi6d9omp_Y/edit?usp=sharing
-
-*Casos de uso:* https://lucid.app/lucidchart/f3bf7f04-301e-45c9-adba-4d3d7d251cc2/edit?viewport_loc=-829%2C-796%2C4746%2C2682%2C0_0&invitationId=inv_6f3db7af-28fd-4d4c-9833-ec414a54d09c
 
 ## Controle de Versão
 
