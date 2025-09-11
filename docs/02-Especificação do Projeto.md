@@ -82,6 +82,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-010| A aplicação deve permitir ao Admin excluir publicações, apagar comentários e deletar contas de usuários | ALTA |
 |RF-011| A aplicação deve permitir o usuário solicitar a troca de endereço para o Admin | ALTA |
 |RF-012| O sistema deve permitir o usuário a modificar seus dados básicos com agilidade (Nome, email, senha e telefone) | ALTA |
+|RF-013| O sistema deve permitir o usuário após efetuar o login ter acesso ao feed geral com todas as publicações e alertas criados | ALTA |
+|RF-014| O sistema deve permitir somente ao Admin realizar a alteração de endereço do usuário | ALTA |
 
 
 
@@ -118,5 +120,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Diagrama de Casos de Uso
 
-<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/dbc59050-89fb-4ae7-a1ba-4fbb1798d923" />
+<img width="1909" height="1076" alt="image" src="https://github.com/user-attachments/assets/c29446cd-8a20-41d9-b381-74e5687c656e" />
+
 
