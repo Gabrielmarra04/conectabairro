@@ -92,18 +92,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| Os formulários devem apresentar mensagens de erro claras e em tempo real, indicando como o usuário pode corrigir |  ALTA  |
-|RNF-002| O Código deve seguir boas práticas de desenvolvimento de acordo com as Heurísticas de Nielsen |  ALTA  |
-|RNF-003| As informações cadastrais dos usuários devem estar disponíveis apenas para eles e os desenvolvedores |  ALTA  |
-|RNF-004| A aplicação deve ser compatível com os principais navegadores como Chrome, Firefox, Edge e Safari |  ALTA  |
-|RNF-005| A aplicação deve ter uma opção para modo escuro |  ALTA  |
-|RNF-006| A aplicação deve ser totalmente utilizável em smartphones, tablets e computadores, sem perda de funcionalidades |  ALTA  |
-|RNF-007| Todas as comunicações entre cliente e servidor devem ser criptografadas via HTTPS/TLS |  ALTA  |
-|RNF-008| A aplicação deve ter uma interface simples, com botões visíveis e textos claros |  ALTA  |
-|RNF-009| Todas as telas do sistema devem seguir o mesmo padrão visual de cores, tipografia e posicionamento de botões. |  ALTA  |
-|RNF-010| Todas as alterações no código devem estar vinculadas a um identificador único de requisito ou ticket de manutenção no sistema de gerenciamento |  ALTA  |
-|RNF-011| O código deve ser estruturado de forma organizada para facilitar futuras atualizações e manutenção |  ALTA  |
-|RNF-012| A aplicação deve exibir mensagens de feedback claras e amigáveis para as ações do usuário |  ALTA  |
+|RNF-001| O código deve seguir boas práticas de desenvolvimento, de acordo com as Heurísticas de Nielsen.|  ALTA  |
+|RNF-002| As informações cadastrais dos usuários devem estar acessíveis apenas ao próprio usuário e aos desenvolvedores autorizados. |  ALTA  |
+|RNF-003| A aplicação deve ser compatível com os principais navegadores: Chrome, Firefox, Edge e Safari. |  ALTA  |
+|RNF-004| A aplicação deve oferecer opção de alternância para modo escuro.|  ALTA  |
+|RNF-005| A aplicação deve ser responsiva, funcionando integralmente em smartphones, tablets e computadores. |  ALTA  |
+|RNF-006| Todas as comunicações entre cliente e servidor devem ser criptografadas utilizando HTTPS/TLS.|  ALTA  |
+|RNF-007| A aplicação deve adotar o padrão de arquitetura MVC, garantindo separação entre lógica de negócios, interface de usuário e controle de fluxo. | ALTA|
+|RNF-008| A aplicação deve ser desenvolvida na linguagem de programação C#. |  ALTA  |
+|RNF-009| A aplicação deve utilizar o framework Bootstrap para estilização e componentes de interface. |  ALTA  |
 
 
 ## Restrições
