@@ -68,11 +68,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| A aplicação deve permitir que usuários do tipo moradores, ONGs e prefeitura efetuem seu próprio registro (autorregistro) e tenham acesso às funções de gerenciamento de seus dados pessoais, permitindo consultar, atualizar e excluir essas informações. | ALTA |
 |RF-002| A aplicação deve permitir ao usuário realizar login com e-mail e senha. | ALTA |
 |RF-003| A aplicação deve permitir ao usuário trocar senha e login | ALTA |
-|RF-004| A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. | ALTA |
+|RF-004| A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. | ALTA |
 |RF-005| A aplicação deve permitir aos usuários a possibilidade de interagir nas publicações, seja através de reações como “gostei” e “não gostei”, ou pela inclusão de comentários. | ALTA |
 |RF-006| A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas. | ALTA |
 |RF-007| A aplicação deve permitir que os usuários filtrem publicações por categoria, data ou palavra-chave. | ALTA |
-|RF-008| A aplicação deve permitir que ONGs e Prefeitura alterem o status e adicionem comentários, quando pertinente, em uma publicação. | ALTA |
+|RF-008| A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas publicações e adicionem comentários em uma publicação. | ALTA |
 |RF-009| O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação. | MÉDIA |
 |RF-010| O sistema deve permitir que o administrador remova publicações existentes. | MÉDIA |
 |RF-011| O sistema deve permitir que o administrador exclua comentários feitos pelos usuários. | ALTA |
