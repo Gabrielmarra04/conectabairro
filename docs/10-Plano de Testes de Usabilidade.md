@@ -14,14 +14,15 @@ Alguns exemplos de objetivos são:
 - Testar a acessibilidade para diferentes perfis de usuários.
 
 --
-O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro considerando a experiência real dos usuários de um bairro. Os objetivos específicos são:
 
-- Verificar se os usuários conseguem publicar alertas, avisos e promoções de forma rápida e intuitiva.
-- Avaliar se os usuários conseguem filtrar e localizar publicações por categoria (ex.: saúde, lazer, comércio).
-- Medir a facilidade de interação entre moradores (curtir, comentar) e a clareza da interface.
-- Identificar possíveis barreiras de navegação ou confusão em telas como feed, chat e pesquisa.
+O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro considerando a experiência real dos moradores e agentes da comunidade. Os objetivos específicos são:
+
+- Verificar se os usuários conseguem fazer publicações de forma rápida e intuitiva.
+- Avaliar se os usuários conseguem filtrar e localizar informações por categoria.
+- Medir a facilidade de interação entre moradores nas publicações e a clareza da interface.
+- Identificar possíveis barreiras de navegação no feed, chat e filtro.
 - Avaliar a satisfação dos usuários quanto à facilidade de uso, estética e percepção de valor da aplicação.
-- Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica.
+- Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica
 
 
 
@@ -41,12 +42,10 @@ Ideal: Entre 8 e 12 para maior diversidade.
 
 Para garantir que os testes reflitam o uso real do sistema, os participantes serão selecionados com base nas personas do projeto:
 
-- Maria Silva (35 anos) – Moradora ativa, média familiaridade com tecnologia; quer reportar problemas e receber promoções.
-- Dona Ana (68 anos) – Moradora antiga, baixa familiaridade com tecnologia; deseja acompanhar melhorias de forma simples.
-- Bruno Seixas (28 anos) – Morador jovem, experiência média em tecnologia; busca oportunidades de emprego e divulgar serviços.
-- Andreia Ferreira (38 anos) – Representante de ONG, alta familiaridade com tecnologia; precisa monitorar alertas e coordenar ações.
-- José Pereira (45 anos) – Comerciante local, experiência média; quer divulgar promoções e acompanhar resultados.
-- Carlos Mendes (45 anos) – Representante da Prefeitura, alta familiaridade com tecnologia; monitora alertas e atualiza status.
+- Moradores de diferentes idades, que utilizam ou desejam utilizar a aplicação para reportar problemas, acessar informações e interagir com vizinhos.
+- Pessoas com diferentes níveis de familiaridade tecnológica, incluindo iniciantes e usuários frequentes de redes sociais.
+- Representantes de ONGs ou da Prefeitura, responsáveis por monitorar alertas e coordenar ações locais.
+- Comerciantes do bairro, interessados em divulgar produtos e serviços.
 
 
 ## Definição de cenários de teste
