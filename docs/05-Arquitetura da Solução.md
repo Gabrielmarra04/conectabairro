@@ -6,7 +6,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-<img width="1441" height="1022" alt="image" src="https://github.com/user-attachments/assets/e690d4cc-c7be-4e50-97e4-31bb3e50f8c0" />
+<img width="1270" height="916" alt="image" src="https://github.com/user-attachments/assets/217c5910-a662-40ba-8502-614f92d71e86" />
 
 
 ## Modelo ER (Projeto Conceitual)
