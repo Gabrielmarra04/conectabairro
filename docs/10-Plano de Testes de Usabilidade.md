@@ -13,6 +13,18 @@ Alguns exemplos de objetivos são:
 - Avaliar a eficiência e a satisfação do usuário ao utilizar a interface.
 - Testar a acessibilidade para diferentes perfis de usuários.
 
+--
+O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro considerando a experiência real dos usuários de um bairro. Os objetivos específicos são:
+
+- Verificar se os usuários conseguem publicar alertas, avisos e promoções de forma rápida e intuitiva.
+- Avaliar se os usuários conseguem filtrar e localizar publicações por categoria (ex.: saúde, lazer, comércio).
+- Medir a facilidade de interação entre moradores (curtir, comentar) e a clareza da interface.
+- Identificar possíveis barreiras de navegação ou confusão em telas como feed, chat e pesquisa.
+- Avaliar a satisfação dos usuários quanto à facilidade de uso, estética e percepção de valor da aplicação.
+- Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica.
+
+
+
 ## Seleção dos participantes
 
 Para garantir que o teste reflita o uso real do sistema, escolha participantes representativos do público-alvo.
@@ -25,6 +37,17 @@ Para garantir que o teste reflita o uso real do sistema, escolha participantes r
 **Quantidade recomendada:**
 Mínimo: 5 participantes.
 Ideal: Entre 8 e 12 para maior diversidade.
+--
+
+Para garantir que os testes reflitam o uso real do sistema, os participantes serão selecionados com base nas personas do projeto:
+
+- Maria Silva (35 anos) – Moradora ativa, média familiaridade com tecnologia; quer reportar problemas e receber promoções.
+- Dona Ana (68 anos) – Moradora antiga, baixa familiaridade com tecnologia; deseja acompanhar melhorias de forma simples.
+- Bruno Seixas (28 anos) – Morador jovem, experiência média em tecnologia; busca oportunidades de emprego e divulgar serviços.
+- Andreia Ferreira (38 anos) – Representante de ONG, alta familiaridade com tecnologia; precisa monitorar alertas e coordenar ações.
+- José Pereira (45 anos) – Comerciante local, experiência média; quer divulgar promoções e acompanhar resultados.
+- Carlos Mendes (45 anos) – Representante da Prefeitura, alta familiaridade com tecnologia; monitora alertas e atualiza status.
+
 
 ## Definição de cenários de teste
 
