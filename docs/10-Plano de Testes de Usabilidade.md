@@ -78,6 +78,93 @@ Os cenários representam tarefas reais que os usuários executam no sistema. Nes
 - A compra é finalizada com sucesso, e o usuário visualiza a confirmação do pedido.
 - Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
 
+**Cenário 1** - Criar uma publicação no feed
+
+**Objetivo:** Avaliar a facilidade do usuário em criar qualquer tipo de publicação
+
+**Contexto:**  Usuário deseja registrar uma informação no bairro (ex.: anúncio, evento ou aviso)
+
+**Tarefa:**  Abrir a aplicação → Selecionar “Nova Publicação” → Adicionar título, descrição, categoria, imagem/vídeo → Publicar
+
+**Critérios de sucesso:**
+- O usuário consegue abrir feed e criar uma publicação sem dificuldades.
+- O título, descrição, categoria e imagem/vídeo são adicionados corretamente.
+- A publicação é exibida corretamente no feed para todos os usuários.
+  
+
+**Cenário 2** - Filtrar postagens por categoria
+
+**Objetivo:** Testar eficiência na navegação por categorias
+
+**Contexto:**  Usuário deseja visualizar apenas postagens da categoria “Saúde”
+
+**Tarefa:**  Abrir feed → Selecionar filtro “Saúde” → Visualizar postagens
+
+**Critérios de sucesso:** 
+- O usuário consegue localizar e selecionar o filtro de categoria facilmente.
+- As postagens da categoria correta são exibidas sem erros.
+- O usuário consegue navegar entre as postagens filtradas sem dificuldades.
+
+
+**Cenário 3** - Interagir com postagem
+
+**Objetivo:** Avaliar experiência em curtir, comentar e compartilhar
+
+**Contexto:**  Usuário encontra uma postagem sobre evento esportivo
+
+**Tarefa:**  Curtir a postagem → Não curti → Escrever comentário 
+
+**Critérios de sucesso:** 
+- O botão de curtida funciona corretamente e muda de estado.
+- O comentário é enviado e exibido corretamente na postagem.
+
+
+**Cenário 4** - Interagir com postagem
+
+**Objetivo:** Avaliar experiência em curtir, comentar e compartilhar
+
+**Contexto:**  Usuário encontra uma postagem sobre evento esportivo
+
+**Tarefa:**  Curtir a postagem → Não curti → Escrever comentário 
+
+**Critérios de sucesso:** 
+- O botão de curtida funciona corretamente e muda de estado.
+- O comentário é enviado e exibido corretamente na postagem.
+
+
+**Cenário 5** - Alterar status e comentar publicações
+
+**Objetivo:** Avaliar a facilidade com que ONGs e Prefeitura conseguem alterar o status de publicações e adicionar comentários.
+
+**Contexto:** Uma ONG ou o setor da Prefeitura precisa atualizar o andamento de uma ocorrência ou aviso criado por moradores.
+
+**Tarefa:** Acessar a publicação no feed → Alterar o status da publicação (ex.: “Em andamento”, “Resolvido”, “Pendente”) → Adicionar um comentário informativo sobre a ação realizada → Salvar a alteração.
+
+**Critério(s) de Sucesso(s):**
+-O usuário consegue localizar a publicação desejada sem dificuldades.
+-O status da publicação é alterado corretamente e refletido no feed.
+-O comentário é adicionado e exibido corretamente na publicação.
+
+
+**Cenário 7** - Excluir comentários de usuários
+
+**Objetivo:** Avaliar a facilidade com que o administrador consegue localizar e remover comentários inapropriados.
+
+**Contexto:** O administrador identificou comentários que violam regras da plataforma ou são irrelevantes e precisa removê-los do feed.
+
+**Tarefa:** Acessar a publicação com comentários → Selecionar o comentário que deve ser removido  → Executar a ação de exclusão  → Confirmar a remoção do comentário.
+
+**Critério(s) de Sucesso(s):**
+- O administrador consegue localizar o comentário sem dificuldades.
+- O comentário é removido corretamente e não aparece mais no feed.
+- O restante da publicação permanece intacto e funcional.
+
+
+
+
+
+
+
 ## Métodos de coleta de dados
 
 Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
