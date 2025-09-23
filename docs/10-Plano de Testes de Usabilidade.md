@@ -1,28 +1,25 @@
 # Plano de Testes de Usabilidade
 
-O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro considerando a experiência real dos moradores e agentes da comunidade. Os objetivos específicos são:
+O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, considerando a experiência real de moradores, comerciantes, ONGs e representantes da Prefeitura. Os objetivos específicos são:
 
 - Verificar se os usuários conseguem fazer publicações de forma rápida e intuitiva.
 - Avaliar se os usuários conseguem filtrar e localizar informações por categoria.
-- Medir a facilidade de interação entre moradores nas publicações e a clareza da interface.
 - Identificar possíveis barreiras de navegação no feed, chat e filtro.
-- 
 - Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica.
-- 
+- Avaliar o funcionamento e a clareza das notificações.
 -
-
+-
 
 ## Seleção dos participantes
 
-- Moradores de diferentes idades, que utilizam ou desejam utilizar a aplicação para reportar problemas, acessar informações e interagir com vizinhos.
-- Pessoas com diferentes níveis de familiaridade tecnológica, incluindo iniciantes e usuários frequentes de redes sociais.
-- Representantes de ONGs ou da Prefeitura, responsáveis por monitorar alertas e coordenar ações locais.
-- Comerciantes do bairro, interessados em divulgar produtos e serviços.
-
+Moradores de diferentes idades - Usuários principais da plataforma para reportar problemas e interagir.
+Usuários com baixa alfabetização digital - Testar a acessibilidade e simplicidade da interface.
+ONGs e Prefeitura	- Responsáveis por acompanhar e agir em relação às publicações.
+Comerciantes locais -	Utilizam a plataforma para promover seus produtos e serviços.
   
 **Quantidade recomendada:**
 Mínimo: 5 participantes.
-Ideal: Entre 18 e 60 para maior diversidade.
+Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 
 
 
@@ -59,7 +56,7 @@ Ideal: Entre 18 e 60 para maior diversidade.
 
 
 
-**Cenário 3** - Interagir com postagem
+**Cenário 3** - Interações básicas com publicações
 
 **Objetivo:** Avaliar experiência em curtir, não curtir e comentar
 
@@ -74,21 +71,7 @@ Ideal: Entre 18 e 60 para maior diversidade.
 
 
 
-**Cenário 4** - Interagir com postagem
-
-**Objetivo:** Avaliar experiência em curtir, comentar e compartilhar
-
-**Contexto:**  Usuário encontra uma postagem sobre evento esportivo
-
-**Tarefa:**  Curtir a postagem → Não curti → Escrever comentário 
-
-**Critérios de sucesso:** 
-- O botão de curtida funciona corretamente e muda de estado.
-- O comentário é enviado e exibido corretamente na postagem.
-
-
-
-**Cenário 5** - Alterar status de publicações
+**Cenário 4** - Alterar status de publicações
 
 **Objetivo:** Verificar se os usuários conseguem alterar corretamente o status de uma publicação feita por moradores.
 
@@ -107,7 +90,7 @@ Confirmar e salvar a alteração.
 
   
 
-**Cenário 6** - Adicionar comentários às publicações
+**Cenário 5** - Adicionar comentários às publicações
 
 **Objetivo:** Testar se todos os usuários (moradores, ONGs, Prefeitura) conseguem comentar publicações, promovendo interação e atualização de informações.
 
@@ -127,7 +110,7 @@ Enviar/publicar o comentário.
 
 
 
-**Cenário 7** - Excluir comentários de usuários
+**Cenário 6** - Excluir comentários de usuários
 
 **Objetivo:** Avaliar a facilidade com que o administrador consegue localizar e remover comentários inapropriados.
 
@@ -141,7 +124,7 @@ Enviar/publicar o comentário.
 - O restante da publicação permanece intacto e funcional.
 
 
-**Cenário 8** - Receber notificações
+**Cenário 7** - Receber notificações
 
 **Objetivo:** Verificar se os usuários recebem notificações sobre ações relacionadas às publicações em que estão envolvidos.
 
@@ -158,14 +141,14 @@ A notificação leva diretamente à publicação correta ao ser clicada
 - A notificação leva o usuário diretamente à ação ou publicação relacionada
 
 
-**Cenário 9**
+**Cenário 8**
 **Objetivo:**
 **Contexto:**
 **Tarefa:** 
 **Critério(s) de Sucesso(s):**
 
 
-**Cenário 10**
+**Cenário 9**
 **Objetivo:**
 **Contexto:**
 **Tarefa:** 
