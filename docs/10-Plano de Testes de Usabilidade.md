@@ -158,6 +158,21 @@ A notificação leva diretamente à publicação correta ao ser clicada
 - A notificação leva o usuário diretamente à ação ou publicação relacionada
 
 
+**Cenário 9**
+**Objetivo:**
+**Contexto:**
+**Tarefa:** 
+**Critério(s) de Sucesso(s):**
+
+
+**Cenário 10**
+**Objetivo:**
+**Contexto:**
+**Tarefa:** 
+**Critério(s) de Sucesso(s):**
+
+
+
 
 
 
