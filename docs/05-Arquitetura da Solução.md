@@ -1,9 +1,5 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
-
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
 ## Diagrama de Classes
 
 <img width="1270" height="916" alt="image" src="https://github.com/user-attachments/assets/217c5910-a662-40ba-8502-614f92d71e86" />
@@ -18,19 +14,18 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Projeto da Base de Dados
 
-O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
- 
-Para mais informações, consulte o microfundamento "Modelagem de Dados".
+<img width="1232" height="945" alt="image" src="https://github.com/user-attachments/assets/b869bc31-a9e5-480b-94e2-1b6b37021094" />
 
-## ATENÇÃO!!!
-
-Os três artefatos — **Diagrama de Classes, Modelo ER e Projeto da Base de Dados** — devem ser desenvolvidos de forma sequencial e integrada, garantindo total coerência e compatibilidade entre eles. O diagrama de classes orienta a estrutura e o comportamento do software; o modelo ER traduz essa estrutura para o nível conceitual dos dados; e o projeto da base de dados materializa essas definições no formato físico (tabelas, colunas, chaves e restrições). A construção isolada ou desconexa desses elementos pode gerar inconsistências, dificultar a implementação e comprometer a qualidade do sistema.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Foi utilizado do [Lucid.app](https://lucid.app/documents/#/home?folder_id=recent) para criação dos seguintes itens, visto a facilidade e colaboração com a Puc Minas ofertando um plano educacional, possibilitando a criação de diversos itens simultaneamente. 
+ - Diagrama de Classes
+ - Modelo ER (Projeto Conceitual)
+ - Projeto da Base de Dados
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Utilizado tambem o [figma.com](https://www.figma.com/) para criação dos Wireframes. Plataforma completa para criação de protótipos e de ótimo visual para auxiliar posteriormente na criação prática do sistema, visto a interatividade e realismo com a ideia inicial do sistema.
+
 
 ## Hospedagem
 
