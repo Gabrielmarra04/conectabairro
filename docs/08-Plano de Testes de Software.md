@@ -1,13 +1,5 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
-
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
-
 | **Caso de Teste** | **Requisito Associado** | **Objetivo do Teste** | **Passos** | **Critério de Êxito** |
 |-------------------|--------------------------|-----------------------|------------|-----------------------|
 | CT01 – Cadastrar perfil | RF-001 - A aplicação deve permitir que usuários do tipo moradores, ONGs e prefeitura efetuem seu próprio registro (autorregistro) e tenham acesso às funções de gerenciamento de seus dados pessoais. | Verificar se o usuário consegue se cadastrar na aplicação. | - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios <br> - Clicar em "Registrar" | O cadastro foi realizado com sucesso. |
@@ -27,14 +19,3 @@ Por exemplo:
 | CT15 – Visualizar feed geral | RF-015 - O sistema deve permitir acesso ao feed geral. | Validar se o usuário acessa o feed após login. | - Efetuar login <br> - Ser redirecionado automaticamente ao feed <br> - Visualizar todas as publicações e alertas | O feed é exibido corretamente. |
 
 ---
-
-
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
