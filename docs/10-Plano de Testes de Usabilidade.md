@@ -12,10 +12,13 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 ## Seleção dos participantes
 
-Moradores de diferentes idades - Usuários principais da plataforma para reportar problemas e interagir.
-Usuários com baixa alfabetização digital - Testar a acessibilidade e simplicidade da interface.
-ONGs e Prefeitura	- Responsáveis por acompanhar e agir em relação às publicações.
-Comerciantes locais -	Utilizam a plataforma para promover seus produtos e serviços.
+- Moradores de diferentes idades - Usuários principais da plataforma para reportar problemas e interagir.
+
+- Usuários com baixa alfabetização digital - Testar a acessibilidade e simplicidade da interface.
+
+- ONGs e Prefeitura	- Responsáveis por acompanhar e agir em relação às publicações.
+
+- Comerciantes locais -	Utilizam a plataforma para promover seus produtos e serviços.
   
 **Quantidade recomendada:**
 Mínimo: 5 participantes.
