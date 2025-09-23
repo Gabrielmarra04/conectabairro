@@ -20,8 +20,7 @@ Os wireframes são protótipos utilizados no design de interfaces para represent
 Nesta seção, é FUNDAMENTAL indicar, para cada tela/wireframe proposto, quais requisitos do projeto estão sendo contemplados por aquela tela.
 
 ## Tela de Login
-### Requisitos atendidos:
-RF-02: A aplicação deve permitir ao usuário realizar login com e-mail e senha.
+### Requisito atendido: RF-02: A aplicação deve permitir ao usuário realizar login com e-mail e senha.
 <img width="1027" height="669" alt="image" src="https://github.com/user-attachments/assets/e91356de-b199-4785-91fc-dba581fd0346" />
 
 
