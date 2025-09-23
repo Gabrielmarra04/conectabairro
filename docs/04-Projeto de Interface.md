@@ -13,13 +13,13 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## Wireframes
 
-Wireframe interativo: https://www.figma.com/proto/OYNhGvJ26zoWCy8DU08G29/CONECTABAIRROS?node-id=126-75&p=f&t=u7M68DzBr33xtOhK-1&scaling=min-zoom&content-scaling=fixed&page-id=43%3A2&starting-point-node-id=126%3A75
-
 ![Exemplo de Wireframe](img/wireframe-example.png)
 
 Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas. Eles funcionam como ilustrações do layout e da disposição dos elementos essenciais da interface.
 
 Nesta seção, é FUNDAMENTAL indicar, para cada tela/wireframe proposto, quais requisitos do projeto estão sendo contemplados por aquela tela.
+
+Wireframes interativos: https://www.figma.com/proto/OYNhGvJ26zoWCy8DU08G29/CONECTABAIRROS?node-id=126-75&p=f&t=u7M68DzBr33xtOhK-1&scaling=min-zoom&content-scaling=fixed&page-id=43%3A2&starting-point-node-id=126%3A75
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
