@@ -1,25 +1,13 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
 
-<img width="1822" height="802" alt="image" src="https://github.com/user-attachments/assets/88322855-4ab7-472c-a4ef-c99c42b3bb5c" />
+<img width="1897" height="911" alt="image" src="https://github.com/user-attachments/assets/a42f16ff-5195-47e9-adfb-24d904e66a76" />
 
 ## Wireframes
-
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-Os wireframes são protótipos utilizados no design de interfaces para representar a estrutura de um site e o relacionamento entre suas páginas. Eles funcionam como ilustrações do layout e da disposição dos elementos essenciais da interface.
-
-Nesta seção, é FUNDAMENTAL indicar, para cada tela/wireframe proposto, quais requisitos do projeto estão sendo contemplados por aquela tela.
-
-## Tela de Login
+### Tela de Login
 ### RF-02: A aplicação deve permitir ao usuário realizar login com e-mail e senha.
 <img width="1027" height="669" alt="image" src="https://github.com/user-attachments/assets/e91356de-b199-4785-91fc-dba581fd0346" />
 
