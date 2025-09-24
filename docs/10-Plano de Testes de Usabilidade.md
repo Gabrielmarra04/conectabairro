@@ -29,136 +29,117 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 ## Definição de cenários de teste
 
 
-**Cenário 1** - Criar uma publicação no feed
+**Cenário 1** - Morador relatando um buraco na rua
 
-**Objetivo:** Avaliar a facilidade do usuário em criar qualquer tipo de publicação
+**Objetivo:** Avaliar se um morador consegue, de maneira intuitiva, criar conta, fazer login e publicar um problema (buraco) com foto e descrição, e verificar se a publicação aparece no feed.
 
-**Contexto:**  Usuário deseja registrar uma informação no bairro (ex.: anúncio, evento ou aviso)
+**Contexto:** Você é um morador que encontrou um buraco perto da sua casa. Decide registrar a ocorrência no ConectaBairro para alertar vizinhos e Prefeitura. Precisa criar conta, entrar e publicar o relato com imagem.
 
-**Tarefa:**  Abrir a aplicação → Selecionar “Criar item” → Adicionar título, descrição, imagem → Publicar
+**Tarefa:**  
+- Acessar ConectaBairro.
+- Criar conta de morador (preencher dados essenciais).
+- Efetuar login com a nova conta.
+- Criar publicação: adicionar título (“Buraco na Rua X”), descrição, anexar imagem e selecionar categoria “Zeladoria” ou similar.
+- Publicar e verificar se aparece no feed.
 
 **Critérios de sucesso:**
-- O usuário consegue abrir feed e criar uma publicação sem dificuldades.
-- O título, descrição e imagem são adicionados corretamente.
-- A publicação é exibida corretamente no feed para todos os usuários.
+- Conta criada e login realizados sem assistência. (RF-001, RF-002)
+- Publicação criada com título, descrição e imagem corretamente salvas. (RF-004)
+- Publicação aparece no feed visível a outros usuários. (RF-015)
+- Usuário não demonstrou confusão ao preencher campos (observação qualitativa).
   
 
 
-**Cenário 2** - Filtrar postagens por categoria
+**Cenário 2** - Administrador da Prefeitura atualiza status de demanda resolvida
 
-**Objetivo:** Testar eficiência na navegação por categorias
+**Objetivo:** Verificar se um administrador localiza corretamente uma publicação de demanda (buraco) e altera o status para “Resolvido”, registrando comentário e disparando notificação.
 
-**Contexto:**  Usuário deseja visualizar apenas postagens da categoria “Saúde”
+**Contexto:**  A Prefeitura recebeu um relatório de buraco que já foi consertado. O administrador precisa registrar isso no ConectaBairro para que moradores sejam informados.
 
-**Tarefa:**  Abrir feed → Selecionar filtro “Saúde” → Visualizar postagens
-
-**Critérios de sucesso:** 
-- O usuário consegue localizar e selecionar o filtro de categoria facilmente.
-- As postagens da categoria correta são exibidas sem erros.
-- O usuário consegue navegar entre as postagens filtradas sem dificuldades.
-
-
-
-**Cenário 3** - Interações básicas com publicações
-
-**Objetivo:** Avaliar experiência em curtir, não curtir e comentar
-
-**Contexto:**  Usuário encontra uma postagem
-
-**Tarefa:**  Curtir a postagem → Não curti → Escrever comentário 
+**Tarefa:**  
+- Efetuar login como administrador.
+- Acessar o feed e localizar a publicação sobre o buraco (por busca/filtro/rolagem).
+- Alterar o status da publicação para “Resolvido” e, se disponível, adicionar comentário com detalhes (ex.: data do conserto).
+- Salvar alterações e confirmar se houve notificação para o autor/participantes.
 
 **Critérios de sucesso:** 
-- O botão de curtida funciona corretamente e muda de estado.
-- O botão de não curtida funciona corretamente e muda de estado
-- O comentário é enviado e exibido corretamente na postagem.
+- Administrador encontrou a publicação sem ajuda. (RF-002, RF-015)
+- Status alterado com sucesso. (RF-008)
+- Comentário/registro da ação aparece na publicação. (RF-011 / RF-004)
+- Notificações foram geradas e redirecionam corretamente para a publicação. (RF-006)
 
 
 
-**Cenário 4** - Alterar status de publicações
+**Cenário 3** - Comerciante divulga promoção e recebe contato de morador
 
-**Objetivo:** Verificar se os usuários conseguem alterar corretamente o status de uma publicação feita por moradores.
+**Objetivo:** Testar o fluxo do comerciante criando anúncio e a comunicação direta entre morador e anunciante.
 
-**Contexto:** Um usuário acessa o feed e precisa atualizar o status de uma publicação para refletir seu andamento.
-
-**Tarefa:** 
-Acessar o feed. 
-Localizar a publicação desejada.
-Clicar na opção de alterar status.
-Selecionar um novo status (ex: “Em andamento”, “Resolvido”, “Pendente”).
-Confirmar e salvar a alteração.
-
-**Critério(s) de Sucesso(s):**
-- O usuário consegue localizar a publicação desejada sem dificuldades.
-- O status da publicação pode ser alterado sem erros.
-
-  
-
-**Cenário 5** - Adicionar comentários às publicações
-
-**Objetivo:** Testar se todos os usuários (moradores, ONGs, Prefeitura) conseguem comentar publicações, promovendo interação e atualização de informações.
-
-**Contexto:** Após visualizar uma publicação, o usuário deseja deixar um comentário.
+**Contexto:** Você é dono de um mercado e quer anunciar uma promoção; um morador vê o anúncio e usa o recurso “Enviar mensagem” para tirar dúvidas.
 
 **Tarefa:** 
-Acessar o feed.
-Localizar a publicação desejada.
-Escrever um comentário.
-Enviar/publicar o comentário.
+- Criar publicação do tipo “Anúncio” com título, descrição, imagem e categoria.
+- Verificar que o anúncio aparece no feed.
+- Um morador clica em “Enviar mensagem”, o comerciante recebe e responde.
 
-**Critério(s) de Sucesso(s):**
-- A publicação correta é localizada facilmente.
-- O campo de comentários é visível e funcional para todos os usuários.
-- O comentário é exibido imediatamente.
-- O comentário aparece com o nome do usuário.
+**Critérios de sucesso:** 
+- Anúncio publicado e visível no feed. (RF-004, RF-015)
+- O botão/fluxo “Enviar mensagem” abre canal de comunicação e as mensagens chegam ao destinatário. (RF-009)
 
 
+**Cenário 4** - Moderação: administrador remove comentários ofensivos e modera publicação
 
-**Cenário 6** - Excluir comentários de usuários
+**Objetivo:** Avaliar a facilidade para o administrador identificar e remover comentários inapropriados.
 
-**Objetivo:** Avaliar a facilidade com que o administrador consegue localizar e remover comentários inapropriados.
-
-**Contexto:** O administrador identificou comentários que violam regras da plataforma ou são irrelevantes e precisa removê-los do feed.
-
-**Tarefa:** Acessar a publicação verificar os comentários, selecionar o comentário que deve ser removido e efetuar a exclusão.
-
-**Critério(s) de Sucesso(s):**
-- O administrador consegue localizar o comentário sem dificuldades.
-- O comentário é removido corretamente e não aparece mais no feed.
-- O restante da publicação permanece intacto e funcional.
-
-
-**Cenário 7** - Receber notificações
-
-**Objetivo:** Verificar se os usuários recebem notificações sobre ações relacionadas às publicações em que estão envolvidos.
-
-**Contexto:** Um usuário (morador, ONG ou Prefeitura) interage com uma publicação é notificado quando houver algum comentários, envio de mensagem.
+**Contexto:** Um administrador monitora o feed e encontra comentários que violam as regras; precisa removê-los.
 
 **Tarefa:** 
-Criar ou interagir com uma publicação (comentar ou curtir)
-Verificar se uma notificação é recebida
-A notificação leva diretamente à publicação correta ao ser clicada
+- Efetuar login como administrador.
+- Localizar publicação com comentários ofensivos.
+- Selecionar comentário(s) e executar exclusão.
+- Verificar que os comentários removidos não aparecem mais e que outras partes da publicação permanecem.
 
 **Critério(s) de Sucesso(s):**
-- O usuário recebe notificações relevantes apenas sobre publicações com as quais interagiu
-- As notificações são visíveis
-- A notificação leva o usuário diretamente à ação ou publicação relacionada
+- Administrador localiza e exclui comentário com facilidade. (RF-011, RF-012)
+- Comentário removido definitivamente do feed público. (RF-011)
+- A publicação e demais comentários permanecem intactos (sem efeitos colaterais). (RF-010)
 
 
-**Cenário 8**
-**Objetivo:**
-**Contexto:**
+**Cenário 5** - Interações e Notificações
+
+**Objetivo:** Verificar todo o fluxo de interação: um usuário reage/comenta em uma publicação e o autor recebe notificação que o direciona corretamente ao conteúdo.
+
+**Contexto:** Um morador comentou em uma publicação; o autor deve receber notificação e, ao clicar, ser levado à publicação correta.
+
 **Tarefa:** 
+- Usuário A publica um post.
+- Usuário B curte e comenta no post.
+- Usuário A verifica a área de notificações.
+- Usuário A clica na notificação e é redirecionado ao post.
+- 
 **Critério(s) de Sucesso(s):**
+- Reações e comentários são registrados e visíveis. (RF-005)
+- Notificações são geradas para o autor/participantes e mostram motivo claro. (RF-006)
+- Clique na notificação redireciona para a publicação correta. (RF-015)
 
 
-**Cenário 9**
-**Objetivo:**
-**Contexto:**
+**Cenário 6** - ONG monitora publicações de saúde e solicita troca de endereço
+
+**Objetivo:** Garantir que a ONG possa acompanhar publicações relacionadas à saúde e, caso identifique inconsistências no cadastro de algum usuário, solicitar a atualização do endereço.
+
+**Contexto:** A ONG entra no sistema, utiliza o filtro de publicações para visualizar apenas aquelas da categoria “Saúde” e, ao notar que uma publicação veio de um usuário com endereço incorreto, emite uma solicitação de troca de endereço. O administrador recebe a solicitação e realiza a alteração.
+
 **Tarefa:** 
+- ONG acessa o feed e aplica filtro de publicações da categoria Saúde (RF-007 e RF-015).
+- ONG identifica inconsistência no endereço de um usuário.
+- ONG solicita a troca de endereço (RF-013).
+- Administrador recebe a solicitação.
+- Administrador altera o endereço do usuário (RF-014).
+
 **Critério(s) de Sucesso(s):**
-
-
-
+- As publicações da categoria Saúde são exibidas corretamente.
+- A solicitação de troca de endereço é registrada no sistema.
+- O administrador recebe a solicitação.
+- O endereço do usuário é atualizado somente após ação do administrador.
 
 
 
