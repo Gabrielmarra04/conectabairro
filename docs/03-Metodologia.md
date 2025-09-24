@@ -32,7 +32,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Scrum Master: João Vitor
 - Product Owner: Luiz Felipe
 - Equipe de Desenvolvimento: Emanuel Moreira, Gabriel Yuri, João Vitor, Luiz Felipe, Nathaliene Cristina
-- Equipe de Design: Gabriel Yuri e Luiz Felipe
+- Equipe de Design: Emanuel Moreira, Gabriel Yuri, João Vitor, Luiz Felipe, Nathaliene Cristina
 
   
 ### Processo
