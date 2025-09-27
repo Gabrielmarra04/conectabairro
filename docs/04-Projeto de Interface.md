@@ -22,3 +22,11 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 
 ### RF-04: A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”.
 <img width="1255" height="817" alt="image" src="https://github.com/user-attachments/assets/0d7a89c8-2d73-4507-b3de-252a3857a75b" />
+
+### RF-05: A aplicação deve permitir aos usuários a possibilidade de interagir nas publicações, seja através de reações como “gostei” e “não gostei”, ou pela inclusão de comentários.
+<img width="1214" height="787" alt="image" src="https://github.com/user-attachments/assets/46c7f283-c878-4dd3-a5f1-9d348395452e" />
+
+### RF-06: A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas.
+<img width="1005" height="652" alt="image" src="https://github.com/user-attachments/assets/2294c5fb-003b-4569-acbf-3af7d67ba495" />
+
+
