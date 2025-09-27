@@ -1,7 +1,5 @@
 # Plano de Testes de Software
 
-# Plano de Testes de Software
-
 | Caso de Teste | Requisito Associado | Objetivo do Teste | Passos | Critério de Êxito |
 |---------------|----------------------|------------------|--------|-------------------|
 | CT01 | RF-001 | Verificar se o usuário consegue se cadastrar na aplicação. | - Acessar o navegador<br>- Informar o endereço do site<br>- Clicar em "Criar conta"<br>- Preencher os campos obrigatórios<br>- Clicar em "Registrar" | O cadastro foi realizado com sucesso. |
