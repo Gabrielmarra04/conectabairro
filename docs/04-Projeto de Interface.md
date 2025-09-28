@@ -29,4 +29,31 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 ### RF-06: A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas.
 <img width="1005" height="652" alt="image" src="https://github.com/user-attachments/assets/2294c5fb-003b-4569-acbf-3af7d67ba495" />
 
+### RF-007: A aplicação deve permitir que os usuários filtrem publicações por categoria, data ou palavra-chave.
+### RF-015:	O sistema deve permitir que o usuário, após efetuar o login, tenha acesso ao feed geral com todas as publicações e alertas criados.
+<img width="1280" height="2761" alt="Image" src="https://github.com/user-attachments/assets/d700c6d1-e244-4e4f-91f3-bda8afefc503" />
+
+### RF-008: A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas publicações e adicionem comentários em uma publicação.
+
+
+### RF-009: O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação.
+
+
+### RF-010: O sistema deve permitir que o administrador remova publicações existentes.
+
+
+### RF-011:	O sistema deve permitir que o administrador exclua comentários feitos pelos usuários.
+
+
+### RF-012:	O sistema deve permitir que o administrador desative contas de usuários por meio de exclusão lógica, alterando o status do perfil em vez de realizar a exclusão física.
+<img width="1280" height="832" alt="Image" src="https://github.com/user-attachments/assets/a03e981b-38dd-4bd9-8752-0b345f4cda64" />
+<img width="1280" height="832" alt="Image" src="https://github.com/user-attachments/assets/9e300b57-ba51-4097-aad8-543bd1851231" />
+
+### RF-013:	A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador.
+
+
+### RF-014:	O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.
+
+
+
 
