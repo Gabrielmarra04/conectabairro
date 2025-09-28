@@ -42,10 +42,11 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 <img width="909" height="590" alt="Captura de Tela 2025-09-27 às 22 56 47" src="https://github.com/user-attachments/assets/6e313ef4-0af6-48e2-896c-fd70ce14308f" />
 
 ### RF-010: O sistema deve permitir que o administrador remova publicações existentes.
+<img width="1289" height="836" alt="image" src="https://github.com/user-attachments/assets/b7bee6fd-630a-46d0-945d-901c0c806251">
 
 
 ### RF-011:	O sistema deve permitir que o administrador exclua comentários feitos pelos usuários.
-
+<img width="1285" height="838" alt="image" src="https://github.com/user-attachments/assets/3023f95b-a839-4090-97af-6ae677237e3c">
 
 ### RF-012:	O sistema deve permitir que o administrador desative contas de usuários por meio de exclusão lógica, alterando o status do perfil em vez de realizar a exclusão física.
 <img width="1280" height="832" alt="Image" src="https://github.com/user-attachments/assets/a03e981b-38dd-4bd9-8752-0b345f4cda64" />
