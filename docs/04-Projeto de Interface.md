@@ -34,6 +34,7 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 <img width="1280" height="2761" alt="Image" src="https://github.com/user-attachments/assets/d700c6d1-e244-4e4f-91f3-bda8afefc503" />
 
 ### RF-008: A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas publicações e adicionem comentários em uma publicação.
+<img width="1289" height="839" alt="image" src="https://github.com/user-attachments/assets/de656e80-8ef9-4ffa-a28f-96a97ca1a57d">
 
 
 ### RF-009: O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação.
