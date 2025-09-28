@@ -23,7 +23,7 @@
 | CT19 | RF-013 | Validar solicitação de troca de endereço. | - Efetuar login<br>- Acessar perfil<br>- Solicitar troca de endereço<br>- Enviar solicitação | A solicitação é enviada ao administrador. |
 | CT20 | RF-014 | Validar alteração de endereço pelo administrador. | - Efetuar login como administrador<br>- Acessar solicitações de endereço<br>- Confirmar alteração | O endereço atualizado aparece no perfil do usuário. |
 | CT21 | RF-015 | Validar se o usuário acessa o feed após login. | - Efetuar login<br>- Ser redirecionado automaticamente ao feed<br>- Visualizar todas as publicações e alertas | O feed é exibido corretamente. |
-| CT22 | RNF-003 | Validar funcionamento da aplicação em navegadores suportados. | - Acessar a aplicação no Chrome, Firefox, Edge e Safari<br>- Realizar login e navegação básica | A aplicação funciona corretamente em todos os navegadores suportados. |
+| CT22 | RNF-003 | Validar funcionamento da aplicação em navegadores suportados. | - Acessar a aplicação no Chrome e Safari<br>- Realizar login e navegação básica | A aplicação funciona corretamente nos navegadores suportados. |
 | CT23 | RNF-004 | Validar alternância de tema claro/escuro. | - Acessar a tela de login<br>- Localizar a opção de alternância de tema (ícone)<br>- Ativar modo escuro<br>- Ativar novamente o modo claro | A interface alterna corretamente entre os modos sem necessidade de login. |
 | CT24 | RNF-005 | Validar responsividade em múltiplos dispositivos. | - Acessar a aplicação em smartphone, tablet e computador<br>- Testar a navegação | A interface adapta-se a cada dispositivo, sem perda de funcionalidade. |
 
