@@ -38,6 +38,7 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 
 ### RF-009: O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação.
 
+<img width="909" height="590" alt="Captura de Tela 2025-09-27 às 22 56 47" src="https://github.com/user-attachments/assets/6e313ef4-0af6-48e2-896c-fd70ce14308f" />
 
 ### RF-010: O sistema deve permitir que o administrador remova publicações existentes.
 
@@ -50,10 +51,10 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 <img width="1280" height="832" alt="Image" src="https://github.com/user-attachments/assets/9e300b57-ba51-4097-aad8-543bd1851231" />
 
 ### RF-013:	A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador.
-
+<img width="904" height="588" alt="Captura de Tela 2025-09-27 às 23 23 42" src="https://github.com/user-attachments/assets/762d4e10-2bc7-4c6c-8e65-bd9c07950145" />
 
 ### RF-014:	O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.
-
+<img width="924" height="599" alt="Captura de Tela 2025-09-27 às 23 10 26" src="https://github.com/user-attachments/assets/b460ba82-e9f8-49b7-8e65-09fe880c6cd3" />
 
 
 
