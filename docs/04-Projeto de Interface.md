@@ -54,6 +54,7 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 
 ### RF-013:	A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador.
 <img width="904" height="588" alt="Captura de Tela 2025-09-27 às 23 23 42" src="https://github.com/user-attachments/assets/762d4e10-2bc7-4c6c-8e65-bd9c07950145" />
+<img width="1010" height="571" alt="Captura de Tela 2025-09-28 às 15 10 51" src="https://github.com/user-attachments/assets/eead1c9e-8707-4b8a-b9f4-5453a385b5e3" />
 
 ### RF-014:	O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.
 <img width="924" height="599" alt="Captura de Tela 2025-09-27 às 23 10 26" src="https://github.com/user-attachments/assets/b460ba82-e9f8-49b7-8e65-09fe880c6cd3" />
