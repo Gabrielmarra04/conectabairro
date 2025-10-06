@@ -7,8 +7,6 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 - Identificar possíveis barreiras de navegação no feed, chat e filtro.
 - Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica.
 - Avaliar o funcionamento e a clareza das notificações.
--
--
 
 ## Seleção dos participantes
 
@@ -70,25 +68,48 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 
 
 
-**Cenário 3** - Comerciante divulga promoção e recebe contato de morador
+**Cenário 3** - Criar e publicar um anúncio
 
-**Objetivo:** Testar o fluxo do comerciante criando anúncio e a comunicação direta entre morador e anunciante.
+**Objetivo:** Verificar se um usuário consegue criar e publicar um anúncio de forma intuitiva, incluindo imagem e categoria, e confirmar se aparece no feed.
 
-**Contexto:** Você é dono de um mercado e quer anunciar uma promoção; um morador vê o anúncio e usa o recurso “Enviar mensagem” para tirar dúvidas.
+**Contexto:** Você é dono de um pequeno comércio e deseja divulgar uma promoção na plataforma para atrair moradores do bairro.
 
 **Tarefa:** 
-- Criar publicação do tipo “Anúncio” com título, descrição, imagem e categoria.
-- Verificar que o anúncio aparece no feed.
-- Um morador clica em “Enviar mensagem”, o comerciante recebe e responde.
+- Acessar a tela de criação de publicação.
+- Inserir título, descrição, imagem e selecionar a categoria apropriada.
+- Publicar o anúncio.
+- Verificar se o anúncio aparece no feed.
 
 **Critérios de sucesso:** 
 - Anúncio publicado e visível no feed. (RF-004, RF-015)
 - O botão/fluxo “Enviar mensagem” abre canal de comunicação e as mensagens chegam ao destinatário. (RF-009)
 
 
-**Cenário 4** - Moderação: administrador remove comentários ofensivos e modera publicação
+**Cenário 4** - Enviar mensagem em resposta a um anúncio
+
+**Objetivo:** Avaliar se um usuário consegue localizar um anúncio no feed e utilizar corretamente o recurso de mensagens para entrar em contato com o anunciante.
+
+**Contexto:** Você viu um anúncio de promoção no feed e deseja tirar uma dúvida diretamente com o anunciante.
+
+**Tarefa:** 
+- Acessar o feed.
+- Localizar um anúncio.
+- Clicar em “Enviar mensagem”.
+- Escrever e enviar uma mensagem.
+
+**Critério(s) de Sucesso(s):**
+- O usuário consegue encontrar o anúncio sem dificuldade.
+- O botão “Enviar mensagem” funciona corretamente. (RF-009)
+- A mensagem é enviada e registrada no chat.
+- Nenhuma etapa gera confusão ou bloqueio
+
+
+
+**Cenário 5** - Moderação: administrador remove comentários ofensivos e modera publicação
 
 **Objetivo:** Avaliar a facilidade para o administrador identificar e remover comentários inapropriados.
+
+**Pré-Condição** Estar logado na aplicação como administrador
 
 **Contexto:** Um administrador monitora o feed e encontra comentários que violam as regras; precisa removê-los.
 
@@ -104,7 +125,7 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - A publicação e demais comentários permanecem intactos (sem efeitos colaterais). (RF-010)
 
 
-**Cenário 5** - Interações e Notificações
+**Cenário 6** - Interações e Notificações
 
 **Objetivo:** Verificar todo o fluxo de interação: um usuário reage/comenta em uma publicação e o autor recebe notificação que o direciona corretamente ao conteúdo.
 
@@ -122,7 +143,7 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - Clique na notificação redireciona para a publicação correta. (RF-015)
 
 
-**Cenário 6** - ONG monitora publicações de saúde e solicita troca de endereço
+**Cenário 7** - ONG monitora publicações de saúde e solicita troca de endereço
 
 **Objetivo:** Garantir que a ONG possa acompanhar publicações relacionadas à saúde e, caso identifique inconsistências no cadastro de algum usuário, solicitar a atualização do endereço.
 
