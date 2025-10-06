@@ -18,11 +18,6 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 - Comerciantes locais -	Utilizam a plataforma para promover seus produtos e serviços.
   
-**Quantidade recomendada:**
-Mínimo: 5 participantes.
-Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
-
-
 
 ## Definição de cenários de teste
 
@@ -97,7 +92,7 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - Clicar em “Enviar mensagem”.
 - Escrever e enviar uma mensagem.
 
-**Critério(s) de Sucesso(s):**
+**Critérios de sucesso:**
 - O usuário consegue encontrar o anúncio sem dificuldade.
 - O botão “Enviar mensagem” funciona corretamente. (RF-009)
 - A mensagem é enviada e registrada no chat.
@@ -119,7 +114,7 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - Selecionar comentário(s) e executar exclusão.
 - Verificar que os comentários removidos não aparecem mais e que outras partes da publicação permanecem.
 
-**Critério(s) de Sucesso(s):**
+**Critérios de sucesso:**
 - Administrador localiza e exclui comentário com facilidade. (RF-011, RF-012)
 - Comentário removido definitivamente do feed público. (RF-011)
 - A publicação e demais comentários permanecem intactos (sem efeitos colaterais). (RF-010)
@@ -136,8 +131,9 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - Usuário B curte e comenta no post.
 - Usuário A verifica a área de notificações.
 - Usuário A clica na notificação e é redirecionado ao post.
-- 
-**Critério(s) de Sucesso(s):**
+
+
+**Critérios de sucesso:**
 - Reações e comentários são registrados e visíveis. (RF-005)
 - Notificações são geradas para o autor/participantes e mostram motivo claro. (RF-006)
 - Clique na notificação redireciona para a publicação correta. (RF-015)
@@ -156,7 +152,7 @@ Ideal: Entre 18 e 60 para maior diversidade e confiabilidade prática.
 - Administrador recebe a solicitação.
 - Administrador altera o endereço do usuário (RF-014).
 
-**Critério(s) de Sucesso(s):**
+**Critérios de sucesso:**
 - As publicações da categoria Saúde são exibidas corretamente.
 - A solicitação de troca de endereço é registrada no sistema.
 - O administrador recebe a solicitação.
