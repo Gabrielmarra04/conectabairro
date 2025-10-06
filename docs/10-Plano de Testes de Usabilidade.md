@@ -1,11 +1,13 @@
 # Plano de Testes de Usabilidade
 
-O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, considerando a experiência real de moradores, comerciantes, ONGs e representantes da Prefeitura. Os objetivos específicos são:
+Avaliar a usabilidade da aplicação ConectaBairro com diferentes perfis de usuários, identificando barreiras de navegação, eficiência de tarefas e clareza da interface. O objetivo é obter dados quantitativos e qualitativos que subsidiem melhorias na experiência do usuário e validem os principais fluxos da aplicação.
 
-- Verificar se os usuários conseguem fazer publicações de forma rápida e intuitiva.
-- Avaliar se os usuários conseguem filtrar e localizar informações por categoria.
-- Identificar possíveis barreiras de navegação no feed, chat e filtro.
-- Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com pouca familiaridade tecnológica.
+Os objetivos específicos são:
+
+- Verificar se os usuários conseguem realizar publicações de forma rápida e intuitiva.
+- Avaliar a clareza dos filtros e a facilidade de localizar informações por categoria.
+- Identificar barreiras de navegação no feed, chat e filtros.
+- Testar a acessibilidade da aplicação para perfis variados, incluindo usuários com baixa familiaridade tecnológica.
 - Avaliar o funcionamento e a clareza das notificações.
 
 ## Seleção dos participantes
@@ -24,7 +26,7 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 **Cenário 1** - Morador relatando um buraco na rua
 
-**Objetivo:** Avaliar se um morador consegue, de maneira intuitiva, criar conta, fazer login e publicar um problema (buraco) com foto e descrição, e verificar se a publicação aparece no feed.
+**Objetivo:** Avaliar se um morador consegue criar conta, fazer login e publicar um problema intuitivamente.
 
 **Contexto:** Você é um morador que encontrou um buraco perto da sua casa. Decide registrar a ocorrência no ConectaBairro para alertar vizinhos e Prefeitura. Precisa criar conta, entrar e publicar o relato com imagem.
 
@@ -44,6 +46,7 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 
 **Cenário 2** - Administrador da Prefeitura atualiza status de demanda resolvida
+Pré-condição: Estar logado como administrador.
 
 **Objetivo:** Verificar se um administrador localiza corretamente uma publicação de demanda (buraco) e altera o status para “Resolvido”, registrando comentário e disparando notificação.
 
@@ -101,10 +104,9 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 
 **Cenário 5** - Moderação: administrador remove comentários ofensivos e modera publicação
+Pré-condição: Estar logado como administrador
 
-**Objetivo:** Avaliar a facilidade para o administrador identificar e remover comentários inapropriados.
-
-**Pré-Condição** Estar logado na aplicação como administrador
+**Objetivo:** Avaliar a facilidade para o administrador identificar e remover comentários inapropriados
 
 **Contexto:** Um administrador monitora o feed e encontra comentários que violam as regras; precisa removê-los.
 
@@ -162,9 +164,16 @@ O objetivo deste plano é avaliar a usabilidade da aplicação ConectaBairro, co
 
 ## Métodos de coleta de dados
 
-Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
+Os dados coletados devem ajudar a entender a experiência dos usuários e podem incluir:
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+- Métricas quantitativas: quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.;
+- Métricas qualitativas: dificuldades observadas, comentários verbais, expressões faciais etc.;
+- Questionários pós-teste: perguntas sobre facilidade de uso, clareza da interface e sugestões de melhoria;
+- Dados não sensíveis sobre o perfil do participante, coletados antes do teste, como faixa etária, familiaridade com tecnologia ou nível de alfabetização digital. Essas informações ajudam a contextualizar os resultados e identificar padrões de uso entre diferentes perfis.
+
+Para cada voluntário, todos os dados/métricas devem ser coletados conforme planejado, garantindo o cumprimento da LGPD: nenhuma informação sensível ou que permita identificar o voluntário será registrada.
+
+
 
 As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
 
