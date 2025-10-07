@@ -6,7 +6,8 @@
 
 ## Modelo ER (Projeto Conceitual)
 
-<img width="1507" height="1042" alt="image" src="https://github.com/user-attachments/assets/57105aed-191d-4516-a8fd-c04766a1e853" />
+<img width="1253" height="944" alt="image" src="https://github.com/user-attachments/assets/424716f7-0b2e-433f-b7de-f681ac671ea2" />
+
 
 ## Projeto da Base de Dados
 
