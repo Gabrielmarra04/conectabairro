@@ -81,6 +81,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-014| O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário. | MÉDIA |
 |RF-015| O sistema deve permitir que o usuário, após efetuar o login, tenha acesso ao feed geral com todas as publicações e alertas criados. | ALTA |
 |RF-016| O sistema deve exibir os comentários adicionados ao Post, ao expandi-lo | ALTA |
+|RF-017| O sistema deve exibir a data de criação do Post ao expandi-lo| MÉDIA |
+
 
 ### Requisitos não Funcionais
 
