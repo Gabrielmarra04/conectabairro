@@ -24,7 +24,7 @@ Utilizado tambem o [figma.com](https://www.figma.com/) para criação dos Wirefr
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Explique como a hospedagem e o lançamento da plataforma foi feita...
 
 > **Links Úteis**:
 >
