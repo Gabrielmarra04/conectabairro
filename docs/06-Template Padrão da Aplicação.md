@@ -10,3 +10,7 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 > - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
 > - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
 > - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+
+
+
+<img width="618" height="798" alt="image" src="https://github.com/user-attachments/assets/53f5483f-e6e1-4227-af35-1bb14b2254ce" />
