@@ -15,7 +15,8 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 
 > **Exemplo**:
-
+>
+>
 <img width="1107" height="742" alt="image" src="https://github.com/user-attachments/assets/beb4cc05-c1c1-41d2-a776-e0cce6ac6a7a" />
 
 
