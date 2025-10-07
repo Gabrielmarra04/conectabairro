@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\docs",
+    "\\presentation",
+    "\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\gabri\\source\\repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2025-2-e2-proj-int-t5-conectabairro",
   "PreviewInSolutionExplorer": false
 }
