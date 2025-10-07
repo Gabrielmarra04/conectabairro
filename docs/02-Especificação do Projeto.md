@@ -74,13 +74,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-007| A aplicação deve permitir que os usuários filtrem publicações por categoria, data ou palavra-chave. | ALTA |
 |RF-008| A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas publicações e adicionem comentários em uma publicação. | ALTA |
 |RF-009| O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação. | MÉDIA |
-|RF-010| O sistema deve permitir que o administrador remova publicações existentes. | MÉDIA |
+|RF-010| O sistema deve permitir que o administrador remova publicações existentes. | ALTA |
 |RF-011| O sistema deve permitir que o administrador exclua comentários feitos pelos usuários. | ALTA |
 |RF-012| O sistema deve permitir que o administrador desative contas de usuários por meio de exclusão lógica, alterando o status do perfil em vez de realizar a exclusão física.| MÉDIA |
-|RF-013| A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador. | ALTA |
+|RF-013| A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador. | MÉDIA |
 |RF-014| O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário. | MÉDIA |
 |RF-015| O sistema deve permitir que o usuário, após efetuar o login, tenha acesso ao feed geral com todas as publicações e alertas criados. | ALTA |
-
+|RF-016| O sistema deve exibir os comentários adicionados ao Post, ao expandi-lo | ALTA |
 
 ### Requisitos não Funcionais
 
