@@ -2,11 +2,11 @@
 
 ## Diagrama de Classes
 
-<img width="1419" height="970" alt="image" src="https://github.com/user-attachments/assets/29a896fa-ac25-4ca2-a367-ae6817d5048f" />
+<img width="1189" height="957" alt="image" src="https://github.com/user-attachments/assets/3d5460c4-99d9-4b2d-8836-a5d97f5ee94d" />
 
 ## Modelo ER (Projeto Conceitual)
 
-<img width="1507" height="1042" alt="image" src="https://github.com/user-attachments/assets/57105aed-191d-4516-a8fd-c04766a1e853" />
+<img width="1330" height="963" alt="image" src="https://github.com/user-attachments/assets/a5ffa41d-b6b3-4f9d-b591-49fdb7a7a583" />
 
 ## Projeto da Base de Dados
 
