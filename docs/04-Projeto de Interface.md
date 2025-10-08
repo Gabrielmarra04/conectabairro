@@ -25,7 +25,7 @@ Link de acesso para os [Wireframes interativos](https://www.figma.com/proto/OYNh
 <img width="1148" height="744" alt="image" src="https://github.com/user-attachments/assets/d3b269dd-a201-447f-9484-bebf4f6ceffc" />
 
 ### RF-05: A aplicação deve permitir aos usuários a possibilidade de interagir nas publicações, seja através de reações como “gostei” e “não gostei”, ou pela inclusão de comentários.
-<img width="1192" height="772" alt="image" src="https://github.com/user-attachments/assets/b8041bec-f8d3-439f-a203-3f40bf960614" />
+<img width="939" height="609" alt="Captura de Tela 2025-10-07 às 21 46 21" src="https://github.com/user-attachments/assets/6d4e9b63-9a4a-4b26-8293-ec9a066a3fe3" />
 
 ### RF-06: A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas.
 <img width="1005" height="652" alt="image" src="https://github.com/user-attachments/assets/2294c5fb-003b-4569-acbf-3af7d67ba495" />
