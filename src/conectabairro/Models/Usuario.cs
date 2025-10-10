@@ -32,7 +32,7 @@ namespace conectabairro.Models
         [Required]
         public string Estado { get; set; } = string.Empty;
 
-        [Required]
+        [Required(ErrorMessage = "Obrigatório informar o tipo de usuário!")]
         public TipoUsuario TipoUsuarios { get; set; }
         public string? Cnpj { get; set; }
         public string? RazaoSocial { get; set; }

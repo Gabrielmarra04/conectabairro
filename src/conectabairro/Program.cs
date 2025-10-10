@@ -1,4 +1,5 @@
 using conectabairro.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,33 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.AccessDeniedPath = "/Usuarios/AccessDenied"; // Caminho para a página de acesso negado
+        options.LoginPath = "/Usuarios/Login"; // Caminho para a página de login
+    });
+
+builder.Services.AddAuthorization(options =>
+{
+    // Define o que é a política 'RequerAdmin'
+    options.AddPolicy("RequerAdmin", policy =>
+    {
+        // 1. O Policy exige que o usuário tenha uma Claim chamada "TipoUsuario"
+        policy.RequireClaim("TipoUsuario");
+
+        // 2. O valor dessa Claim deve ser EXATAMENTE "Admin"
+        policy.RequireClaim("TipoUsuario", "Admin");
+    });
+});
 
 var app = builder.Build();
 
@@ -27,6 +55,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

@@ -20,8 +20,10 @@ namespace conectabairro.Models
 
             // ==========================================================
             // 1. DEFINIR CREDENCIAIS E GERAR HASH
-            const string adminEmail = "admin@conectabairro.com";
-            const string adminSenhaPlana = "Senha@123";
+            const string adminEmail = "admin@a";
+            const string adminSenhaPlana = "Senha123";
+            //admin@conectabairro.com
+            //Senha@123
 
             // CORREÇÃO: Chamar o método HashPassword estático que definimos abaixo.
             string adminPasswordHash = HashPassword(adminSenhaPlana);

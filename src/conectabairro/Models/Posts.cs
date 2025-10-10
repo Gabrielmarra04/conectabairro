@@ -27,7 +27,7 @@ namespace conectabairro.Models
         [DataType(DataType.Date)]
         public DateTime DataCriacao { get; set; } = DateTime.Now;
 
-        // [Required(ErrorMessage = "Obrigatório adicionar ao menos 1 anexo!")]
+        [Required(ErrorMessage = "Obrigatório adicionar ao menos 1 anexo!")]
         [NotMapped] // não mapeia no banco
         [Display(Name = "Imagem do Post")]
         public IFormFile? ImagemArquivo { get; set; } // Upload no formulário
