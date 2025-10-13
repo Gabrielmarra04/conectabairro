@@ -20,3 +20,29 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Estilo para o Balão de Avatar com Sigla */
+.user-avatar {
+    /* Dimensões */
+    width: 36px;
+    height: 36px;
+    /* Forma e cor */
+    border-radius: 50%; /* Torna o div circular */
+    background-color: #D9D9D9; /* Cor de fundo - Azul (exemplo) */
+    color: #000000; /* Cor do texto */
+    /* Centralização do texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Fonte */
+    font-size: 14px;
+    font-weight: 600;
+    /* Espaçamento */
+    margin-right: 10px; /* Separa do texto "Olá, [Nome]" */
+    flex-shrink: 0; /* Impede que o balão encolha */
+}
+
+
+.navbar-nav .nav-item {
+    padding-left: 0; 
+}
