@@ -42,40 +42,10 @@ namespace conectabairro.Models
         [Required(ErrorMessage = "Obrigatório informar o tipo de usuário!")]
         public TipoUsuario TipoUsuarios { get; set; }
 
-        
         public string? Cnpj { get; set; }
 
- 
         public string? RazaoSocial { get; set; }
 
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-        {
-            // Garante que a validação só ocorra se o tipo for ONG
-            if (this.TipoUsuarios == TipoUsuario.Admin)
-            {
-                yield return new ValidationResult(
-                    "Não é permitido cadastrar um usuário Administrador através do formulário de registro.",
-                    new[] { nameof(TipoUsuario) });
-            }
-
-            if (TipoUsuarios == TipoUsuario.Ong)
-            {
-                if (string.IsNullOrWhiteSpace(this.Cnpj))
-                {
-                    yield return new ValidationResult(
-                        "Obrigatório informar o CNPJ para o tipo de usuário ONG.",
-                        new[] { nameof(Cnpj) });
-                }
-
-                if (string.IsNullOrWhiteSpace(RazaoSocial))
-                {
-                    yield return new ValidationResult(
-                        "Obrigatório informar a Razão Social para o tipo de usuário ONG.",
-                        new[] { nameof(RazaoSocial) });
-                }
-            }
-            yield break;
-        }
     }
 
     public enum TipoUsuario

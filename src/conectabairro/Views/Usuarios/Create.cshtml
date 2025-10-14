@@ -44,7 +44,6 @@
         <div class="register-container" style="max-width: 600px; width: 100%;">
 
             <div class="text-center mb-4">
-                @* ATENÇÃO: Seu SVG está incompleto, a imagem base64 não está definida nos <defs> *@
                 <svg width="234" height="73" viewBox="0 0 234 73" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="234" height="73" fill="url(#pattern0_388_246)" />
                     <defs>
@@ -63,7 +62,6 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="row">
-                    @* ... campos de Nome, Telefone, etc. permanecem iguais ... *@
                     <div class="col-12 mb-3">
                         <label asp-for="Nome" class="form-label fw-bold">Nome</label>
                         <input asp-for="Nome" class="form-control form-control-lg" placeholder="Digite aqui o seu nome" required />
@@ -76,9 +74,8 @@
                         <span asp-validation-for="Telefone" class="text-danger"></span>
                     </div>
 
-                    @* 3. TIPO USUÁRIO (SELECT) e 4. CNPJ *@
                     <div class="col-md-6 mb-3">
-                        <label asp-for="TipoUsuarios" class="form-label fw-bold">Tipo Usuário</label>
+                        <label asp-for="TipoUsuarios" class="form-label fw-bold">Tipo de usuário</label>
                         <select asp-for="TipoUsuarios" id="TipoUsuarioSelect" class="form-control form-control-lg" required>
                             <option value="">Selecione o seu tipo de Usuário</option>
                             @foreach (var tipo in Html.GetEnumSelectList<TipoUsuario>())
@@ -98,14 +95,12 @@
                         <span asp-validation-for="Cnpj" class="text-danger"></span>
                     </div>
 
-                    @* 5. RAZÃO SOCIAL *@
                     <div id="usuarioRazaoSocial" class="col-12 mb-3" style="display:none;">
                         <label asp-for="RazaoSocial" class="form-label fw-bold">Razão Social</label>
                         <input asp-for="RazaoSocial" id="RazaoSocial" class="form-control form-control-lg" placeholder="Digite aqui a Razão Social" />
                         <span asp-validation-for="RazaoSocial" class="text-danger"></span>
                     </div>
 
-                    @* ... Restante dos seus campos de endereço, email e senha ... *@
                     <div class="col-12 mb-3">
                         <label asp-for="Rua" class="form-label fw-bold">Rua</label>
                         <input asp-for="Rua" class="form-control form-control-lg" placeholder="Digite aqui a sua rua" required />
@@ -167,7 +162,6 @@
             function togglePessoaJuridicaFields() {
                 var tipoUsuario = $('#TipoUsuarioSelect').val();
 
-                // Comparação segura usando o valor real do enum
                 if (tipoUsuario === '@((int)TipoUsuario.Ong)') {
                     $('#usuarioCnpj, #usuarioRazaoSocial').slideDown();
                     $('#Cnpj, #RazaoSocial').attr('required', true);
@@ -177,10 +171,8 @@
                 }
             }
 
-            // Ao mudar o select
             $('#TipoUsuarioSelect').change(togglePessoaJuridicaFields);
 
-            // Executa no carregamento
             togglePessoaJuridicaFields();
         });
     </script>
