@@ -17,6 +17,7 @@ namespace conectabairro.Models
 
         [Required(ErrorMessage = "Obrigatório informar um Email!")]
         [EmailAddress]
+        [MaxLength(50)]
         public string Email { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Obrigatório informar uma Senha!")]
@@ -25,18 +26,26 @@ namespace conectabairro.Models
         public string PasswordHash { get; set; } = string.Empty;
 
         public string Telefone { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "Obrigatório informar a Rua!")]
         public string Rua { get; set; } = string.Empty;
-        [Required]
+
+        [Required(ErrorMessage = "Obrigatório informar o Bairro!")]
         public string Bairro { get; set; } = string.Empty;
-        [Required]
+
+        [Required(ErrorMessage = "Obrigatório informar a Cidade!")]
         public string Cidade { get; set; } = string.Empty;
-        [Required]
+
+        [Required(ErrorMessage = "Obrigatório informar o Estado!")]
         public string Estado { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Obrigatório informar o tipo de usuário!")]
         public TipoUsuario TipoUsuarios { get; set; }
+
+        
         public string? Cnpj { get; set; }
+
+ 
         public string? RazaoSocial { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
@@ -49,7 +58,7 @@ namespace conectabairro.Models
                     new[] { nameof(TipoUsuario) });
             }
 
-            if (this.TipoUsuarios == TipoUsuario.Ong)
+            if (TipoUsuarios == TipoUsuario.Ong)
             {
                 if (string.IsNullOrWhiteSpace(this.Cnpj))
                 {
@@ -58,7 +67,7 @@ namespace conectabairro.Models
                         new[] { nameof(Cnpj) });
                 }
 
-                if (string.IsNullOrWhiteSpace(this.RazaoSocial))
+                if (string.IsNullOrWhiteSpace(RazaoSocial))
                 {
                     yield return new ValidationResult(
                         "Obrigatório informar a Razão Social para o tipo de usuário ONG.",

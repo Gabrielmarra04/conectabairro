@@ -25,6 +25,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.AccessDeniedPath = "/Usuarios/AccessDenied"; // Caminho para a página de acesso negado
         options.LoginPath = "/Usuarios/Login"; // Caminho para a página de login
+        options.ExpireTimeSpan = TimeSpan.FromHours(3);
+        options.SlidingExpiration = true;
     });
 
 builder.Services.AddAuthorization(options =>

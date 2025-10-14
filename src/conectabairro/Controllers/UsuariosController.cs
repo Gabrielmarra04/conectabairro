@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace conectabairro.Controllers
 {
-    [Authorize(Policy = "RequerAdmin")]
+    
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -20,6 +20,7 @@ namespace conectabairro.Controllers
         }
 
 
+        [Authorize(Policy = "RequerAdmin")]
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
@@ -120,21 +121,33 @@ namespace conectabairro.Controllers
             return View();
         }
 
-        // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("UsuarioId,Nome,Email,PasswordHash,Telefone,Rua,Bairro,Cidade,Estado,TipoUsuarios,Cnpj,RazaoSocial")] Usuario usuario)
         {
+            var emailExistente = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Email == usuario.Email);
+
+            if (emailExistente != null)
+            {
+                // Adiciona o erro ao ModelState. A chave deve ser o nome da propriedade ("Email").
+                ModelState.AddModelError("Email", "Este e-mail já está cadastrado no sistema.");
+            }
+
             if (ModelState.IsValid)
             {
+
                 usuario.PasswordHash = BCrypt.Net.BCrypt.HashPassword(usuario.PasswordHash);
+
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
+
                 return RedirectToAction(nameof(Index));
             }
+
+            // Se houver erro de validação (incluindo o e-mail duplicado), retorna a View
             return View(usuario);
+
         }
 
         // GET: Usuarios/Edit/5
@@ -190,6 +203,7 @@ namespace conectabairro.Controllers
         }
 
         // GET: Usuarios/Delete/5
+        [Authorize(Policy = "RequerAdmin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -210,6 +224,7 @@ namespace conectabairro.Controllers
         // POST: Usuarios/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Policy = "RequerAdmin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var usuario = await _context.Usuarios.FindAsync(id);
