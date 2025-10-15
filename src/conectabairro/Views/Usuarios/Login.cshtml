@@ -37,9 +37,10 @@
                 <input type="password" class="form-control" id="PasswordHash" name="PasswordHash" placeholder="Digite aqui a sua senha" required>
             </div>
 
-            <div class="text-end mb-4">
-                <a href="#" class="text-info text-decoration-none">Recuperar senha</a>
-            </div>
+            <p class="text-end mt-3">
+                <a asp-action="EsqueciSenha" asp-controller="Usuarios">Esqueci minha senha</a>
+            </p>
+
 
             <div class="d-grid mb-3">
                 <button type="submit" class="btn btn-lg"

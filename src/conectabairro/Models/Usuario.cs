@@ -46,6 +46,10 @@ namespace conectabairro.Models
 
         public string? RazaoSocial { get; set; }
 
+
+        public string? ResetToken { get; set; }
+        public DateTime? ResetTokenExpiry { get; set; }
+
     }
 
     public enum TipoUsuario

@@ -1,13 +1,10 @@
 ﻿using conectabairro.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
-
+using System.Security.Cryptography;
 
 namespace conectabairro.Controllers
 {
@@ -99,6 +96,108 @@ namespace conectabairro.Controllers
         }
 
 
+        // ----------- ESQUECI MINHA SENHA -------------
+        [AllowAnonymous]
+        public IActionResult EsqueciSenha()
+        {
+            return View();
+        }
+
+        
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> EsqueciSenha(string email, [FromServices] EmailService emailService)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                TempData["Erro"] = "Por favor, informe um e-mail válido.";
+                return RedirectToAction("EsqueciSenha");
+            }
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+            if (usuario == null)
+            {
+                TempData["Erro"] = "E-mail não encontrado!";
+                return RedirectToAction("EsqueciSenha");
+            }
+
+            var token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
+            usuario.ResetToken = token;
+            usuario.ResetTokenExpiry = DateTime.UtcNow.AddHours(1);
+
+            await _context.SaveChangesAsync();
+
+            var link = Url.Action("RedefinirSenha", "Usuarios", new { token = token }, Request.Scheme);
+
+
+            var mensagem = $@"
+        <h3>Redefinição de senha - ConectaBairro</h3>
+        <p>Olá {usuario.Nome},</p>
+        <p>Clique no link abaixo para redefinir sua senha:</p>
+        <p><a href='{link}'>Redefinir Senha</a></p>
+        <p>Esse link é válido por 1 hora.</p>";
+
+            try
+            {
+                await emailService.EnviarEmailAsync(usuario.Email, "Redefinição de Senha", mensagem);
+                TempData["Sucesso"] = "Um link de redefinição foi enviado para o seu e-mail.";
+            }
+            catch (Exception)
+            {
+                TempData["Erro"] = "Ocorreu um erro ao enviar o e-mail. Verifique as configurações SMTP.";
+            }
+
+            return RedirectToAction("EsqueciSenha");
+        }
+
+
+
+        // ----------- REDEFINIR SENHA -------------
+        [AllowAnonymous]
+        public async Task<IActionResult> RedefinirSenha(string token)
+        {
+            if (string.IsNullOrEmpty(token))
+                return BadRequest("Token inválido");
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.ResetToken == token && u.ResetTokenExpiry > DateTime.UtcNow);
+            if (usuario == null)
+                return BadRequest("Token expirado ou inválido");
+
+            ViewBag.Token = token;
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> RedefinirSenha(string token, string novaSenha)
+        {
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(novaSenha))
+            {
+                TempData["Erro"] = "Token inválido ou senha não informada.";
+                return View();
+            }
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.ResetToken == token);
+
+            if (usuario == null || usuario.ResetTokenExpiry < DateTime.UtcNow)
+            {
+                TempData["Erro"] = "Token inválido ou expirado.";
+                return View();
+            }
+
+            usuario.PasswordHash = BCrypt.Net.BCrypt.HashPassword(novaSenha); 
+            usuario.ResetToken = null;
+            usuario.ResetTokenExpiry = null;
+
+            await _context.SaveChangesAsync();
+
+
+            TempData["Sucesso"] = "Senha redefinida com sucesso! Você já pode fazer login novamente.";
+
+            return View(); 
+        }
+
+
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -132,7 +231,6 @@ namespace conectabairro.Controllers
 
             if (emailExistente != null)
             {
-                // Adiciona o erro ao ModelState. A chave deve ser o nome da propriedade ("Email").
                 ModelState.AddModelError("Email", "Este e-mail já está cadastrado no sistema.");
             }
 
@@ -147,7 +245,6 @@ namespace conectabairro.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Se houver erro de validação (incluindo o e-mail duplicado), retorna a View
             return View(usuario);
 
         }
@@ -169,8 +266,6 @@ namespace conectabairro.Controllers
         }
 
         // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Email,PasswordHash,Telefone,Rua,Bairro,Cidade,Estado,TipoUsuarios,Cnpj,RazaoSocial")] Usuario usuario)
