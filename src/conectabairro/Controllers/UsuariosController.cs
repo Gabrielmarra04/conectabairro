@@ -338,5 +338,23 @@ namespace conectabairro.Controllers
         {
             return _context.Usuarios.Any(e => e.UsuarioId == id);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            ViewData["CurrentFilter"] = searchString;
+
+            var usuarios = from u in _context.Usuarios
+                           select u;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                usuarios = usuarios.Where(u => u.Nome.Contains(searchString)
+                                            || u.Bairro.Contains(searchString)); 
+            }
+
+            return View(await usuarios.ToListAsync());
+        }
+
     }
 }

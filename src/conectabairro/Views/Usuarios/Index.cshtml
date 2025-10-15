@@ -1,95 +1,103 @@
 ﻿@model IEnumerable<conectabairro.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Usuários";
 }
 
-<h1>Index</h1>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs mb-4">
+                <li class="nav-item">
+                    <a class="nav-link active" id="usuarios-tab" asp-controller="Usuarios" asp-action="Index" >
+                        <h4 class="mb-0">Usuários cadastrados</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="solicitacoes-tab" asp-controller="Usuarios" asp-action="Solicitacoes">
+                        <h4 class="mb-0">Solicitações</h4>
+                    </a>
+                </li>
+            </ul>
 
-@* <p>
-    <a asp-action="Create">Create New</a>
-</p> *@
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th> *@
-            @* <th>
-                @Html.DisplayNameFor(model => model.PasswordHash)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rua)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.Bairro)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Cidade)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TipoUsuarios)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Cnpj)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.RazaoSocial)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PasswordHash)
-            </td> 
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rua)
-            </td> *@
-            <td>
-                @Html.DisplayFor(modelItem => item.Bairro)
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Cidade)
-            </td> *@
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoUsuarios)
-            </td>
-            @* <td>
-                @Html.DisplayFor(modelItem => item.Cnpj)
-            </td> *@
-            <td>
-                @Html.DisplayFor(modelItem => item.RazaoSocial)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.UsuarioId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.UsuarioId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.UsuarioId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            <form asp-controller="Usuarios" asp-action="Index" method="get">
+                <div class="row justify-content-end mb-3">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Pesquisar" name="SearchString" value="@ViewData["CurrentFilter"]">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit" style="background-color: #f8f9fa; border: 1px solid #ced4da;">
+                                    <span class="fas fa-search">🔍</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="usuarios-cadastrados" role="tabpanel" aria-labelledby="usuarios-tab">
+                    <table class="table table-hover">
+                        <thead class="bg-light">
+                            <tr>
+                                <th style="width: 30%;">
+                                    @Html.DisplayNameFor(model => model.Nome)
+                                </th>
+                                <th style="width: 30%;">
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+                                <th style="width: 17%;">
+                                    @Html.DisplayNameFor(model => model.Bairro)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nome)
+                                    </td>
+                                    <td>
+                                        <a href="@item.Email">@Html.DisplayFor(modelItem => item.Email)</a>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Bairro)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" class="btn btn-sm btn-primary" asp-route-id="@item.UsuarioId" data-action="edit-user">Editar</a> |
+                                        <a asp-action="Details" class="btn btn-sm btn-secondary" asp-route-id="@item.UsuarioId">Detalhes</a> |
+                                        <a asp-action="Delete" class="btn btn-sm btn-danger" asp-route-id="@item.UsuarioId">Excluir</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    @if (!Model.Any())
+                    {
+                        <tr>
+                            <td colspan="4" class="text-center text-muted py-4">Nenhum usuário encontrado com o filtro aplicado.</td>
+                        </tr>
+                    }
+
+                </div>
+
+                <div class="tab-pane fade" id="solicitacoes" role="tabpanel" aria-labelledby="solicitacoes-tab">
+                    <p class="py-5 text-center text-muted">Ainda não há solicitações pendentes.</p>
+                </div>
+
+                <div class="modal fade" id="editUserModal" tabindex="-1" role="dialog" aria-labelledby="editUserModalLabel" aria-hidden="true">
+                    <div id="modalContent">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
