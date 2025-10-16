@@ -1,92 +1,142 @@
 ﻿@model conectabairro.Models.Usuario
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
 }
 
-<h1>Edit</h1>
+<h1>Editar - Usuário @Model.Nome</h1>
 
-<h4>Usuario</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+<div class="container">
+    <form asp-action="Edit" asp-controller="Usuarios">
+        <div class="row">
+
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UsuarioId" />
-            <div class="form-group">
+            <input type="hidden" asp-for="PasswordHash" />
+
+            <div class="col-md-6 form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 form-group">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="PasswordHash" class="control-label"></label>
-                <input asp-for="PasswordHash" class="form-control" placeholder="Deixe em branco para manter a senha atual" />
-                <span asp-validation-for="PasswordHash" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            <div class="col-md-6 form-group">
                 <label asp-for="Telefone" class="control-label"></label>
                 <input asp-for="Telefone" class="form-control" />
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 form-group">
+                <label for="NovaSenha" class="control-label">Nova Senha</label>
+                <input type="password" id="NovaSenha" name="NovaSenha" class="form-control" placeholder="Deixe em branco para manter a senha atual" />
+                <span asp-validation-for="PasswordHash" class="text-danger"></span>
+            </div>
+            <div class="col-md-6 form-group">
                 <label asp-for="Rua" class="control-label"></label>
                 <input asp-for="Rua" class="form-control" />
                 <span asp-validation-for="Rua" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 form-group">
                 <label asp-for="Bairro" class="control-label"></label>
                 <input asp-for="Bairro" class="form-control" />
                 <span asp-validation-for="Bairro" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 form-group">
                 <label asp-for="Cidade" class="control-label"></label>
                 <input asp-for="Cidade" class="form-control" />
                 <span asp-validation-for="Cidade" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 form-group">
                 <label asp-for="Estado" class="control-label"></label>
                 <input asp-for="Estado" class="form-control" />
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="TipoUsuarios" class="control-label"></label>
-                <select asp-for="TipoUsuarios" class="form-control" asp-items="Html.GetEnumSelectList<TipoUsuario>()" readonly></select>
+            <div class="col-md-6 form-group">
+                <label asp-for="TipoUsuarios" class="control-label">Tipo Usuário</label>
+                <select asp-for="TipoUsuarios" id="tipoUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoUsuario>()" disabled></select>
                 <span asp-validation-for="TipoUsuarios" class="text-danger"></span>
+                <input type="hidden" asp-for="TipoUsuarios" />
             </div>
-            <div class="form-group">
-                <label asp-for="Cnpj" class="control-label"></label>
-                <input asp-for="Cnpj" class="form-control" />
-                <span asp-validation-for="Cnpj" class="text-danger"></span>
+
+            <div id="camposOng" class="row col-md-6" style="display: none;">
+                <div class="col-md-6 form-group">
+                    <label asp-for="Cnpj" class="control-label"></label>
+                    <input asp-for="Cnpj" class="form-control" />
+                    <span asp-validation-for="Cnpj" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="RazaoSocial" class="control-label">Razão Social</label>
+                    <input asp-for="RazaoSocial" class="form-control" />
+                    <span asp-validation-for="RazaoSocial" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="RazaoSocial" class="control-label"></label>
-                <input asp-for="RazaoSocial" class="form-control" />
-                <span asp-validation-for="RazaoSocial" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        </div>
+
+        <br />
+        <div class="form-group" style="display: flex; justify-content: flex-end; align-items: center;">
+
+            <a asp-action="Index" class="btn btn-secondary" style="margin-right: 15px;">Voltar</a>
+
+            <a asp-action="Delete" asp-route-id="@Model.UsuarioId" class="btn btn-outline-danger">Excluir usuário</a>
+
+            <input type="submit" value="Salvar Alterações" class="btn btn-primary" style="margin-left: 15px;" />
+        </div>
+    </form>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
-@{
-    if (TempData["MensagemSucesso"] != null)
-    {
-        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-            <strong>@TempData["MensagemSucesso"]</strong>
-        </div>
+    @{
+        // CRÍTICO: O bloco de scripts deve ser aberto APENAS UMA VEZ
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+    @{
+        if (TempData["MensagemSucesso"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                <strong>@TempData["MensagemSucesso"]</strong>
+            </div>
+        }
+    }
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // CRÍTICO: O SELECT NÃO TINHA ID. Agora busca por id="tipoUsuario".
+            const selectTipoUsuario = document.getElementById('tipoUsuario');
+            const camposOng = document.getElementById('camposOng');
+
+            // CRÍTICO: O valor numérico '2' deve ser o valor que representa ONG no seu Enum.
+            const valorOng = '2';
+
+            // Função para verificar e exibir/ocultar
+            function toggleCamposOng() {
+                // CORREÇÃO 2: Verifica se o select foi encontrado antes de tentar ler o valor.
+                if (selectTipoUsuario) {
+                    // CORREÇÃO 3: Usa 'flex' para manter o layout de colunas do Bootstrap.
+                    if (selectTipoUsuario.value === valorOng) {
+                        camposOng.style.display = 'flex';
+                    } else {
+                        camposOng.style.display = 'none';
+                    }
+                }
+            }
+
+            // 1. Executa a função na primeira carga
+            toggleCamposOng();
+
+            // 2. Executa a função sempre que o valor do select mudar
+            if (selectTipoUsuario) {
+                selectTipoUsuario.addEventListener('change', toggleCamposOng);
+            }
+        });
+    </script>
 }

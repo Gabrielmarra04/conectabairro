@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 60px; /* Garante espaço para o footer fixo */
 }
 
 /* Estilo para o Balão de Avatar com Sigla */
@@ -45,4 +46,12 @@ body {
 
 .navbar-nav .nav-item {
     padding-left: 0; 
+}
+
+.footer-fixo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: #f8f9fa; 
 }

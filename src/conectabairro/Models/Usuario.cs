@@ -39,11 +39,13 @@ namespace conectabairro.Models
         [Required(ErrorMessage = "Obrigatório informar o Estado!")]
         public string Estado { get; set; } = string.Empty;
 
+        [DisplayName("Tipo de Usuário")]
         [Required(ErrorMessage = "Obrigatório informar o tipo de usuário!")]
         public TipoUsuario TipoUsuarios { get; set; }
 
         public string? Cnpj { get; set; }
 
+        [DisplayName("Razão Social")]
         public string? RazaoSocial { get; set; }
 
 

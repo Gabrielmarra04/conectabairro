@@ -280,12 +280,10 @@ namespace conectabairro.Controllers
 
             try
             {
-                // Carrega o usuário original do banco
                 var usuarioExistente = await _context.Usuarios.FindAsync(id);
                 if (usuarioExistente == null)
                     return NotFound();
 
-                // Atualiza apenas os campos editáveis
                 usuarioExistente.Nome = usuario.Nome;
                 usuarioExistente.Email = usuario.Email;
                 usuarioExistente.Telefone = usuario.Telefone;
@@ -296,7 +294,6 @@ namespace conectabairro.Controllers
                 usuarioExistente.Cnpj = usuario.Cnpj;
                 usuarioExistente.RazaoSocial = usuario.RazaoSocial;
 
-                // Atualiza a senha apenas se o campo foi preenchido
                 if (!string.IsNullOrWhiteSpace(usuario.PasswordHash))
                 {
                     usuarioExistente.PasswordHash = BCrypt.Net.BCrypt.HashPassword(usuario.PasswordHash);
