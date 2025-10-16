@@ -242,7 +242,9 @@ namespace conectabairro.Controllers
                 _context.Add(usuario);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                TempData["MensagemSucesso"] = "Cadastro realizado com sucesso! Faça seu login abaixo.";
+
+                return RedirectToAction("Login", "Usuarios");
             }
 
             return View(usuario);
@@ -271,32 +273,47 @@ namespace conectabairro.Controllers
         public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Email,PasswordHash,Telefone,Rua,Bairro,Cidade,Estado,TipoUsuarios,Cnpj,RazaoSocial")] Usuario usuario)
         {
             if (id != usuario.UsuarioId)
-            {
                 return NotFound();
-            }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+                return View(usuario);
+
+            try
             {
-                try
+                // Carrega o usuário original do banco
+                var usuarioExistente = await _context.Usuarios.FindAsync(id);
+                if (usuarioExistente == null)
+                    return NotFound();
+
+                // Atualiza apenas os campos editáveis
+                usuarioExistente.Nome = usuario.Nome;
+                usuarioExistente.Email = usuario.Email;
+                usuarioExistente.Telefone = usuario.Telefone;
+                usuarioExistente.Rua = usuario.Rua;
+                usuarioExistente.Bairro = usuario.Bairro;
+                usuarioExistente.Cidade = usuario.Cidade;
+                usuarioExistente.Estado = usuario.Estado;
+                usuarioExistente.Cnpj = usuario.Cnpj;
+                usuarioExistente.RazaoSocial = usuario.RazaoSocial;
+
+                // Atualiza a senha apenas se o campo foi preenchido
+                if (!string.IsNullOrWhiteSpace(usuario.PasswordHash))
                 {
-                    usuario.PasswordHash = BCrypt.Net.BCrypt.HashPassword(usuario.PasswordHash);
-                    _context.Update(usuario);
-                    await _context.SaveChangesAsync();
+                    usuarioExistente.PasswordHash = BCrypt.Net.BCrypt.HashPassword(usuario.PasswordHash);
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UsuarioExists(usuario.UsuarioId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+
+                await _context.SaveChangesAsync();
+
+                TempData["MensagemSucesso"] = "Usuário atualizado com sucesso!";
+
+                return RedirectToAction("Index", "Usuarios");
             }
-            return View(usuario);
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Erro ao atualizar o usuário: " + ex.Message);
+                return View(usuario);
+            }
+            
         }
 
         // GET: Usuarios/Delete/5

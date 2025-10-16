@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel;
+using conectabairro.Services;
 
 namespace conectabairro.Models
 {
@@ -20,10 +21,9 @@ namespace conectabairro.Models
         [MaxLength(50)]
         public string Email { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Obrigatório informar uma Senha!")]
         [DisplayName("Senha")]
         [DataType(DataType.Password)]
-        public string PasswordHash { get; set; } = string.Empty;
+        public string PasswordHash { get; set; }
 
         public string Telefone { get; set; }
 

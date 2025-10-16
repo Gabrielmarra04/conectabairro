@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="PasswordHash" class="control-label"></label>
-                <input asp-for="PasswordHash" class="form-control" />
+                <input asp-for="PasswordHash" class="form-control" placeholder="Deixe em branco para manter a senha atual" />
                 <span asp-validation-for="PasswordHash" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -53,11 +53,11 @@
                 <input asp-for="Estado" class="form-control" />
                 <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
-            @* <div class="form-group">
+            <div class="form-group">
                 <label asp-for="TipoUsuarios" class="control-label"></label>
-                <select asp-for="TipoUsuarios" class="form-control"></select>
+                <select asp-for="TipoUsuarios" class="form-control" asp-items="Html.GetEnumSelectList<TipoUsuario>()" readonly></select>
                 <span asp-validation-for="TipoUsuarios" class="text-danger"></span>
-            </div> *@
+            </div>
             <div class="form-group">
                 <label asp-for="Cnpj" class="control-label"></label>
                 <input asp-for="Cnpj" class="form-control" />
@@ -81,4 +81,12 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+@{
+    if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+            <strong>@TempData["MensagemSucesso"]</strong>
+        </div>
+    }
 }
