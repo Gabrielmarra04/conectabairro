@@ -270,7 +270,7 @@ namespace conectabairro.Controllers
         // POST: Usuarios/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Email,PasswordHash,Telefone,Rua,Bairro,Cidade,Estado,TipoUsuarios,Cnpj,RazaoSocial")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("UsuarioId,Nome,Email,Telefone,Rua,Bairro,Cidade,Estado,TipoUsuarios,Cnpj,RazaoSocial")] Usuario usuario, string NovaSenha)
         {
             if (id != usuario.UsuarioId)
                 return NotFound();
@@ -294,9 +294,9 @@ namespace conectabairro.Controllers
                 usuarioExistente.Cnpj = usuario.Cnpj;
                 usuarioExistente.RazaoSocial = usuario.RazaoSocial;
 
-                if (!string.IsNullOrWhiteSpace(usuario.PasswordHash))
+                if (!string.IsNullOrWhiteSpace(NovaSenha))
                 {
-                    usuarioExistente.PasswordHash = BCrypt.Net.BCrypt.HashPassword(usuario.PasswordHash);
+                    usuarioExistente.PasswordHash = BCrypt.Net.BCrypt.HashPassword(NovaSenha);
                 }
 
                 await _context.SaveChangesAsync();
