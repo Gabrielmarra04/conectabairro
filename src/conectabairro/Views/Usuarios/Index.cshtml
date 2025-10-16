@@ -5,11 +5,16 @@
 }
 @if (TempData["MensagemSucesso"] != null)
 {
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <div id="alertaSucesso" class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>@TempData["MensagemSucesso"]</strong>
     </div>
 }
-
+@if (TempData["MensagemDelete"] != null)
+{
+    <div id="alertaSucesso" class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        <strong>@TempData["MensagemDelete"]</strong>
+    </div>
+}
 <div class="container mt-4">
     <div class="row">
         <div class="col-12">
@@ -52,7 +57,7 @@
                                 <th style="width: 30%;">
                                     @Html.DisplayNameFor(model => model.Email)
                                 </th>
-                                <th style="width: 17%;">
+                                <th style="width: 22%;">
                                     @Html.DisplayNameFor(model => model.Bairro)
                                 </th>
                                 <th></th>
@@ -73,7 +78,7 @@
                                     </td>
                                     <td>
                                         <a asp-action="Edit" class="btn btn-sm btn-primary" asp-route-id="@item.UsuarioId" data-action="edit-user">Editar</a> |
-                                        <a asp-action="Details" class="btn btn-sm btn-secondary" asp-route-id="@item.UsuarioId">Detalhes</a> |
+                                        @* <a asp-action="Details" class="btn btn-sm btn-secondary" asp-route-id="@item.UsuarioId">Detalhes</a> | *@
                                         <a asp-action="Delete" class="btn btn-sm btn-danger" asp-route-id="@item.UsuarioId">Excluir</a>
                                     </td>
                                 </tr>
@@ -107,4 +112,19 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+
+
+<script>
+    setTimeout(function() {
+        var alertElement = document.getElementById('alertaSucesso');
+
+        if (alertElement) {
+            alertElement.classList.remove('show');
+
+            setTimeout(function() {
+                alertElement.remove();
+            }, 500); 
+        }
+    }, 5000); 
+</script>
    

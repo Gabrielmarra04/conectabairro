@@ -345,6 +345,7 @@ namespace conectabairro.Controllers
             }
 
             await _context.SaveChangesAsync();
+            TempData["MensagemDelete"] = "Usuário Excluído com sucesso!";
             return RedirectToAction(nameof(Index));
         }
 
