@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Security.Claims;
 using System.Security.Cryptography;
 
 namespace conectabairro.Controllers
 {
-    
+
     public class UsuariosController : Controller
     {
         private readonly AppDbContext _context;
@@ -58,7 +59,7 @@ namespace conectabairro.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Email, dados.Email),
-                    new Claim(ClaimTypes.Name, dados.Nome), 
+                    new Claim(ClaimTypes.Name, dados.Nome),
                     new Claim(ClaimTypes.NameIdentifier, dados.UsuarioId.ToString()),
                     new Claim("TipoUsuario", dados.TipoUsuarios.ToString())
                 };
@@ -83,7 +84,7 @@ namespace conectabairro.Controllers
             }
 
 
-                return View();
+            return View();
         }
 
         [AllowAnonymous]
@@ -95,9 +96,34 @@ namespace conectabairro.Controllers
 
         }
 
+[Authorize]
+public async Task<IActionResult> MeusDados()
+{
 
-        // ----------- ESQUECI MINHA SENHA -------------
-        [AllowAnonymous]
+    var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier); //guarda informações do usuário logado
+
+    if (userIdClaim == null)//Se não encontrar o id do usuário
+    {
+        return RedirectToAction("Login"); //Redireciona para a tela de login
+    }
+
+    var usuarioId = int.Parse(userIdClaim.Value); //Pega o valor do id do usuário logado
+
+    var usuario = await _context.Usuarios.FindAsync(usuarioId); //Busca o usuário no banco de dados
+
+    if (usuario == null)
+    {
+        return NotFound();//Se o usuário não for encontrado retorna erro "Não Encontrado)
+    }
+
+    return View(usuario); //Se o usuário for encontrado retorna a View com os dados do usuário.
+
+}
+
+
+
+// ----------- ESQUECI MINHA SENHA -------------
+[AllowAnonymous]
         public IActionResult EsqueciSenha()
         {
             return View();

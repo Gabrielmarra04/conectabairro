@@ -19,11 +19,8 @@ namespace conectabairro.Migrations
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Usuario_Email", // Nome do índice
-                table: "Usuario",
-                column: "Email",
-                unique: true);
+            // O BLOCO migrationBuilder.CreateIndex PARA IX_Usuario_Email FOI REMOVIDO DAQUI
+            // PORQUE O ÍNDICE JÁ EXISTE NO SEU BANCO DE DADOS, CONFORME ERRO 1505.
 
             migrationBuilder.UpdateData(
                 table: "Usuario",
@@ -34,15 +31,13 @@ namespace conectabairro.Migrations
 
         }
 
-
-
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
             migrationBuilder.DropIndex(
-                name: "IX_Usuario_Email", // Use o mesmo nome que você definiu no método Up()
+                name: "IX_Usuario_Email", // Se o índice for derrubado, ele precisa ser desfeito no Down()
                 table: "Usuario");
+
             migrationBuilder.AlterColumn<string>(
                 name: "Email",
                 table: "Usuario",
