@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("conectabairro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+930fb6c663be996d53967e3b0cd94ee2c7fc6de9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+deb228605b8af7abdc8973b95842c882d7f10415")]
 [assembly: System.Reflection.AssemblyProductAttribute("conectabairro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("conectabairro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
