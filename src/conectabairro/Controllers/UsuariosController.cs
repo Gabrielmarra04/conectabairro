@@ -371,6 +371,7 @@ public async Task<IActionResult> MeusDados()
             }
 
             await _context.SaveChangesAsync();
+            TempData["MensagemDelete"] = "Usuário Excluído com sucesso!";
             return RedirectToAction(nameof(Index));
         }
 

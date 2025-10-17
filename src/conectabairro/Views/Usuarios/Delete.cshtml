@@ -3,79 +3,135 @@
 @{
     ViewData["Title"] = "Excluir";
 }
+<style>
+    .fake-modal {
+        border: 3px solid #00CBBB;
+        background-color: transparent;
+        width: 1300px;
+        height: 530px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+</style>
 
 <h1>EXCLUSÃO DE USUÁRIO</h1>
 
 <h3>Você tem certeza que deseja excluir o Usuário @Model.Nome?</h3>
-<hr />
-<div>
 
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Telefone)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rua)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Rua)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Bairro)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Bairro)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cidade)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cidade)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Estado)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TipoUsuarios)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TipoUsuarios)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Cnpj)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cnpj)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.RazaoSocial)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.RazaoSocial)
-        </dd>
-    </dl>
+
+
+    <div class="fake-modal">
+        <div class="container">
+                <div class="row">
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="UsuarioId" />
+                    <input type="hidden" asp-for="PasswordHash" />
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Nome" class="control-label"></label>
+                    <input asp-for="Nome" class="form-control" disabled />
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" disabled />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Telefone" class="control-label"></label>
+                    <input asp-for="Telefone" class="form-control" disabled />
+                        <span asp-validation-for="Telefone" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="NovaSenha" class="control-label">Senha</label>
+                    <input type="password" id="NovaSenha" name="NovaSenha" class="form-control" disabled />
+                        <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Rua" class="control-label"></label>
+                    <input asp-for="Rua" class="form-control" disabled />
+                        <span asp-validation-for="Rua" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Bairro" class="control-label"></label>
+                    <input asp-for="Bairro" class="form-control" disabled />
+                        <span asp-validation-for="Bairro" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Cidade" class="control-label"></label>
+                    <input asp-for="Cidade" class="form-control" disabled />
+                        <span asp-validation-for="Cidade" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="Estado" class="control-label"></label>
+                    <input asp-for="Estado" class="form-control" disabled />
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                        <label asp-for="TipoUsuarios" class="control-label">Tipo Usuário</label>
+                        <select asp-for="TipoUsuarios" id="tipoUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoUsuario>()" disabled></select>
+                        <span asp-validation-for="TipoUsuarios" class="text-danger"></span>
+                        <input type="hidden" asp-for="TipoUsuarios" />
+                    </div>
+
+                    <div id="camposOng" class="row col-md-6 mb-3" style="display: none;">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Cnpj" class="control-label"></label>
+                        <input asp-for="Cnpj" class="form-control" disabled />
+                            <span asp-validation-for="Cnpj" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <label asp-for="RazaoSocial" class="control-label">Razão Social</label>
+                        <input asp-for="RazaoSocial" class="form-control" disabled />
+                            <span asp-validation-for="RazaoSocial" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+            <div class="form-group" style="display: flex; justify-content: flex-end; align-items: center;">
+
+                    <form asp-action="Delete">
+                            <input type="hidden" asp-for="UsuarioId" />
+                            <a asp-action="Index" class="btn btn-secondary" style="margin-right: 15px;">Voltar</a>
+                            <input type="submit" value="Excluir Usuário" class="btn btn-danger" /> 
+                    </form>
+            </div>
+        </div>
+    </div>
     
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="UsuarioId" />
-        <input type="submit" value="Excluir Usuário" class="btn btn-danger" /> |
-        <a asp-action="Index">Voltar</a>
-    </form>
-</div>
+
+
+@{
+
+}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const selectTipoUsuario = document.getElementById('tipoUsuario');
+        const camposOng = document.getElementById('camposOng');
+
+        const valorOng = '2';
+
+        function toggleCamposOng() {
+            if (selectTipoUsuario) {
+                if (selectTipoUsuario.value === valorOng) {
+                    camposOng.style.display = 'flex';
+                } else {
+                    camposOng.style.display = 'none';
+                }
+            }
+        }
+
+        toggleCamposOng();
+
+        if (selectTipoUsuario) {
+            selectTipoUsuario.addEventListener('change', toggleCamposOng);
+        }
+    });
+</script>
