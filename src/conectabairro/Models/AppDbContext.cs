@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using conectabairro.Models;
-using System.Security.Cryptography; 
+using System.Security.Cryptography; // Para o hash
 using System.Text;
-using BCrypt.Net;
+using BCrypt.Net; // Importe o BCrypt!
 
 namespace conectabairro.Models
 {
@@ -19,20 +19,24 @@ namespace conectabairro.Models
             base.OnModelCreating(modelBuilder);
 
             // ==========================================================
+            // 1. DEFINIR CREDENCIAIS E GERAR HASH
             const string adminEmail = "admin@a";
             const string adminSenhaPlana = "Senha123";
+            //admin@conectabairro.com
+            //Senha@123
 
-
+            // CORREÇÃO: Chamar o método HashPassword estático que definimos abaixo.
             string adminPasswordHash = HashPassword(adminSenhaPlana);
             // ==========================================================
 
+            // 2. INSERIR O USUÁRIO ADMIN
             modelBuilder.Entity<Usuario>().HasData(
                 new Usuario
                 {
                     UsuarioId = 1,
                     Nome = "Administrador Geral",
                     Email = adminEmail,
-                    PasswordHash = adminPasswordHash, 
+                    PasswordHash = adminPasswordHash, // AGORA COM O HASH DO BCrypt
                     TipoUsuarios = TipoUsuario.Admin,
                     Telefone = "",
                     Rua = "N/A",
@@ -44,8 +48,10 @@ namespace conectabairro.Models
                 }
             );
         }
+        // Método estático para gerar o hash usando BCrypt
         private static string HashPassword(string password)
         {
+            // Define o cost factor (custo/lentidão). 13 é um bom valor.
             return BCrypt.Net.BCrypt.HashPassword(password, workFactor: 13);
         }
     };
