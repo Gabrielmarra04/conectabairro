@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Models\RecuperarSenha.cs" />
+    <Compile Remove="Views\Home\CriarPost.cs" />
     <Compile Remove="Views\Usuarios\EsqueciSenha.cshtml.cs" />
   </ItemGroup>
 
@@ -25,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\imagens\posts\" />
   </ItemGroup>
 
 </Project>

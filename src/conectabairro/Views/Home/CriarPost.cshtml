@@ -1,0 +1,60 @@
+﻿@model conectabairro.Models.Post 
+@using conectabairro.Models // Adiciona este using para acessar o Enum Categoria
+
+@{
+    ViewData["Title"] = "Criar Novo Post";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">Criar Nova Publicação</h1>
+
+            <form asp-action="CriarPost" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" asp-for="AutorId" value="1" />
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Titulo" class="control-label"></label>
+                    <input asp-for="Titulo" class="form-control" />
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Descricao" class="control-label"></label>
+                    <textarea asp-for="Descricao" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Categoria" class="control-label"></label>
+                    <select asp-for="Categoria" asp-items="Html.GetEnumSelectList<Categoria>()" class="form-control">
+                        <option value="">-- Selecione uma Categoria --</option>
+                    </select>
+                    <span asp-validation-for="Categoria" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="ImagemArquivo" class="control-label"></label>
+                    <input asp-for="ImagemArquivo" type="file" class="form-control" />
+                    <span asp-validation-for="ImagemArquivo" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-send-fill"></i> Publicar
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar e Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,8 +1,72 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<conectabairro.Models.Post>
+@{
+    ViewData["Title"] = "Feed de Bairros";
 }
 
-<div class="text-center">
-    <h1 class="display-4">ConectaBairro</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+
+    
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="mb-0">O que está acontecendo no Conectabairro</h1>
+
+        
+        <a asp-controller="Home" asp-action="CriarPost" class="btn btn-primary">
+            <i class="bi bi-plus-circle-fill"></i> Criar Post
+        </a>
+    </div>
+  
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var post in Model)
+        {
+            <div class="card mb-3 shadow-sm">
+
+                @if (!string.IsNullOrEmpty(post.CaminhoImagem))
+                {
+                    <img src="@post.CaminhoImagem"
+                         class="card-img-top"
+                         alt="Anexo do Post: @post.Titulo"
+                         style="max-height: 400px; width: 100%; display: block; object-fit: contain; background-color: #f8f9fa;">
+                }
+
+                <div class="card-body">
+
+                    <p class="card-subtitle mb-2 text-muted small">
+                        Categoria: @post.Categoria
+                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary")">
+                            @post.Status
+                        </span>
+                    </p>
+
+                    <h5 class="card-title text-primary">@post.Titulo</h5>
+                    <p class="card-text">@post.Descricao</p>
+
+                    <p class="card-text">
+                        <small class="text-muted">
+                            Publicado em @post.DataCriacao.ToShortDateString()
+                        </small>
+                    </p>
+
+                    <a href="#" class="btn btn-sm btn-outline-info">Ver Detalhes/Comentários</a>
+
+                    <a asp-controller="Home" asp-action="DeletarPost" asp-route-id="@post.PostId"
+                       class="btn btn-sm btn-danger"
+                       onclick="return confirm('Tem certeza que deseja apagar esta publicação?');">
+                        <i class="bi bi-trash-fill"></i> Apagar
+                    </a>
+
+                    <span class="text-secondary ms-3">
+                        <i class="bi bi-heart-fill"></i> @post.LikesCount
+                    </span>
+
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Nenhuma publicação encontrada no feed.
+        </div>
+    }
 </div>
