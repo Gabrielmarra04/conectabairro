@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
 
 namespace conectabairro.Models
 {
@@ -28,9 +29,9 @@ namespace conectabairro.Models
         public DateTime DataCriacao { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "Obrigatório adicionar ao menos 1 anexo!")]
-        [NotMapped] // não mapeia no banco
+        [NotMapped] 
         [Display(Name = "Imagem do Post")]
-        public IFormFile? ImagemArquivo { get; set; } // Upload no formulário
+        public IFormFile? ImagemArquivo { get; set; }
         public string? CaminhoImagem { get; set; }
        
         public int LikesCount { get; set; }
