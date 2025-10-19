@@ -96,6 +96,10 @@ namespace conectabairro.Controllers
 
         }
 
+
+        // Tela Meus Dados
+
+
 [Authorize]
 public async Task<IActionResult> MeusDados()
 {
@@ -107,18 +111,18 @@ public async Task<IActionResult> MeusDados()
         return RedirectToAction("Login"); //Redireciona para a tela de login
     }
 
-    var usuarioId = int.Parse(userIdClaim.Value); //Pega o valor do id do usuário logado
+        var usuarioId = int.Parse(userIdClaim.Value); //Pega o valor do id do usuário logado
 
-    var usuario = await _context.Usuarios.FindAsync(usuarioId); //Busca o usuário no banco de dados
+        var usuario = await _context.Usuarios.FindAsync(usuarioId); //Busca o usuário no banco de dados
 
     if (usuario == null)
     {
         return NotFound();//Se o usuário não for encontrado retorna erro "Não Encontrado)
     }
 
-    return View(usuario); //Se o usuário for encontrado retorna a View com os dados do usuário.
+        return View(usuario); //Se o usuário for encontrado retorna a View com os dados do usuário.
 
-}
+        }
 
 
 
@@ -290,6 +294,9 @@ public async Task<IActionResult> MeusDados()
             {
                 return NotFound();
             }
+
+            ViewBag.ReturnUrl = Request.Headers["Referer"].ToString(); //captura a URL anterior
+
             return View(usuario);
         }
 
@@ -300,6 +307,8 @@ public async Task<IActionResult> MeusDados()
         {
             if (id != usuario.UsuarioId)
                 return NotFound();
+
+            ModelState.Remove("PasswordHash");
 
             if (!ModelState.IsValid)
                 return View(usuario);
@@ -326,6 +335,18 @@ public async Task<IActionResult> MeusDados()
                 }
 
                 await _context.SaveChangesAsync();
+
+                if (User.HasClaim("TipoUsuario", "Admin")) // Verifica se o usuário logado é um Administrador
+                {
+                    TempData["MensagemSucesso"] = "Usuário atualizado com sucesso!"; 
+                    return RedirectToAction("Index", "Usuarios"); // Se for administrador direciona para a área administrativa (lista de usuários)
+                }
+                else
+                {
+                    TempData["MensagemSucesso"] = "Seus dados foram atualizados com sucesso!"; 
+                    return RedirectToAction("Index", "Home"); //Se for qualquer outro tipo de usuário, retorna para o feed.
+                } 
+
 
                 TempData["MensagemSucesso"] = "Usuário atualizado com sucesso!";
 

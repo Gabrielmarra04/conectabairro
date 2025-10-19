@@ -25,6 +25,7 @@
 <div class="container">
     <form asp-action="Edit" asp-controller="Usuarios">
         <div class="row">
+   </form>
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UsuarioId" />
@@ -97,17 +98,16 @@
 
         <hr />
 
-        <div class="form-group" style="display: flex; justify-content: flex-end; align-items: center;">
+            <div class="form-group" style="display: flex; justify-content: flex-end; align-items: center;">
 
-            <a asp-action="Index" class="btn btn-secondary" style="margin-right: 15px;">Voltar</a>
+                <a href="@ViewBag.ReturnUrl" class="btn btn-secondary">Voltar</a>
 
-            <a asp-action="Delete" asp-route-id="@Model.UsuarioId" class="btn btn-outline-danger">Excluir usuário</a>
-
-            <input type="submit" value="Salvar Alterações" class="btn btn-primary" style="margin-left: 15px;" />
-        </div>
-    </form>
-</div>
-</div>
+                @if (User.HasClaim("TipoUsuario", "Admin")) @* verifica se o usuário logado possui etiqueta "TipoUsuario com valor de "Admin"*@
+                {
+                    <a asp-action="Delete" asp-route-id="@Model.UsuarioId" class="btn btn-outline-danger" style="margin: 0 15px;">Excluir usuário</a>
+                }
+                <input type="submit" value="Salvar Alterações" class="btn btn-primary" />
+            </div>
 
 @section Scripts {
     @{
