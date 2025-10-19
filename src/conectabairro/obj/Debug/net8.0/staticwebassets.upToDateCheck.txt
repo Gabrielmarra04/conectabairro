@@ -1,6 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\imagens\posts\7c938a35-3f98-42f9-b9cd-f7601f7c74c3.jpg
+wwwroot\imagens\posts\5db28c4b-568a-420f-ae61-c66b662e2e75.jpeg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

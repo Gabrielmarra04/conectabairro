@@ -1,0 +1,39 @@
+# ===================================================
+# Arquivo .gitignore Padrão para projetos .NET / Visual Studio
+# ===================================================
+
+# Dependências do Usuário
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Configurações do Visual Studio
+.vs/
+
+# Pastas de Build e arquivos gerados
+[Bb]in/
+[Oo]bj/
+[Rr]elease/
+[Dd]ebug/
+publish/
+
+# Arquivos de Cache do NuGet
+project.lock.json
+project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# Arquivos de teste
+*.DotSettings
+*.VSTestHost.exe.config
+*.testsettings
+
+# Outros
+*.Publish.xml
+*.pubxml
+*.nupkg
+
+# Ignorar arquivos de segredos (muito importante!)
+secrets.json
+appsettings.Development.json

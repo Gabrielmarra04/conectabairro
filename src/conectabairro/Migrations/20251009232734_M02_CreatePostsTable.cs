@@ -37,13 +37,6 @@ namespace conectabairro.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.UpdateData(
-                table: "Usuario",
-                keyColumn: "UsuarioId",
-                keyValue: 1,
-                column: "PasswordHash",
-                value: "$2b$13$wdlKDH25RBdNlz4MJr5h..bSzkNYYlfTJcL5pICmJMnP2PZ5P17by");
-
             migrationBuilder.CreateIndex(
                 name: "IX_Posts_AutorId",
                 table: "Posts",
@@ -55,13 +48,6 @@ namespace conectabairro.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Posts");
-
-            migrationBuilder.UpdateData(
-                table: "Usuario",
-                keyColumn: "UsuarioId",
-                keyValue: 1,
-                column: "PasswordHash",
-                value: "$2b$13$nVGSJP0ybARQ3Y9TfhSKAeueSW8GsraU3KFfvyzatwwrAA7Im2.4G");
         }
     }
 }
