@@ -23,14 +23,13 @@
 
 <div class="fake-modal">
 <div class="container">
-    <form asp-action="Edit" asp-controller="Usuarios">
-        <div class="row">
-   </form>
-
+    <form asp-action="Edit" asp-controller="Usuarios"> <div class="row">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="UsuarioId" />
             <input type="hidden" asp-for="PasswordHash" />
 
+            </div>
+        </form>
                 <div class="col-md-6 form-group mb-3">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" class="form-control" />
