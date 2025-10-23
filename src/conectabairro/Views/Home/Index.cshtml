@@ -1,72 +1,163 @@
 ﻿@model List<conectabairro.Models.Post>
 @{
-    ViewData["Title"] = "Feed de Bairros";
+    ViewData["Title"] = "Conecta Bairro - Feed";
+    Layout = "_Layout";
 }
 
-<div class="container mt-4">
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
 
-    
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="mb-0">O que está acontecendo no Conectabairro</h1>
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-        
-        <a asp-controller="Home" asp-action="CriarPost" class="btn btn-primary">
-            <i class="bi bi-plus-circle-fill"></i> Criar Post
-        </a>
-    </div>
-  
-    @if (Model != null && Model.Any())
-    {
-        @foreach (var post in Model)
-        {
-            <div class="card mb-3 shadow-sm">
+    .content-wrapper {
+        flex: 1;
+    }
 
-                @if (!string.IsNullOrEmpty(post.CaminhoImagem))
-                {
-                    <img src="@post.CaminhoImagem"
-                         class="card-img-top"
-                         alt="Anexo do Post: @post.Titulo"
-                         style="max-height: 400px; width: 100%; display: block; object-fit: contain; background-color: #f8f9fa;">
-                }
+    .hero-section {
+        padding: 5px 0;
+        background-color: #f8f9fa;
+    }
 
-                <div class="card-body">
+    .community-heart {
+        width: 100%;
+        max-width: 100%;
+        height: 60vh;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        object-fit: cover;
+    }
 
-                    <p class="card-subtitle mb-2 text-muted small">
-                        Categoria: @post.Categoria
-                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary")">
-                            @post.Status
-                        </span>
-                    </p>
+    .card-post-grid .card {
+        transition: transform 0.2s ease-in-out;
+    }
 
-                    <h5 class="card-title text-primary">@post.Titulo</h5>
-                    <p class="card-text">@post.Descricao</p>
+        .card-post-grid .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
 
-                    <p class="card-text">
-                        <small class="text-muted">
-                            Publicado em @post.DataCriacao.ToShortDateString()
-                        </small>
-                    </p>
+    .card-img-top-custom {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
 
-                    <a href="#" class="btn btn-sm btn-outline-info">Ver Detalhes/Comentários</a>
+    .custom-footer {
+        background-color: #007bff;
+        color: white;
+        padding: 20px 0;
+    }
 
-                    <a asp-controller="Home" asp-action="DeletarPost" asp-route-id="@post.PostId"
-                       class="btn btn-sm btn-danger"
-                       onclick="return confirm('Tem certeza que deseja apagar esta publicação?');">
-                        <i class="bi bi-trash-fill"></i> Apagar
-                    </a>
+    .footer-logo {
+        height: 40px;
+    }
+</style>
 
-                    <span class="text-secondary ms-3">
-                        <i class="bi bi-heart-fill"></i> @post.LikesCount
-                    </span>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="container mt-2">
 
+            <div class="row hero-section rounded-lg mb-3">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <img src="/imagens/banner/banner-comunidade.jpeg" class="community-heart" alt="Coração de Comunidade com Pessoas" />
                 </div>
             </div>
-        }
-    }
-    else
-    {
-        <div class="alert alert-info text-center" role="alert">
-            Nenhuma publicação encontrada no feed.
+
+            <div class="d-flex justify-content-end mb-5">
+                <a asp-controller="Home" asp-action="CriarPost" class="btn btn-primary">
+                    <i class="bi bi-plus-circle-fill"></i> Criar Post
+                </a>
+            </div>
+
+            <h2 class="mb-4 text-secondary border-bottom pb-2">O que está acontecendo no ConectaBairro:</h2>
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 card-post-grid">
+
+                    @foreach (var post in Model)
+                    {
+                        var isAuthorized = User.Identity.IsAuthenticated;
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+
+                                @if (!string.IsNullOrEmpty(post.CaminhoImagem))
+                                {
+                                    <img src="@post.CaminhoImagem"
+                                         class="card-img-top-custom"
+                                         alt="Anexo do Post: @post.Titulo"
+                                         style="object-position: top;">
+                                }
+                                else
+                                {
+                                    <div class="card-img-top-custom bg-light d-flex justify-content-center align-items-center text-muted">
+                                        Sem imagem
+                                    </div>
+                                }
+
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="card-subtitle mb-1 text-muted small">
+                                        @post.Categoria
+                                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary")">
+                                            @post.Status
+                                        </span>
+                                    </h6>
+
+                                    <h5 class="card-title text-dark fw-bold mt-1">@post.Titulo</h5>
+
+                                    <p class="card-text small text-truncate" title="@post.Descricao">@post.Descricao</p>
+
+                                    <div class="mt-auto pt-2 border-top">
+                                        <small class="text-muted d-block mb-2">Publicado: @post.DataCriacao.ToShortDateString()</small>
+
+                                        <a href="#" class="btn btn-sm btn-outline-primary me-2">Detalhes</a>
+
+                                        @if (isAuthorized)
+                                        {
+                                            <a asp-controller="Home" asp-action="DeletarPost" asp-route-id="@post.PostId"
+                                               class="btn btn-sm btn-outline-danger"
+                                               onclick="return confirm('Tem certeza que deseja apagar esta publicação?');">
+                                                <i class="bi bi-trash-fill"></i> Apagar
+                                            </a>
+                                        }
+
+                                        <span class="text-secondary ms-3 float-end">
+                                            <i class="bi bi-heart-fill"></i> @post.LikesCount
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info text-center mt-5" role="alert">
+                    Nenhuma publicação encontrada. Crie a primeira iniciativa!
+                </div>
+            }
+
         </div>
-    }
+    </div>
+
+    <footer class="custom-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="mb-2">Entre em contato</h5>
+                    <p class="mb-1 small"><i class="bi bi-telephone-fill me-2"></i> (00) 00000-0000</p>
+                    <p class="mb-0 small"><i class="bi bi-envelope-fill me-2"></i> contato@conectabairro.com.br</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
