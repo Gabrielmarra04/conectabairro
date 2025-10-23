@@ -2,7 +2,9 @@
 
 ## Diagrama de Classes
 
-<img width="1189" height="957" alt="image" src="https://github.com/user-attachments/assets/3d5460c4-99d9-4b2d-8836-a5d97f5ee94d" />
+<img width="1330" height="963" alt="Diagrama de Classes ConectaBairro" src="https://github.com/user-attachments/assets/929d2119-214e-45a3-b741-cc082f4f7f4c" />
+
+
 
 ## Modelo ER (Projeto Conceitual)
 
