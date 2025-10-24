@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\conectabairro",
+    "\\src\\conectabairro\\Controllers",
+    "\\src\\conectabairro\\Migrations",
+    "\\src\\conectabairro\\Models",
+    "\\src\\conectabairro\\Properties",
+    "\\src\\conectabairro\\Services",
+    "\\src\\conectabairro\\Views",
+    "\\src\\conectabairro\\wwwroot"
   ],
-  "SelectedNode": "\\conectabairro.sln",
+  "SelectedNode": "\\src\\conectabairro\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

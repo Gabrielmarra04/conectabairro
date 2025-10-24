@@ -12,10 +12,10 @@
 .vs/
 
 # Pastas de Build e arquivos gerados
-[Bb]in/
-[Oo]bj/
-[Rr]elease/
-[Dd]ebug/
+bin/
+obj/
+release/
+debug/
 publish/
 
 # Arquivos de Cache do NuGet
