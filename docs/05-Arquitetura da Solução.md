@@ -2,11 +2,14 @@
 
 ## Diagrama de Classes
 
-<img width="1189" height="957" alt="image" src="https://github.com/user-attachments/assets/3d5460c4-99d9-4b2d-8836-a5d97f5ee94d" />
+<img width="1330" height="963" alt="Diagrama de Classes ConectaBairro" src="https://github.com/user-attachments/assets/929d2119-214e-45a3-b741-cc082f4f7f4c" />
+
+
 
 ## Modelo ER (Projeto Conceitual)
 
-<img width="1330" height="963" alt="image" src="https://github.com/user-attachments/assets/a5ffa41d-b6b3-4f9d-b591-49fdb7a7a583" />
+<img width="1330" height="963" alt="Modelo ER (Projeto Conceitual)" src="https://github.com/user-attachments/assets/b0a720dc-3267-4592-b983-4e2ca3fb99c6" />
+
 
 ## Projeto da Base de Dados
 
