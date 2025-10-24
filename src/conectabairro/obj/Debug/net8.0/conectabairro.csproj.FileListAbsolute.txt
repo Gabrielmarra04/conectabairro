@@ -1134,8 +1134,8 @@ C:\Users\gibac\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2025-2-e2-proj-int-t5
 C:\Users\gibac\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2025-2-e2-proj-int-t5-conectabairro\src\conectabairro\obj\Debug\net8.0\conectabairro.pdb
 C:\Users\gibac\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2025-2-e2-proj-int-t5-conectabairro\src\conectabairro\obj\Debug\net8.0\conectabairro.genruntimeconfig.cache
 C:\Users\gibac\source\repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2025-2-e2-proj-int-t5-conectabairro\src\conectabairro\obj\Debug\net8.0\ref\conectabairro.dll
-C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\appsettings.json
 C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\appsettings.json
 C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\conectabairro.staticwebassets.runtime.json
 C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\conectabairro.staticwebassets.endpoints.json
 C:\Users\Liquer\Desktop\CONECTA BAIRRO\conecta-bairro\src\conectabairro\bin\Debug\net8.0\conectabairro.exe
