@@ -2,12 +2,11 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\imagens\banner\banner-comunidade.jpeg
 wwwroot\imagens\posts\5db28c4b-568a-420f-ae61-c66b662e2e75.jpeg
-<<<<<<< HEAD
+wwwroot\imagens\posts\861cea1a-9cbc-49db-89ac-2a33fc7d01cf.jpg
 wwwroot\imagens\posts\8a1cc7db-b1c5-4c1d-880e-c94959dbe844.jpg
-=======
 wwwroot\imagens\posts\9be552b1-da3c-4b60-a99b-330df1d0a4e5.jpg
+wwwroot\imagens\posts\a4665b7d-d3a4-46b4-b6c0-9212d6403f51.jpg
 wwwroot\imagens\posts\f11c8733-9058-4611-9d7c-8adb898f3e1d.jpg
->>>>>>> 85caa944ada0ea8c053d2a05d7c28621513ffbff
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
