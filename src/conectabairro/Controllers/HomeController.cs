@@ -23,13 +23,39 @@ namespace conectabairro.Controllers
             _hostEnvironment = hostEnvironment;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string termoBusca, string categoria)
         {
-            var posts = await _context.Posts
-                .OrderByDescending(p => p.DataCriacao)
-                .ToListAsync();
+            
+            var query = _context.Posts.AsQueryable(); // 1. Inicia a consulta
 
-            return View(posts);
+
+            if (!string.IsNullOrEmpty(termoBusca)) // 2. Filtro de pesquisa de texto
+            {
+                query = query.Where(p => p.Titulo.Contains(termoBusca) ||
+                                         p.Descricao.Contains(termoBusca));
+            }
+
+            if (!string.IsNullOrEmpty(categoria)) //3. Filtro por categoria
+            {
+
+                if (Enum.TryParse<Categoria>(categoria, out Categoria categoriaEnum))
+                {
+                    query = query.Where(p => p.Categoria == categoriaEnum);
+                }
+                else
+                {
+                    // Se a string for inválida
+                    _logger.LogWarning($"Categoria de filtro inválida recebida: {categoria}");
+                }
+            }
+
+            var postsFiltrados = await query.OrderByDescending(p => p.DataCriacao).ToListAsync();
+
+            ViewData["TermoBusca"] = termoBusca;
+            ViewData["Categoria"] = categoria;
+
+            return View(postsFiltrados);
+      
         }
 
         public IActionResult CriarPost()
@@ -130,6 +156,7 @@ namespace conectabairro.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        
         }
     }
 }

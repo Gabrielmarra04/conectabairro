@@ -79,3 +79,29 @@ body {
     word-break: break-word; /* Evita que textos longos (como emails) quebrem o layout */
     color: #495057;
 }
+
+.filtro-container {
+    background-color: #ffffff;
+    border-radius: 10px; /* Borda arredondada */
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+
+.filtro-container .form-control,
+.filtro-container .form-select,
+.filtro-container .btn {
+    border-radius: 8px; /* Borda levemente arredondada nos inputs */
+}
+
+/* Ajuste para o ícone de busca dentro do input (Imagem 2) */
+.filtro-container .input-group .form-control {
+ border-left: 0;
+ padding-left: 0.5rem;
+}
+
+.filtro-container .input-group .input-group-text {
+ background-color: white;
+ border-right: 0;
+ border-color: #ced4da;
+}

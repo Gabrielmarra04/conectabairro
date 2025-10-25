@@ -58,6 +58,32 @@
     .footer-logo {
         height: 40px;
     }
+
+    .filtro-container {
+        background-color: #ffffff;
+        border-radius: 10px; 
+        padding: 1rem 1.25rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        border: 1px solid #e0e0e0;
+    }
+
+        .filtro-container .form-control,
+        .filtro-container .form-select,
+        .filtro-container .btn {
+            border-radius: 8px;
+        }
+
+        .filtro-container .input-group .form-control,
+        .filtro-container .input-group .form-select {
+            border-left: 0;
+            padding-left: 0.5rem;
+        }
+
+        .filtro-container .input-group .input-group-text {
+            background-color: white;
+            border-right: 0;
+            border-color: #ced4da;
+        }
 </style>
 
 <div class="page-wrapper">
@@ -70,12 +96,64 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-end mb-5">
-                <a asp-controller="Home" asp-action="CriarPost" class="btn btn-primary">
-                    <i class="bi bi-plus-circle-fill"></i> Criar Post
-                </a>
+            <!--NOVO BLOCO UNIFICADO (FILTRO + BOTÃO)-->
+
+<div class="row g-3 mb-4 align-items-center">
+
+    <div class="col-md-9">
+
+        <form class="filtro-container row g-3" method="get" asp-controller="Home" asp-action="Index">
+            @{
+                var termoBusca = ViewData["TermoBusca"] as string;
+                var categoria = ViewData["Categoria"] as string;
+            }
+
+            <!-- Coluna da Pesquisa -->
+            <div class="col-lg-5">
+                <label for="termoBusca" class="form-label visually-hidden">Pesquisar</label>
+                <div class="input-group">
+                    <span class="input-group-text" style="color: #005F6A;">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control" id="termoBusca"
+                           name="termoBusca" placeholder="Pesquisar publicações..." value="@termoBusca">
+                </div>
             </div>
 
+            <!-- Coluna da Categoria -->
+            <div class="col-lg-5">
+                <label for="categoria" class="form-label visually-hidden">Categoria</label>
+                <div class="input-group">
+                    <span class="input-group-text" style="color: #005F6A;">
+                        <i class="bi bi-filter"></i>
+                    </span>
+                    <select class="form-select" id="categoria" name="categoria">
+                        @(categoria == "...")
+                        <option value="" selected="@(string.IsNullOrEmpty(categoria))">Todas as Categorias</option>
+                        <option value="EsporteELazer" selected="@(categoria == "EsporteELazer")">Esporte e Lazer</option>
+                        <option value="Saude" selected="@(categoria == "Saude")">Saúde</option>
+                        <option value="Zeladoria" selected="@(categoria == "Zeladoria")">Zeladoria</option>
+                        <option value="ComercioEServicos" selected="@(categoria == "ComercioEServicos")">Comércio e Serviços</option>
+                        <option value="Alerta" selected="@(categoria == "Alerta")">Alerta</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Coluna do Botão de Filtrar -->
+            <div class="col-lg-2">
+                <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+            </div>
+        </form>
+    </div> 
+    
+
+    <div class="col-md-3 d-flex justify-content-md-end">
+        <a asp-controller="Home" asp-action="CriarPost" class="btn btn-primary">
+            <i class="bi bi-plus-circle-fill"></i> Criar Post
+        </a>
+    </div>
+
+</div>
             <h2 class="mb-4 text-secondary border-bottom pb-2">O que está acontecendo no ConectaBairro:</h2>
 
             @if (Model != null && Model.Any())
