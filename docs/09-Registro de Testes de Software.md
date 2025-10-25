@@ -41,16 +41,24 @@ https://github.com/user-attachments/assets/05cc9820-b227-4e59-8374-50ef53ddc94d
  
 https://github.com/user-attachments/assets/95a98d79-4e44-4205-b13b-1ba9a451fdde
 
-| **Caso de Teste** 	| **CT06 – Verificar se o usuário consegue criar publicações.** 	|
+| **Caso de Teste** | **CT06 – Verificar se o usuário consegue criar publicações.** |
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-04 -  A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. |
-|Registro de evidência | |
+|	Requisito Associado 	| RF-04 -  A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. |
+|Registro de evidência |  <img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/b9678e83-fdf0-4c64-b966-3bc6dfc517b4" /> <br> Teste Completo no vídeo abaixo: Teste CT-06  Criar post|
+
+https://github.com/user-attachments/assets/b9678e83-fdf0-4c64-b966-3bc6dfc517b4
+ 
 
 
 | **Caso de Teste** 	| **CT07 – Validar se o usuário consegue visualizar suas publicações.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04 -  A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. |
-|Registro de evidência | |
+|Registro de evidência | <img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/6a43cdf9-e927-44fb-acc4-9f0a17399051" /> <br> Teste Completo no vídeo abaixo: Teste CT-07  Visualizar post|
+
+https://github.com/user-attachments/assets/6a43cdf9-e927-44fb-acc4-9f0a17399051
+
+
+
 
 
 | **Caso de Teste** 	| **CT08 – Verificar se o usuário consegue alterar suas publicações.** 	|
@@ -62,7 +70,10 @@ https://github.com/user-attachments/assets/95a98d79-4e44-4205-b13b-1ba9a451fdde
 | **Caso de Teste** 	| **CT09 – Verificar se o usuário consegue excluir suas publicações.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-04 -  A aplicação deve permitir que os usuários do tipo moradores, ONGs e prefeitura criem e administrem publicações, preenchendo os campos obrigatórios: título, descrição, categorias (como anúncios, avisos, eventos etc.), status somente da sua publicação, imagens e vídeos curtos. Toda nova publicação deve ser registrada automaticamente com o status “em aberto”. |
-|Registro de evidência | |
+|Registro de evidência | <img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f" /> <br> Teste Completo no vídeo abaixo: Teste CT-09  Apagar post|
+
+https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f
+
 
 
 | **Caso de Teste** 	| **CT10 – Validar curtidas e comentários em publicações.** 	|
