@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/b110f2f5-f6df-4162-8c16-47719aab1ce1
 # Registro de Testes de Software
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
@@ -14,12 +16,18 @@ https://github.com/user-attachments/assets/e10557ab-5392-4a37-8ce8-5dc22d734c37
 | **Caso de Teste** 	| **CT02 – Validar se o usuário consegue visualizar seus dados pessoais.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 -  A aplicação deve permitir que usuários do tipo moradores, ONGs e prefeitura efetuem seu próprio registro (autorregistro) e tenham acesso às funções de gerenciamento de seus dados pessoais, permitindo consultar, atualizar e excluir essas informações. |
-|Registro de evidência | |
+|Registro de evidência | | Teste no vídeo abaixo: Teste CT-02 Visualização dos dados de cadastro |
+
+https://github.com/user-attachments/assets/4c6cc5b8-32ef-4c1a-b635-7a27b7efbdfa
+
 
 | **Caso de Teste** 	| **CT03 – Verificar se o usuário consegue alterar seus dados.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 -  A aplicação deve permitir que usuários do tipo moradores, ONGs e prefeitura efetuem seu próprio registro (autorregistro) e tenham acesso às funções de gerenciamento de seus dados pessoais, permitindo consultar, atualizar e excluir essas informações. |
-|Registro de evidência | |
+|Registro de evidência | | CT-03 Atualização dos dados de cadastro |
+
+https://github.com/user-attachments/assets/8ca358b4-562a-40c3-9c20-68c8b44912a0
+
 
 | **Caso de Teste** 	| **CT04 – Verificar se o usuário consegue realizar login.** 	|
 |:---:	|:---:	|
