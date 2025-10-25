@@ -59,31 +59,42 @@
         height: 40px;
     }
 
-    .filtro-container {
-        background-color: #ffffff;
+    .filtro-campos {
         border-radius: 10px; 
         padding: 1rem 1.25rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         border: 1px solid #e0e0e0;
     }
 
-        .filtro-container .form-control,
-        .filtro-container .form-select,
-        .filtro-container .btn {
+        .filtro-campos .form-control,
+        .filtro-campos .form-select,
+        .filtro-campos .btn,
+        .filtro-campos .input-group-text {
             border-radius: 8px;
-        }
-
-        .filtro-container .input-group .form-control,
-        .filtro-container .input-group .form-select {
-            border-left: 0;
-            padding-left: 0.5rem;
-        }
-
-        .filtro-container .input-group .input-group-text {
-            background-color: white;
-            border-right: 0;
             border-color: #ced4da;
         }
+
+        .filtro-campos .input-group .input-group-text {
+            background-color: white;
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .filtro-campos .input-group .form-control,
+        .filtro-campos .input-group .form-select {
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .filtro-campos .form-control:focus,
+        .filtro-campos .form-select:focus {
+            box-shadow: none;
+            border-color: #ced4da;
+            border-left: 0;
+        }
+       
 </style>
 
 <div class="page-wrapper">
@@ -102,7 +113,7 @@
 
     <div class="col-md-9">
 
-        <form class="filtro-container row g-3" method="get" asp-controller="Home" asp-action="Index">
+          <form class="row g-3" method="get" asp-controller="Home" asp-action="Index">
             @{
                 var termoBusca = ViewData["TermoBusca"] as string;
                 var categoria = ViewData["Categoria"] as string;
