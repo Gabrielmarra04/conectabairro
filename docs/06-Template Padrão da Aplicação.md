@@ -6,7 +6,5 @@
 > **Exemplo**:
 >
 >
-<img width="1107" height="742" alt="image" src="https://github.com/user-attachments/assets/beb4cc05-c1c1-41d2-a776-e0cce6ac6a7a" />
-
-
+<img width="824" height="753" alt="image" src="https://github.com/user-attachments/assets/034056cd-4221-4745-931a-82313a5a61a1" />
 
