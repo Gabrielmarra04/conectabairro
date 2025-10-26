@@ -90,8 +90,10 @@ https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f
 
 | **Caso de Teste** 	| **CT12 – 	Validar a busca e filtro de publicações.** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-07 - A aplicação deve permitir que os usuários filtrem publicações por categoria, data ou palavra-chave. |
-|Registro de evidência | |
+|	Requisito Associado 	| RF-07 - A aplicação deve permitir que os usuários filtrem publicações por categoria ou palavra-chave. |
+|Registro de evidência | Teste no vídeo abaixo: CT12 Validar a busca e filtro de publicações|
+
+https://github.com/user-attachments/assets/4c3f50e2-bcb6-46bb-a223-9b39d108657d
 
 
 
