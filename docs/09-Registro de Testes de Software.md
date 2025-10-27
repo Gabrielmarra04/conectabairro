@@ -75,7 +75,9 @@ https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f
 | **Caso de Teste** 	| **CT10 – Validar curtidas e comentários em publicações.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-05 - A aplicação deve permitir aos usuários a possibilidade de interagir nas publicações, seja através de reações como “gostei” e “não gostei”, ou pela inclusão de comentários. |
-|Registro de evidência | |
+|Registro de evidência |<img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/4c7cd9a9-91a9-46a2-a60b-6a64e203ebff" /> <br> Teste Completo no vídeo abaixo:|
+
+https://github.com/user-attachments/assets/4c7cd9a9-91a9-46a2-a60b-6a64e203ebff
 
 
  
