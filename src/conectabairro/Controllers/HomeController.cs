@@ -200,7 +200,7 @@ namespace conectabairro.Controllers
             _context.Posts.Update(post);
             await _context.SaveChangesAsync();
 
-            return View(nameof(DetalharPost), post);
+            return RedirectToAction(nameof(DetalharPost), new { id = post.PostId });
         }
 
         [HttpPost]

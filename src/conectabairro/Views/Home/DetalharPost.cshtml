@@ -4,27 +4,6 @@
 @{
     // Exemplo de como dados poderiam ser passados via Model ou ViewBag
     ViewData["Title"] = "Detalhes do Post";
-
-    // Dados de exemplo, que em uma aplicação real viriam de um Model
-    var post = new
-    {
-        Titulo = "Título do Post",
-        Status = "Pendente",
-        Data = "18/09/2025 - 19h30",
-        Conteudo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet porta diam, magna ex, et consequat nisi sagittis ut. Quisque commodo congue justo, congue lobortis. Donec tempus lobortis dolor at luctus. Curabitur placerat tempor commodo.",
-        Autor = "José",
-        Local = "Bairro Coração Eucarístico",
-        Curtidas = 15,
-        Apoios = 3
-    };
-
-    var comentarios = new[]
-    {
-        new { Autor = "Lucas", Conteudo = "Quisque semper magna ex, et consequat nisi sagittis ut. Quisque commodo congue." },
-        new { Autor = "Bruna", Conteudo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet porta diam, magna ex, et consequat nisi sagittis ut. Quisque commodo congue justo, congue lobortis. Donec tempus lobortis dolor at luctus. Curabitur placerat tempor commodo." },
-        new { Autor = "Tadeu", Conteudo = "Lorem ipsum dolor sit amet." },
-        new { Autor = "Pedro", Conteudo = "Quisque semper magna ex, et consequat nisi sagittis ut. Quisque commodo congue." }
-    };
 }
 
 <!DOCTYPE html>
