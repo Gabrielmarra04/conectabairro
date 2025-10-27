@@ -77,12 +77,12 @@ https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f
 |	Requisito Associado 	| RF-05 - A aplicação deve permitir aos usuários a possibilidade de interagir nas publicações, seja através de reações como “gostei” e “não gostei”, ou pela inclusão de comentários. |
 |Registro de evidência | |
 
+
  
 | **Caso de Teste** 	| **CT11 – Verificar se o usuário recebe notificações ao interagir.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas. |
 |Registro de evidência | |
-
 
 | **Caso de Teste** 	| **CT12 – 	Validar a busca e filtro de publicações.** 	|
 |:---:	|:---:	|
@@ -90,6 +90,24 @@ https://github.com/user-attachments/assets/a7187d9f-90f6-485a-831c-7ef039774b8f
 |Registro de evidência | Teste no vídeo abaixo: CT12 Validar a busca e filtro de publicações|
 
 https://github.com/user-attachments/assets/4c3f50e2-bcb6-46bb-a223-9b39d108657d
+
+
+ 
+| **Caso de Teste** 	| **CT13 – Verifique se ONGs/Prefeitura conseguem alterar o status.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-08 - A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas as publicações e adicionem comentários em uma publicação. |
+|Registro de evidência | |
+
+
+| **Caso de Teste** 	| **CT15 – Verifique se o administrador consegue excluir publicações.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 - O sistema deve permitir que o administrador remova as publicações existentes. |
+|Registro de evidência | |
+
+| **Caso de Teste** 	| **CT16 – Validar a remoção de comentários.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-011 - O sistema deve permitir que o administrador exclua comentários feitos pelos usuários. |
+|Registro de evidência | |
 
 
 
