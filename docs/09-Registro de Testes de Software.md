@@ -95,7 +95,8 @@ https://github.com/user-attachments/assets/4c3f50e2-bcb6-46bb-a223-9b39d108657d
 
 | **Caso de Teste** 	| **CT13 – Verifique se ONGs/Prefeitura conseguem alterar o status..** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-08 - A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas as publicações e adicionem comentários em uma publicação. 
+|	Requisito Associado 	| 
+RF-08 - A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas as publicações e adicionem comentários em uma publicação. 
 RF-010 - O sistema deve permitir que o administrador remova as publicações existentes.
 RF-011 - O sistema deve permitir que o administrador exclua comentários feitos pelos usuários.
 RF-016 - O sistema deve exibir os comentários adicionais ao Post, ao expandi-lo.|
