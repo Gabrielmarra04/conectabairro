@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using conectabairro.Models;
 
@@ -11,9 +12,11 @@ using conectabairro.Models;
 namespace conectabairro.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251026150615_AddMsgEComentarios")]
+    partial class AddMsgEComentarios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -165,32 +168,6 @@ namespace conectabairro.Migrations
                     b.ToTable("Posts");
                 });
 
-            modelBuilder.Entity("conectabairro.Models.Reacao", b =>
-                {
-                    b.Property<int>("ReacaoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReacaoId"));
-
-                    b.Property<int>("AutorUsuarioId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PostId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TipoReacao")
-                        .HasColumnType("int");
-
-                    b.HasKey("ReacaoId");
-
-                    b.HasIndex("AutorUsuarioId");
-
-                    b.HasIndex("PostId");
-
-                    b.ToTable("Reacao");
-                });
-
             modelBuilder.Entity("conectabairro.Models.Usuario", b =>
                 {
                     b.Property<int>("UsuarioId")
@@ -259,7 +236,7 @@ namespace conectabairro.Migrations
                             Email = "admin@a",
                             Estado = "N/A",
                             Nome = "Administrador Geral",
-                            PasswordHash = "$2a$13$shwrzAdaQXuYGGfolQlWI.avL5M/TIEDl/3oGiXVG.d6V7DFlBaci",
+                            PasswordHash = "$2a$13$Ha0RaHOqA3HHACVhx1/kaur2ntL2.IWuQ90z6EFO71IWkzy3Ialgm",
                             Rua = "N/A",
                             Telefone = "",
                             TipoUsuarios = 0
@@ -342,25 +319,6 @@ namespace conectabairro.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("conectabairro.Models.Reacao", b =>
-                {
-                    b.HasOne("conectabairro.Models.Usuario", "Autor")
-                        .WithMany()
-                        .HasForeignKey("AutorUsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("conectabairro.Models.Post", "Post")
-                        .WithMany("Reacoes")
-                        .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Autor");
-
-                    b.Navigation("Post");
-                });
-
             modelBuilder.Entity("conectabairro.Models.Conversa", b =>
                 {
                     b.Navigation("Mensagens");
@@ -369,8 +327,6 @@ namespace conectabairro.Migrations
             modelBuilder.Entity("conectabairro.Models.Post", b =>
                 {
                     b.Navigation("Comentarios");
-
-                    b.Navigation("Reacoes");
                 });
 
             modelBuilder.Entity("conectabairro.Models.Usuario", b =>
