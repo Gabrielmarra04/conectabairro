@@ -1,14 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel;
-using conectabairro.Services;
 
 namespace conectabairro.Models
 {
     [Table("Usuario")]
     public class Usuario
     {
-
         [Key]
         public int UsuarioId { get; set; }
 
@@ -52,13 +50,13 @@ namespace conectabairro.Models
         public string? ResetToken { get; set; }
         public DateTime? ResetTokenExpiry { get; set; }
 
-    }
+        public ICollection<Posts> PostsCriados { get; set; }
 
-    public enum TipoUsuario
-    {
-        Admin,
-        Morador,
-        Ong
+        public ICollection<Conversa> ConversasIniciadas { get; set; }
+
+        public ICollection<Mensagem> MensagensEnviadas { get; set; }
+
+        public ICollection<Comentario> ComentariosFeitos { get; set; }
     }
 
 }

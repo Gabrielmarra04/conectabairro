@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 namespace conectabairro.Models
 {
     [Table("Posts")]
-    public class Post
+    public class Posts
     {
         [Key]
         public int PostId { get; set; }
@@ -23,20 +23,33 @@ namespace conectabairro.Models
         [Required(ErrorMessage = "Obrigatório selecionar uma Categoria!")]
         public Categoria Categoria { get; set; }
 
-        public StatusPost Status { get; set; }
+        public StatusPost Status { get; set; } = StatusPost.Pendente;
 
         [DataType(DataType.Date)]
         public DateTime DataCriacao { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "Obrigatório adicionar ao menos 1 anexo!")]
-        [NotMapped] 
+        [NotMapped]
         [Display(Name = "Imagem do Post")]
         public IFormFile? ImagemArquivo { get; set; }
         public string? CaminhoImagem { get; set; }
-       
+
         public int LikesCount { get; set; }
+        public int DislikesCount { get; set; }
 
         public virtual Usuario Usuario { get; set; } = null!;
+
+        public ICollection<Comentario> Comentarios { get; set; }
+
+        public ICollection<Reacao> Reacoes { get; set; }
+        
+        [NotMapped]
+        public ICollection<Conversa> Conversas { get; set; }
+
+        [NotMapped]
+        public Comentario Comentario { get; set; }
+        [NotMapped]
+        public Usuario UsuarioLogado { get; set; }
     }
 
     public enum Categoria
