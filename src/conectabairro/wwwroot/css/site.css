@@ -20,6 +20,7 @@ html {
 body {
     margin-bottom: 60px;
     padding-bottom: 60px; /* Garante espaço para o footer fixo */
+    padding-top: 65px;
 }
 
 /* Estilo para o Balão de Avatar com Sigla */

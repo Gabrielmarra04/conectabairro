@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Models\RecuperarSenha.cs" />
+    <Compile Remove="Services\sigla.cs" />
     <Compile Remove="Views\Home\CriarPost.cs" />
     <Compile Remove="Views\Home\DetalharPost.cshtml.cs" />
     <Compile Remove="Views\Usuarios\EsqueciSenha.cshtml.cs" />
