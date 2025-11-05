@@ -10,6 +10,18 @@
 |RF-006| A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas.|  |  |
 |RF-007| A aplicação deve permitir que os usuários filtrem publicações por categoria ou palavra-chave.| Controllers/HomeController.cs: A Action Index foi modificada para aceitar parâmetros de filtro (termoBusca, categoria, ordenacaoData). Ela agora usa IQueryable para construir uma consulta dinâmica, aplicando filtros Where() condicionais para palavra-chave e categoria, e ordenação (OrderBy()) para a data. O ViewData é usado para enviar os filtros selecionados de volta para a View. Views/Home/Index.cshtml: Foi adicionado um <form method="get"> que agrupa os campos de filtro (<input> de pesquisa, <select> de categoria e <select> de ordenação). A lógica Razor (@ViewData["..."]) é usada para ler os dados enviados pelo Controller e manter os campos de filtro preenchidos após a pesquisa. | Luiz Felipe |
 |RF-008| A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas publicações e adicionem comentários em uma publicação.|  |  |
+|RF-009| O sistema deve permitir que os usuários entrem em contato com o anunciador via chat dentro da aplicação.|  |  |
+|RF-010| O sistema deve permitir que o administrador remova publicações existentes.| Adicionado função de User.Identity.IsAuthenticated no DetalharPost.cshtml para validar que apenas o Usuário ou o Autor do Post tenha permissão de exclusão | Gabriel Yuri |
+|RF-011| O sistema deve permitir que o administrador exclua comentários feitos pelos usuários. |  |  |
+|RF-012| O sistema deve permitir que o administrador desative contas de usuários por meio de exclusão lógica, alterando o status do perfil em vez de realizar a exclusão física. |  |  |
+|RF-013| A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador. |  |  |
+|RF-014| O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.	 |  |  |
+|RF-015| O sistema deve permitir que o usuário, após efetuar o login, tenha acesso ao feed geral com todas as publicações e alertas criados. |  |  |
+|RF-016| O sistema deve exibir os comentários adicionados ao Post, ao expandi-lo |  |  |
+|RF-017| 	O sistema deve exibir a data de criação do Post ao expandi-lo |  |  |
+
+
+
 
 # Instruções de acesso
 
