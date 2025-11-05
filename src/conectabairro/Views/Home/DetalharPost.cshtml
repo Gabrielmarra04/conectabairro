@@ -28,7 +28,7 @@
             margin-top: 105px; 
         }
 
-        /* Estilização para a Sigla no Card do Autor */
+
         .avatar-lg {
             width: 80px;
             height: 80px;
@@ -172,7 +172,8 @@
                                         <i class="bi bi-pencil-fill"></i> Editar
                                     </a>
                                 </div>
-                                @if (User.Identity.IsAuthenticated)
+                                @if (User.Identity.IsAuthenticated &&
+                                (Model.UsuarioLogado.TipoUsuarios == TipoUsuario.Admin || Model.Usuario.UsuarioId == Model.UsuarioLogado.UsuarioId))
                                 {
                                     <div class="col-md-3">
                                         <a asp-controller="Home" asp-action="DeletarPost" asp-route-id="@Model.PostId"
@@ -185,7 +186,6 @@
                             </div>
                         </div>
                     </div>
-                    @* Fim Card do Autor *@
 
                     @* Seção de Comentários *@
                     <div class="card shadow-sm">
@@ -222,17 +222,13 @@
                                 </div>
                             }
 
-                            @* Formulário de Novo Comentário - ENVOLVA COM <form> *@
                             <form asp-controller="Home" asp-action="CriarComentario" method="post">
                                 <div class="d-flex align-items-center">
-                                    @* O asp-for garante que o input terá o name correto para o Model Binding *@
                                     <input asp-for="Comentario.Conteudo" type="text" class="form-control me-2" placeholder="Digite seu comentário aqui" aria-label="Digite seu comentário aqui" />
 
-                                    @* Os campos hidden precisam estar DENTRO do formulário para serem submetidos *@
                                     <input type="hidden" asp-for="Comentario.PostId" value="@Model.PostId" />
                                     <input type="hidden" asp-for="Comentario.AutorUsuarioId" value="@Model.UsuarioLogado.UsuarioId" />
 
-                                    @* Mude o <a> para <button type="submit"> *@
                                     <button type="submit" class="btn btn-primary">
                                         <i class="bi bi-send-fill"></i>
                                     </button>
@@ -240,12 +236,8 @@
                             </form>
                         </div>
                     </div>
-                    @* Fim Seção de Comentários *@
-
                 </div>
             </div>
-            @* Fim Coluna Lateral *@
-
         </div>
     </main>
 

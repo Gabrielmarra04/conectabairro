@@ -206,16 +206,17 @@
                                     <div class="mt-auto pt-2 border-top">
                                         <small class="text-muted d-block mb-2">Publicado: @post.DataCriacao.ToShortDateString()</small>
 
-                                        <a asp-controller="Home" asp-action="DetalharPost" asp-route-id="@post.PostId" class="btn btn-sm btn-outline-primary me-2">Detalhes</a>
+                                        <a asp-controller="Home" asp-action="DetalharPost" asp-route-id="@post.PostId" class="btn btn-sm btn-outline-primary me-2">Ver mais</a>
 
-                                        @if (isAuthorized)
+                                        @* @if (User.Identity.IsAuthenticated &&
+                                        (Model.UsuarioLogado.TipoUsuarios == TipoUsuario.Admin || Model.Usuario.UsuarioId == Model.UsuarioLogado.UsuarioId))
                                         {
                                             <a asp-controller="Home" asp-action="DeletarPost" asp-route-id="@post.PostId"
                                                class="btn btn-sm btn-outline-danger"
                                                onclick="return confirm('Tem certeza que deseja apagar esta publicação?');">
                                                 <i class="bi bi-trash-fill"></i> Apagar
                                             </a>
-                                        }
+                                        } *@
 
                                         <span class="text-secondary ms-3 float-end">
                                             <i class="bi bi-heart-fill"></i> @post.LikesCount
