@@ -97,7 +97,6 @@ https://github.com/user-attachments/assets/4c3f50e2-bcb6-46bb-a223-9b39d108657d
 |:---:	|:---:	|
 |	Requisito Associado 	| 
 RF-08 - A aplicação deve permitir que ONGs e Prefeitura alterem o status de todas as publicações e adicionem comentários em uma publicação. 
-RF-010 - O sistema deve permitir que o administrador remova as publicações existentes.
 RF-011 - O sistema deve permitir que o administrador exclua comentários feitos pelos usuários.
 RF-016 - O sistema deve exibir os comentários adicionais ao Post, ao expandi-lo.|
 |Registro de evidência | <img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/3a14d055-5c63-4b67-9cc8-cf43e27748c7"  /> <img width="628" height="472" alt="image" src="https://github.com/user-attachments/assets/35d68ff4-3aca-4646-9b1e-bd00b04d344a"  /> |
@@ -107,6 +106,13 @@ https://github.com/user-attachments/assets/3a14d055-5c63-4b67-9cc8-cf43e27748c7
 https://github.com/user-attachments/assets/35d68ff4-3aca-4646-9b1e-bd00b04d344a
 
 
+| **Caso de Teste** 	| **CT15 – Verificar se o administrador consegue excluir publicações.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-010 - O sistema deve permitir que o administrador remova publicações existentes. |
+|Registro de evidência | Teste no vídeo abaixo: Teste CT-15 Exclusão de Post|
+
+
+https://github.com/user-attachments/assets/810a1671-a240-47b5-9095-463f5c5e3c7b
 
 
 ## Relatório de testes de software
