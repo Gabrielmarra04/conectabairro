@@ -193,9 +193,10 @@
 
                                 <div class="card-body d-flex flex-column">
                                     <h6 class="card-subtitle mb-1 text-muted small">
-                                        @post.Categoria
-                                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary")">
-                                            @post.Status
+                                        @FormatarCategoria(post.Categoria)
+
+                                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary") ms-1">
+                                            @FormatarStatus(post.Status)
                                         </span>
                                     </h6>
 
@@ -250,3 +251,30 @@
         </div>
     </footer>
 </div>
+
+@functions {
+
+    private string FormatarStatus(StatusPost status)
+    {
+        return status switch
+        {
+            StatusPost.EmAandamento => "Em andamento",
+            StatusPost.Resolvido => "Resolvido",
+            StatusPost.Pendente => "Pendente",
+            _ => status.ToString()
+        };
+    }
+
+    private string FormatarCategoria(Categoria categoria)
+    {
+        return categoria switch
+        {
+            Categoria.ComercioEServicos => "Comércio e Serviços",
+            Categoria.Saude => "Saúde",
+            Categoria.EsporteELazer => "Esporte e Lazer",
+            Categoria.Zeladoria => "Zeladoria",
+            Categoria.Alertas => "Alertas",
+            _ => categoria.ToString()
+        };
+    }
+}
