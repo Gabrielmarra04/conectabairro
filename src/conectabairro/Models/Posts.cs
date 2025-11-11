@@ -13,10 +13,12 @@ namespace conectabairro.Models
         [ForeignKey("Usuario")]
         public int AutorId { get; set; }
 
+        [Display(Name = "Título")]  
         [Required(ErrorMessage = "Obrigatório informar um Título!")]
         [MaxLength(150)]
         public string Titulo { get; set; }
 
+        [Display(Name = "Descrição")]
         [Required(ErrorMessage = "Obrigatório informar uma Descrição!")]
         public string Descricao { get; set; }
 
