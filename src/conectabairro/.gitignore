@@ -37,3 +37,23 @@ project.assets.json
 # Ignorar arquivos de segredos (muito importante!)
 secrets.json
 appsettings.Development.json
+appsettings.Production.json
+
+# Logs
+*.log
+
+# Configurações temporárias
+*.tmp
+*.temp
+*.cache
+*.bak
+*.swp
+
+# Diretórios específicos de publicação e pacotes
+/wwwroot/dist/
+/node_modules/
+/dist/
+/packages/
+
+# Arquivos de configuração locais (não versionar)
+launchSettings.json
