@@ -37,7 +37,7 @@ project.assets.json
 # Ignorar arquivos de segredos (muito importante!)
 secrets.json
 appsettings.Development.json
-appsettings.Production.json
+
 
 # Logs
 *.log
