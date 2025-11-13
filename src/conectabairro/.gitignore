@@ -36,6 +36,7 @@ project.assets.json
 
 # Ignorar arquivos de segredos (muito importante!)
 secrets.json
+<<<<<<< HEAD
 appsettings.Development.json
 
 
@@ -57,3 +58,6 @@ appsettings.Development.json
 
 # Arquivos de configuração locais (não versionar)
 launchSettings.json
+=======
+appsettings.Development.json
+>>>>>>> parent of 340dcf7 (Testando deploy)
