@@ -20,7 +20,7 @@
         <div class="col-12">
             <ul class="nav nav-tabs mb-4">
                 <li class="nav-item">
-                    <a class="nav-link active" id="usuarios-tab" asp-controller="Usuarios" asp-action="Index" >
+                    <a class="nav-link active" id="usuarios-tab" asp-controller="Usuarios" asp-action="Index">
                         <h4 class="mb-0">Usuários cadastrados</h4>
                     </a>
                 </li>
@@ -37,7 +37,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Pesquisar" name="SearchString" value="@ViewData["CurrentFilter"]">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="submit" style="background-color: #f8f9fa; border: 1px solid #ced4da;">
+                                <button class="btn btn-outline-secondary search-btn" type="submit">
                                     <span class="fas fa-search">🔍</span>
                                 </button>
                             </div>
@@ -49,7 +49,7 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="usuarios-cadastrados" role="tabpanel" aria-labelledby="usuarios-tab">
                     <table class="table table-hover">
-                        <thead class="bg-light">
+                        <thead class="table-light">
                             <tr>
                                 <th style="width: 30%;">
                                     @Html.DisplayNameFor(model => model.Nome)
@@ -64,35 +64,36 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var item in Model)
+                            @if (Model != null && Model.Any())
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Nome)
+                                        </td>
+                                        <td>
+                                            <a href="mailto:@item.Email">@Html.DisplayFor(modelItem => item.Email)</a>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Bairro)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" class="btn btn-sm btn-primary" asp-route-id="@item.UsuarioId" data-action="edit-user">Editar</a> |
+                                            @* <a asp-action="Details" class="btn btn-sm btn-secondary" asp-route-id="@item.UsuarioId">Detalhes</a> | *@
+                                            <a asp-action="Delete" class="btn btn-sm btn-danger" asp-route-id="@item.UsuarioId">Excluir</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
                             {
                                 <tr>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.Nome)
-                                    </td>
-                                    <td>
-                                        <a href="@item.Email">@Html.DisplayFor(modelItem => item.Email)</a>
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(modelItem => item.Bairro)
-                                    </td>
-                                    <td>
-                                        <a asp-action="Edit" class="btn btn-sm btn-primary" asp-route-id="@item.UsuarioId" data-action="edit-user">Editar</a> |
-                                        @* <a asp-action="Details" class="btn btn-sm btn-secondary" asp-route-id="@item.UsuarioId">Detalhes</a> | *@
-                                        <a asp-action="Delete" class="btn btn-sm btn-danger" asp-route-id="@item.UsuarioId">Excluir</a>
-                                    </td>
+                                    <td colspan="4" class="text-center text-muted py-4">Nenhum usuário encontrado com o filtro aplicado.</td>
                                 </tr>
                             }
                         </tbody>
                     </table>
-
-                    @if (!Model.Any())
-                    {
-                        <tr>
-                            <td colspan="4" class="text-center text-muted py-4">Nenhum usuário encontrado com o filtro aplicado.</td>
-                        </tr>
-                    }
-
                 </div>
 
                 <div class="tab-pane fade" id="solicitacoes" role="tabpanel" aria-labelledby="solicitacoes-tab">
@@ -109,10 +110,9 @@
     </div>
 </div>
 
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 
 <script>
     setTimeout(function() {
@@ -123,8 +123,39 @@
 
             setTimeout(function() {
                 alertElement.remove();
-            }, 500); 
+            }, 500);
         }
-    }, 5000); 
+    }, 5000);
 </script>
+
+<
+<style>
+    
+    .dark-mode .table-light {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+    }
+
    
+    .dark-mode table tbody tr td,
+    .dark-mode table thead th {
+        color: #ffffff !important;
+    }
+
+    
+    .search-btn {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+    }
+
+    .dark-mode .search-btn {
+        background-color: #2a2a2a !important;
+        color: #ffffff !important;
+        border-color: #444 !important;
+    }
+
+    
+    .dark-mode input::placeholder {
+        color: #cccccc !important;
+    }
+</style>
