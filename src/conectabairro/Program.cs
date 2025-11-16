@@ -4,15 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Carrega os arquivos de configuração (incluindo o de produção)
-builder.Configuration
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
-    .AddEnvironmentVariables();
-
-// Adiciona serviços ao contêiner
+// Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -28,26 +24,36 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.AccessDeniedPath = "/Usuarios/AccessDenied";
-        options.LoginPath = "/Usuarios/Login";
+        options.AccessDeniedPath = "/Usuarios/AccessDenied"; // Caminho para a página de acesso negado
+        options.LoginPath = "/Usuarios/Login"; // Caminho para a página de login
         options.ExpireTimeSpan = TimeSpan.FromHours(3);
         options.SlidingExpiration = true;
     });
 
+// Teste
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
 builder.Services.AddAuthorization(options =>
 {
+    // Define o que é a política 'RequerAdmin'
     options.AddPolicy("RequerAdmin", policy =>
     {
+        // 1. O Policy exige que o usuário tenha uma Claim chamada "TipoUsuario"
+        policy.RequireClaim("TipoUsuario");
+
+        // 2. O valor dessa Claim deve ser EXATAMENTE "Admin"
         policy.RequireClaim("TipoUsuario", "Admin");
     });
 });
 
 var app = builder.Build();
 
-// Configuração do pipeline HTTP
+// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -64,3 +70,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
