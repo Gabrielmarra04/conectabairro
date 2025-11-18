@@ -1,110 +1,167 @@
-﻿@* @page "{id:int}"
-@model SeuProjeto.Pages.Home
+﻿@model conectabairro.Models.Conversa
+@using conectabairro.Models
+@using conectabairro.Services
+
 @{
-    ViewData["Title"] = "Detalhes do Post";
+    ViewData["Title"] = "Chat do Post";
 }
 
 <style>
-    /* Estilos básicos para corresponder à imagem */
-    .modal-dialog-scrollable { /* Simula um modal com scroll se a tela for muito grande */
-        max-height: 90vh; /* Ajuste conforme necessário */
-        overflow-y: auto;
-    }
-
-    .modal-content {
-        border-radius: 0.5rem;
-    }
-
-    .profile-pic-placeholder {
-        width: 40px;
-        height: 40px;
-        background-color: #ccc; /* Cor de fundo para o placeholder */
-        border-radius: 50%;
+    /* Estilos customizados para o container de chat */
+    .chat-container {
+        max-width: 600px; /* Limita a largura do modal */
+        margin: 50px auto; /* Centraliza na página */
+        background-color: #f8f8f8; /* Fundo cinza claro */
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-weight: bold;
-        flex-shrink: 0; /* Impede que a imagem encolha */
+        flex-direction: column;
+        height: 75vh; /* Altura do chat na tela */
     }
 
-    .comment-card {
-        background-color: #f8f9fa; /* Cor de fundo para os cards de comentário */
-        border-radius: 0.5rem;
-        padding: 1rem;
-        margin-bottom: 0.75rem;
-        box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    /* Estilo para a área onde as mensagens rolam */
+    .messages-area {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 15px;
+        background-color: white; /* Fundo branco para a área de mensagens */
     }
 
-    .comment-input-area {
-        background-color: #e9ecef; /* Cor de fundo para a área de input */
-        padding: 1rem;
-        border-radius: 0.5rem;
+    /* Estilo para as mensagens do usuário atual (direita) */
+    .message-bubble.right {
+        background-color: #e2f0ff; /* Azul claro */
+        align-self: flex-end;
+        text-align: right;
     }
+
+    /* Estilo para as mensagens do outro usuário (esquerda) */
+    .message-bubble.left {
+        background-color: #f0f0f0; /* Cinza claro */
+        align-self: flex-start;
+    }
+
+    .message-bubble {
+        max-width: 100%;
+        padding: 10px 15px;
+        border-radius: 18px;
+        margin-bottom: 15px;
+        word-wrap: break-word;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+        .message-bubble span {
+            padding-bottom: 10px;
+        }
+
+    /* Estilo para o campo de input */
+    .input-box {
+        padding: 15px;
+        border-top: 1px solid #ddd;
+    }
+
+        .input-box input {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
 </style>
 
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-        <div class="modal-header d-flex align-items-center justify-content-between pb-0 border-bottom-0">
-            <div class="d-flex align-items-center">
-                @if (!string.IsNullOrEmpty(Model.Post?.ImagemUrl))
+<div class="chat-container">
+
+    <div class="p-3 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #ddd;">
+        <div>
+            <h4 class="mb-0">@Model.Post.Titulo</h4>
+            <p class="text-success lead mb-0">@Model.Post.Descricao</p>
+        </div>
+        <a type="button" class="btn-close" aria-label="Fechar" method="get" asp-controller="Home" asp-action="DetalharPost" asp-route-id="@Model.PostId"></a>
+    </div>
+
+    <div id="messagesArea" class="messages-area d-flex flex-column">
+
+        @foreach (var msg in Model.Mensagens)
+        {
+            var fullName = User.Identity.Name;
+            string initials = "";
+            if (!string.IsNullOrWhiteSpace(fullName))
+            {
+                var parts = fullName.Trim().Split(' ');
+                if (parts.Length > 0 && !string.IsNullOrWhiteSpace(parts[0]))
                 {
-                    <img src="@Model.Post.ImagemUrl" alt="Imagem do Post" class="img-fluid me-3" style="width: 80px; height: 80px; object-fit: cover; border-radius: 0.25rem;" />
+                    initials += parts[0][0];
                 }
-                else
+                if (parts.Length > 1 && !string.IsNullOrWhiteSpace(parts.Last()))
                 {
-                    <div style="width: 80px; height: 80px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; border-radius: 0.25rem;" class="me-3">
-                        <span class="text-muted">No Image</span>
+                    initials += parts.Last()[0];
+                }
+
+                initials = initials.ToUpper();
+            }
+
+            // Determina se a mensagem é do usuário atual ou do outro participante
+            var isCurrentUser = msg.RemetenteUsuarioId == Model.UsuarioLogado.UsuarioId;
+            var alignmentClass = isCurrentUser ? "justify-content-end" : "justify-content-start";
+            var bubbleClass = isCurrentUser ? "right" : "left";
+
+            <div class="d-flex w-100 @alignmentClass">
+                <div class="d-flex @(isCurrentUser ? "flex-row-reverse" : "")">
+
+                    <div class="p-1 @(isCurrentUser ? "ml-2" : "mr-2") d-flex align-items-start">
+                        <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
+                            @if (isCurrentUser) 
+                            { 
+                                @initials
+
+                            }
+                            else
+                            {
+                                var initialsRemetente = "";
+                                var parts = msg.Remetente.Nome.Trim().Split(' ');
+                                if (parts.Length > 0 && !string.IsNullOrWhiteSpace(parts[0]))
+                                {
+                                    initialsRemetente += parts[0][0];
+                                }
+                                if (parts.Length > 1 && !string.IsNullOrWhiteSpace(parts.Last()))
+                                {
+                                    initialsRemetente += parts.Last()[0];
+                                }
+
+                                initialsRemetente = initialsRemetente.ToUpper();
+
+                                @initialsRemetente
+                            }
+                        </div>
                     </div>
-                }
-                <div>
-                    <h5 class="modal-title mb-0">@Model.Post?.Titulo</h5>
-                    <p class="text-muted mb-0">R$@Model.Post?.Preco.ToString("N2")</p>
+
+                    <div class="message-bubble @bubbleClass">
+                        <small class="font-weight-bold d-block mb-1"><strong>@msg.Remetente.Nome</strong></small>
+                        <p class="mb-0">@msg.Conteudo</p>
+                        <small class="text-muted" style="font-size: 0.7em;">@msg.DataEnvio.ToString("HH:mm")</small>
+                    </div>
                 </div>
             </div>
-            <button type="button" class="btn-close" aria-label="Close" onclick="history.back()"></button>
-        </div>
+        }
 
-        <div class="modal-body pt-0">
-            @if (Model.Post?.Comentarios != null && Model.Post.Comentarios.Any())
-            {
-                <h6 class="mt-3 mb-2">Comentários</h6>
-                <div class="comments-section">
-                    @foreach (var comentario in Model.Post.Comentarios.OrderBy(c => c.Id)) // Ordenar por ID para manter a ordem de envio
-                    {
-                        <div class="comment-card d-flex align-items-start">
-                            <div class="profile-pic-placeholder me-3">
-                                @(comentario.Autor?.Nome?.Substring(0, 1).ToUpper() ?? "?")
-                            </div>
-                            <div class="flex-grow-1">
-                                <p class="fw-bold mb-0">@comentario.Autor?.Nome</p>
-                                <p class="mb-0 small text-muted">@comentario.Conteudo</p>
-                            </div>
-                        </div>
-                    }
-                </div>
-            }
-            else
-            {
-                <p class="text-center mt-4 text-muted">Nenhum comentário ainda. Seja o primeiro!</p>
-            }
-        </div>
+    </div>
 
-        <div class="modal-footer comment-input-area border-top-0">
-            <form method="post" class="d-flex w-100">
-                <input type="hidden" asp-for="ComentarioInput.PostId" value="@Model.Post?.Id" />
-                <input type="text" asp-for="ComentarioInput.Conteudo" class="form-control rounded-pill me-2" placeholder="Digite sua mensagem aqui" required />
-                <button type="submit" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
-                    <i class="bi bi-send-fill"></i>
-                </button>
-            </form>
-        </div>
+    <div class="input-box">
+        <form asp-controller="Home" asp-action="EnviarMensagem" method="post" class="d-flex">
+            <input type="hidden" name="conversaId" value="@Model.ConversaId" />
+
+            <input type="text"
+                   name="conteudo"
+                   id="messageInput"
+                   class="form-control flex-grow-1"
+                   placeholder="Digite sua mensagem aqui"
+                   autocomplete="off"
+                   required />
+
+            <button type="submit" class="btn btn-link p-0 ml-2 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </form>
     </div>
 </div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-} *@

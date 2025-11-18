@@ -84,6 +84,13 @@ namespace conectabairro.Models
                 .HasForeignKey(c => c.PostId)
                 .OnDelete(DeleteBehavior.Cascade); // Se o Post for excluído, os comentários também são.
 
+            // Relacionamento Post -> Conversas (1 para N)
+            modelBuilder.Entity<Posts>()
+                .HasMany(p => p.Conversas) // Um Post tem muitas Conversas
+                .WithOne(c => c.Post)        // Uma Conversa pertence a um Post
+                .HasForeignKey(c => c.PostId)
+                .OnDelete(DeleteBehavior.Cascade); // Se o Post for excluído, as conversas também são.
+
             // Relacionamento Usuario -> Post (1 para N)
             modelBuilder.Entity<Posts>()
                 .HasOne(p => p.Usuario)
