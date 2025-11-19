@@ -1,10 +1,7 @@
 using conectabairro.Models;
-using conectabairro.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
-using System;
 using System.Diagnostics;
 using System.Security.Claims;
 
