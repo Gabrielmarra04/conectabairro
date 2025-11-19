@@ -79,6 +79,11 @@ namespace conectabairro.Controllers
                 return View(post);
             }
 
+            if (post.ImagemArquivo == null)
+            {
+                ModelState.AddModelError("", "Obrigatório adicionar ao menos 1 anexo!");
+            }
+
             await CriarCaminhoImagem(post);
 
             ModelState.Remove(nameof(post.ImagemArquivo));
@@ -197,7 +202,14 @@ namespace conectabairro.Controllers
         [HttpPost]
         public async Task<IActionResult> EditarPost(Posts post)
         {
-            await CriarCaminhoImagem(post);
+            if (post.ImagemArquivo != null)
+            {
+                await CriarCaminhoImagem(post);
+            }
+            else
+            {
+                post.CaminhoImagem = post.CaminhoImagemExistente;
+            }
 
             _context.Posts.Update(post);
             await _context.SaveChangesAsync();
@@ -362,7 +374,7 @@ namespace conectabairro.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        
+
         }
     }
 }
