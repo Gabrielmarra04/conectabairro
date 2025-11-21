@@ -72,8 +72,8 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
 | Usuário 1   |   30seg            |             5                   |       Sim       |          Não           | Interessante essa possibilidade  |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
+| Usuário 2   |   40seg            |             6                   |       Sim       |          Não           |                              |                     |      
+| Usuário 3   |   43seg            |             6                   |       Sim       |          Não           | Muito importante para evitar problemas  |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
@@ -84,9 +84,9 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 6**: Interações e Notificações         
 | **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
+| Usuário 1   |       15seg        |            5                    |      Sim        |        Não             |                              |                     |      
+| Usuário 2   |       20seg        |            7                    |      Sim        |        Não             |            Poderia ter mais reações   |                     |      
+| Usuário 3   |       20seg        |            8                    |      Sim        |        Não             |            achei ótimo somente os 2 tipos de interação, mais limitado |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
