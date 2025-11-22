@@ -195,7 +195,7 @@
                                     <h6 class="card-subtitle mb-1 text-muted small">
                                         @FormatarCategoria(post.Categoria)
 
-                                        <span class="badge @(post.Status == StatusPost.Resolvido ? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary") ms-1">
+                                        <span class="badge @(post.Status == StatusPost.Resolvido? "bg-success" : post.Status == StatusPost.EmAandamento ? "bg-warning text-dark" : "bg-secondary") ms-1">
                                             @FormatarStatus(post.Status)
                                         </span>
                                     </h6>

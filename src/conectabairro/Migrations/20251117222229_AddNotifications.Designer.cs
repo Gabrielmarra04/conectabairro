@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using conectabairro.Models;
 
@@ -11,9 +12,11 @@ using conectabairro.Models;
 namespace conectabairro.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251117222229_AddNotifications")]
+    partial class AddNotifications
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -285,7 +288,7 @@ namespace conectabairro.Migrations
                             Email = "admin@a",
                             Estado = "N/A",
                             Nome = "Administrador Geral",
-                            PasswordHash = "$2a$13$ZTcMO7gOMe9PDCO1kGAhI.BenYhERgqZElUU41AorjFFVq53dsaIK",
+                            PasswordHash = "$2a$13$eARnFlVAG5g/Kpw.J2yk6.TkH6VdJq.30q4MiOvuGZlotoAwNoFYi",
                             Rua = "N/A",
                             Telefone = "",
                             TipoUsuarios = 0

@@ -1,5 +1,4 @@
-﻿
-html {
+﻿html {
     font-size: 14px;
     position: relative;
     min-height: 100%;
@@ -21,7 +20,6 @@ body {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-
 .user-avatar {
     width: 36px;
     height: 36px;
@@ -36,7 +34,6 @@ body {
     margin-right: 10px;
     flex-shrink: 0;
 }
-
 
 .navbar-nav .nav-item {
     padding-left: 0;
@@ -70,7 +67,6 @@ body {
     color: #495057;
 }
 
-
 .filtro-container {
     background-color: #ffffff;
     border-radius: 10px;
@@ -79,7 +75,9 @@ body {
     border: 1px solid #e0e0e0;
 }
 
-    .filtro-container .form-control, .filtro-container .form-select, .filtro-container .btn {
+    .filtro-container .form-control,
+    .filtro-container .form-select,
+    .filtro-container .btn {
         border-radius: 8px;
     }
 
@@ -95,34 +93,49 @@ body {
     }
 
 
+header i,
+header svg {
+    color: #006587 !important;
+    fill: #006587 !important;
+}
+
+
 .dark-mode {
     background-color: #121212 !important;
     color: #f5f5f5 !important;
 }
-    /* Navbar */
 
     .dark-mode .navbar {
         background-color: #1e1e1e !important;
     }
 
-        .dark-mode .navbar *, .dark-mode .nav-link, .dark-mode .navbar-brand {
+        .dark-mode .navbar *,
+        .dark-mode .nav-link,
+        .dark-mode .navbar-brand {
             color: #ffffff !important;
         }
-    /* Ícones */
 
-    .dark-mode svg, .dark-mode i {
+    
+    .dark-mode svg,
+    .dark-mode i {
         color: #ffffff !important;
         fill: #ffffff !important;
     }
-    /* Footer */
+
+    
+    .dark-mode header i,
+    .dark-mode header svg {
+        color: #006587 !important;
+        fill: #006587 !important;
+    }
 
     .dark-mode .footer-fixo {
         background-color: #1e1e1e !important;
         color: #ffffff !important;
     }
-    /* Containers */
 
-    .dark-mode .details-container, .dark-mode .filtro-container {
+    .dark-mode .details-container,
+    .dark-mode .filtro-container {
         background-color: #1f1f1f !important;
         border-color: #444 !important;
         color: #ffffff !important;
@@ -133,9 +146,9 @@ body {
         color: #ffffff !important;
         border-color: #555 !important;
     }
-    /* Inputs */
 
-    .dark-mode .form-control, .dark-mode .form-select {
+    .dark-mode .form-control,
+    .dark-mode .form-select {
         background-color: #2a2a2a !important;
         color: #ffffff !important;
         border-color: #666 !important;
@@ -144,7 +157,6 @@ body {
     .dark-mode input::placeholder {
         color: #cccccc !important;
     }
-    /* Botões */
 
     .dark-mode .btn {
         background-color: #2b2b2b !important;
@@ -155,22 +167,21 @@ body {
         .dark-mode .btn:hover {
             background-color: #3c3c3c !important;
         }
-    /* Input-group */
 
     .dark-mode .input-group-text {
         background-color: #2a2a2a !important;
         color: #ffffff !important;
         border-color: #666 !important;
     }
-    /* Avatar */
 
     .dark-mode .user-avatar {
         background-color: #444 !important;
         color: #ffffff !important;
     }
-   
 
-    .dark-mode table, .dark-mode th, .dark-mode td {
+    .dark-mode table,
+    .dark-mode th,
+    .dark-mode td {
         color: #ffffff !important;
         border-color: #555 !important;
     }
@@ -186,43 +197,41 @@ body {
         .dark-mode tbody tr:hover {
             background-color: #2a2a2a !important;
         }
-  
 
-    .dark-mode .container, .dark-mode .row, .dark-mode .col-12, .dark-mode .tab-content, .dark-mode .tab-pane {
+    .dark-mode .container,
+    .dark-mode .row,
+    .dark-mode .col-12,
+    .dark-mode .tab-content,
+    .dark-mode .tab-pane {
         background-color: #121212 !important;
         color: #ffffff !important;
     }
-    /* Tabela */
 
     .dark-mode table {
         background-color: #1a1a1a !important;
         color: #ffffff !important;
         border-color: #333 !important;
     }
-    /* THEAD (está usando table-light → branco) */
 
     .dark-mode .table-light {
         background-color: #222 !important;
         color: #ffffff !important;
     }
-    /* Células */
 
-    .dark-mode thead th, .dark-mode tbody td {
+    .dark-mode thead th,
+    .dark-mode tbody td {
         background-color: #1a1a1a !important;
         color: #ffffff !important;
         border-color: #333 !important;
     }
-    /* Hover */
 
     .dark-mode table tbody tr:hover {
         background-color: #272727 !important;
     }
-    /* Link do e-mail */
 
     .dark-mode table a {
         color: #4da6ff !important;
     }
-    /* Botões EDITAR / EXCLUIR */
 
     .dark-mode .btn-primary {
         background-color: #0066cc !important;
@@ -233,14 +242,12 @@ body {
         background-color: #cc3333 !important;
         border-color: #b22d2d !important;
     }
-    /* Barra de pesquisa */
 
     .dark-mode .form-control {
         background-color: #2b2b2b !important;
         color: #ffffff !important;
         border-color: #555 !important;
     }
-    /* Botão SEARCH */
 
     .dark-mode .search-btn {
         background-color: #2b2b2b !important;
@@ -251,7 +258,6 @@ body {
     .dark-mode input::placeholder {
         color: #bbbbbb !important;
     }
-    /* Abas (nav-tabs) */
 
     .dark-mode .nav-tabs .nav-link {
         background-color: #1a1a1a !important;
@@ -261,44 +267,77 @@ body {
 
         .dark-mode .nav-tabs .nav-link.active {
             background-color: #242424 !important;
-            color: #00c9b7 !important; /* cor bonita para destacar */
+            color: #00c9b7 !important;
             border-bottom: 2px solid #00c9b7 !important;
         }
-    
 
     .dark-mode .dropdown-menu {
         background-color: #1f1f1f !important;
         border-color: #444 !important;
     }
-    /* Texto */
 
     .dark-mode .dropdown-item {
         color: #ffffff !important;
     }
-        /* Hover */
 
         .dark-mode .dropdown-item:hover {
             background-color: #333333 !important;
             color: #ffffff !important;
         }
-    /* Linha divisória do dropdown */
 
     .dark-mode .dropdown-divider {
         border-color: #555 !important;
     }
-    /* Ajuste do container que abre o dropdown */
 
     .dark-mode .dropdown-menu.show {
         background-color: #1f1f1f !important;
     }
-    /* Botão que abre o dropdown (avatar + texto) */
 
-    .dark-mode .nav-link, .dark-mode .nav-link:hover {
+    .dark-mode .nav-link,
+    .dark-mode .nav-link:hover {
         color: #ffffff !important;
     }
-    /* Avatar */
 
     .dark-mode .user-avatar {
         background-color: #444 !important;
         color: #ffffff !important;
     }
+
+    .dark-mode .notification-icon i,
+    .dark-mode .notification-icon svg {
+        color: #006587 !important;
+        fill: #006587 !important;
+    }
+
+
+   
+    .dark-mode .modal-content {
+        background-color: #2b2b2b !important;
+        color: #ffffff !important;
+    }
+
+    .dark-mode .modal-header,
+    .dark-mode .modal-body,
+    .dark-mode .modal-footer {
+        background-color: #2b2b2b !important;
+        color: #ffffff !important;
+        border-color: #444 !important;
+    }
+
+    .dark-mode .modal-title {
+        color: #ffffff !important;
+    }
+
+    .dark-mode .btn-close {
+        filter: invert(1);
+    }
+
+    .dark-mode .btn-secondary,
+    .dark-mode .btn-primary {
+        color: #ffffff !important;
+    }
+
+    .dark-mode .modal-backdrop.show {
+        opacity: 0.8 !important;
+    }
+
