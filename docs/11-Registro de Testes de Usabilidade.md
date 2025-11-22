@@ -3,54 +3,109 @@
 O registro de testes de usabilidade é um documento ou planilha onde são coletadas e organizadas as informações sobre a experiência dos usuários ao interagir com um sistema. Ele inclui dados como tempo de execução de tarefas, taxa de sucesso, dificuldades encontradas, erros cometidos e _feedback_ dos usuários. Esse registro permite identificar padrões de uso, obstáculos/dificuldades encontrados na interface e oportunidades de melhoria, fornecendo _insights_ quantitativos e qualitativos para otimizar a experiência do usuário. Além disso, serve como base para análises, correções e futuras iterações do sistema, garantindo que ele atenda às necessidades do público-alvo de forma eficiente.
 
 ## Perfil dos usuários que participaram do teste
-- Usuário 1: 29 anos, nível superior completo, conhecimento avançado em tecnologia
-
-
-## Exemplo de tabela de registro dos testes de usabilidade  
+- Usuário 1: 22 anos, nível superior incompleto, estudante de biomedicina
+- Usuário 2: 41 anos, nível superior completo, servidor público
+- Usuário 3: 44 anos, nível médio completo, conhecimentos básicos em tecnologia
+- Usuário 4: 66 anos, aposentada, baixo conhecimento em tecnologia
+- Usuário 5: 37 anos, nível superior completo, empresária
+- Usuário 6:
+- Usuário 7:
+- Usuário 8:
+  
+## Tabela de registro dos testes de usabilidade  
 
 Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
 
 **Cenário 1**: O usuário deseja realizar o cadastro das suas informações, realizar login no sistema, acessar o feed disponível e criar um post.         
-| **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+| **Usuário**   | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    | 10min             |  30                             |      Sim         |         Não            | Sistema intuitivo e fácil    |                     |      
+| Usuário 1   | 5:20min            |  11                             |      Sim        |         Não            | Parece uma rede social, não achei difícil          |      
+| Usuário 2   | 7:50min            |  16                             |      Sim        |         Não            | Não tive dificuldades        |                     |  
+| Usuário 3   | 12:20min           |  26                             |      Sim        |         Não            | Achei legal ter categorias diferentes   |                     | 
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
-**Cenário 2**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+**Cenário 2**: Administrador da Prefeitura atualiza status de demanda resolvida Pré-condição: Estar logado como administrador.         
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
+| Usuário 1   | 2min               |  7                              |      Sim        |        Não             | Pensei que para editar tinha que clicar no Status dentro do Post. |                     |      
+| Usuário 2   | 5:20min            |  11                             |      Sim        |        Não             | Inicialmente não tinha entendido que para alterar o Status precisava editar  o post. |                     |      
+| Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+
+
+**Cenário 3**: Criar e publicar um anúncio.       
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
+| Usuário 1   | 2min               |    7                            |     Sim         |       Não              |  Queria ter adicionado mais fotos |                     |      
+| Usuário 2   | 2:30min            |    8                            |     Sim         |       Não              |  Muito tranquilo, sem erros  |                     |      
+| Usuário 3   | 3:10min               |    15                           |     Sim         |       Não              |  Pensei que para adicionar um valor, teria um campo específico  |                     |  
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+
+
+**Cenário 4**: Enviar mensagem em resposta a um anúncio.         
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
 | Usuário 1   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 2   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 3   |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
-**Cenário 3**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+
+**Cenário 5**: Moderação: administrador remove comentários ofensivos e modera publicação. Pré-condição: Estar logado como administrador         
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
+| Usuário 1   |   30seg            |             5                   |       Sim       |          Não           | Interessante essa possibilidade  |                     |      
+| Usuário 2   |   40seg            |             6                   |       Sim       |          Não           |                              |                     |      
+| Usuário 3   |   43seg            |             6                   |       Sim       |          Não           | Muito importante para evitar problemas  |                     |  
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+
+
+**Cenário 6**: Interações e Notificações         
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
+| Usuário 1   |       15seg        |            5                    |      Sim        |        Não             |                              |                     |      
+| Usuário 2   |       20seg        |            7                    |      Sim        |        Não             |            Poderia ter mais reações   |                     |      
+| Usuário 3   |       20seg        |            8                    |      Sim        |        Não             |            achei ótimo somente os 2 tipos de interação, mais limitado |                     |  
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+
+
+**Cenário 7**: ONG monitora publicações de saúde e solicita troca de endereço     
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
 | Usuário 1   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 2   |                    |                                 |                 |                        |                              |                     |      
 | Usuário 3   |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
-**Cenário 4**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
-
-**Cenário 5**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 
 ## Relatório dos testes de usabilidade 
 

@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Http;
 
 namespace conectabairro.Models
 {
@@ -32,13 +31,14 @@ namespace conectabairro.Models
         [DataType(DataType.Date)]
         public DateTime DataCriacao { get; set; } = DateTime.Now;
 
-        // IMAGEM
         [Required(ErrorMessage = "Obrigatório adicionar ao menos 1 anexo!")]
         [NotMapped]
         [Display(Name = "Imagem do Post")]
         public IFormFile? ImagemArquivo { get; set; }
 
         public string? CaminhoImagem { get; set; }
+        [NotMapped]
+        public string? CaminhoImagemExistente { get; set; }
 
         // CONTADORES DE REAÇÕES
         public int LikesCount { get; set; }

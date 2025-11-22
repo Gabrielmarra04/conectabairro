@@ -26,6 +26,9 @@ namespace conectabairro.Models
         public Usuario Interessado { get; set; }
 
         public ICollection<Mensagem> Mensagens { get; set; }
+
+        [NotMapped]
+        public Usuario UsuarioLogado { get; set; }
     }
 
 }

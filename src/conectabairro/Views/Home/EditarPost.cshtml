@@ -16,6 +16,7 @@
                 <input type="hidden" asp-for="PostId" value="@Model.PostId" />
                 <input type="hidden" asp-for="LikesCount" value="@Model.LikesCount" />
                 <input type="hidden" asp-for="DislikesCount" value="@Model.DislikesCount" />
+                <input type="hidden" asp-for="CaminhoImagemExistente" value="@Model.CaminhoImagem" />
 
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
@@ -55,7 +56,7 @@
                             <img src="@Model.CaminhoImagem"
                                  class="card-img-top-custom"
                                  alt="Anexo do Post: @Model.Titulo"
-                                 style="object-position: top;">
+                                 style="object-position: top; width: 100%;">
                         }
                         else
                         {

@@ -87,7 +87,7 @@ namespace conectabairro.Models
                 .HasForeignKey(c => c.PostId)
                 .OnDelete(DeleteBehavior.Cascade); 
 
-            // Relacionamento Usuario 
+            // Relacionamento Usuario -> Post (1 para N)
             modelBuilder.Entity<Posts>()
                 .HasOne(p => p.Usuario)
                 .WithMany(u => u.PostsCriados)

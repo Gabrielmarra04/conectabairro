@@ -140,12 +140,12 @@
                                     "@Model.Usuario.Rua @Model.Usuario.Bairro @Model.Usuario.Cidade @Model.Usuario.Estado"
                                 </small>
                             </p>
-                            <button class="btn btn-outline-primary btn-sm mb-3">
+                            <a class="btn btn-outline-primary btn-sm mb-3" asp-controller="Home" asp-action="ChatPost" asp-route-id="@Model.PostId">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill me-1" viewBox="0 0 16 16">
                                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.403a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4.697l-7.083 3.978L0 4.697z" />
                                 </svg>
                                 Enviar mensagem
-                            </button>
+                            </a>
 
                             <hr />
 
@@ -270,7 +270,4 @@
             _ => categoria.ToString()
         };
     }
-}
-@{
-    await Html.RenderPartialAsync("ChatPost", Model);
 }
