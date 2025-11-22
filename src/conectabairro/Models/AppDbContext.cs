@@ -22,6 +22,9 @@ namespace conectabairro.Models
 
         public DbSet<Reacao> Reacoes { get; set; }
 
+        public DbSet<Notificacao> Notifications { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -55,13 +58,13 @@ namespace conectabairro.Models
             // Relacionamento na tabela Conversa (para AutorPost e Interessado)
             modelBuilder.Entity<Conversa>()
                 .HasOne(c => c.AutorPost)
-                .WithMany(u => u.ConversasIniciadas) // Uma conversa tem 1 AutorPost. Um Usuario pode ser AutorPost em N conversas.
+                .WithMany(u => u.ConversasIniciadas) 
                 .HasForeignKey(c => c.AutorPostId)
-                .OnDelete(DeleteBehavior.Restrict); // Evita exclusão em cascata se o usuário for excluído.
+                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<Conversa>()
                 .HasOne(c => c.Interessado)
-                .WithMany() // Se você não quiser uma coleção no model Usuario para Conversas como Interessado
+                .WithMany() 
                 .HasForeignKey(c => c.InteressadoUsuarioId)
                 .OnDelete(DeleteBehavior.Restrict);
 
@@ -77,19 +80,12 @@ namespace conectabairro.Models
                 .HasForeignKey(m => m.RemetenteUsuarioId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Relacionamento Post -> Comentarios (1 para N)
+            // Relacionamento Post 
             modelBuilder.Entity<Posts>()
-                .HasMany(p => p.Comentarios) // Um Post tem muitos Comentários
-                .WithOne(c => c.Post)        // Um Comentário pertence a um Post
+                .HasMany(p => p.Comentarios) 
+                .WithOne(c => c.Post)        
                 .HasForeignKey(c => c.PostId)
-                .OnDelete(DeleteBehavior.Cascade); // Se o Post for excluído, os comentários também são.
-
-            // Relacionamento Post -> Conversas (1 para N)
-            modelBuilder.Entity<Posts>()
-                .HasMany(p => p.Conversas) // Um Post tem muitas Conversas
-                .WithOne(c => c.Post)        // Uma Conversa pertence a um Post
-                .HasForeignKey(c => c.PostId)
-                .OnDelete(DeleteBehavior.Cascade); // Se o Post for excluído, as conversas também são.
+                .OnDelete(DeleteBehavior.Cascade); 
 
             // Relacionamento Usuario -> Post (1 para N)
             modelBuilder.Entity<Posts>()
@@ -98,12 +94,12 @@ namespace conectabairro.Models
                 .HasForeignKey(p => p.AutorId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            // Relacionamento Usuario -> Comentario (1 para N)
+            // Relacionamento Usuario 
             modelBuilder.Entity<Comentario>()
                 .HasOne(c => c.Autor)
                 .WithMany(u => u.ComentariosFeitos)
                 .HasForeignKey(c => c.AutorUsuarioId)
-                .OnDelete(DeleteBehavior.Restrict); // Não exclui o usuário se um comentário for deletado.
+                .OnDelete(DeleteBehavior.Restrict); 
 
             modelBuilder.Entity<Reacao>()
                 .HasIndex(r => new { r.PostId, r.AutorUsuarioId })

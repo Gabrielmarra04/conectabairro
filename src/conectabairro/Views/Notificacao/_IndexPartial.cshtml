@@ -1,0 +1,29 @@
+﻿@model List<conectabairro.Models.Notificacao>
+
+@if (!Model.Any())
+{
+    <p>Nenhuma notificação encontrada.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mensagem</th>
+                <th>Data</th>
+                <th>Lida</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Message</td>
+                    <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@(item.IsRead ? "Sim" : "Não")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

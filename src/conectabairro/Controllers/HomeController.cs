@@ -1,10 +1,7 @@
 using conectabairro.Models;
-using conectabairro.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Hosting;
-using System;
 using System.Diagnostics;
 using System.Security.Claims;
 
@@ -77,6 +74,11 @@ namespace conectabairro.Controllers
             {
                 ModelState.AddModelError("", "Não foi possível identificar o usuário logado.");
                 return View(post);
+            }
+
+            if (post.ImagemArquivo == null)
+            {
+                ModelState.AddModelError("", "Obrigatório adicionar ao menos 1 anexo!");
             }
 
             await CriarCaminhoImagem(post);
@@ -197,7 +199,14 @@ namespace conectabairro.Controllers
         [HttpPost]
         public async Task<IActionResult> EditarPost(Posts post)
         {
-            await CriarCaminhoImagem(post);
+            if (post.ImagemArquivo != null)
+            {
+                await CriarCaminhoImagem(post);
+            }
+            else
+            {
+                post.CaminhoImagem = post.CaminhoImagemExistente;
+            }
 
             _context.Posts.Update(post);
             await _context.SaveChangesAsync();
@@ -362,7 +371,7 @@ namespace conectabairro.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        
+
         }
     }
 }

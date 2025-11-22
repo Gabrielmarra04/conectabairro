@@ -1,19 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Http;
 
 namespace conectabairro.Models
 {
     [Table("Posts")]
     public class Posts
     {
+        // CHAVE PRIMÁRIA
         [Key]
-        public int PostId { get; set; }
+        public int PostId { get; set; }   // <-- ESTE É O ID CERTO!
 
+        // RELAÇÃO COM USUÁRIO
         [ForeignKey("Usuario")]
         public int AutorId { get; set; }
 
-        [Display(Name = "Título")]  
+        [Display(Name = "Título")]
         [Required(ErrorMessage = "Obrigatório informar um Título!")]
         [MaxLength(150)]
         public string Titulo { get; set; }
@@ -34,26 +35,32 @@ namespace conectabairro.Models
         [NotMapped]
         [Display(Name = "Imagem do Post")]
         public IFormFile? ImagemArquivo { get; set; }
-        public string? CaminhoImagem { get; set; }
 
+        public string? CaminhoImagem { get; set; }
+        [NotMapped]
+        public string? CaminhoImagemExistente { get; set; }
+
+        // CONTADORES DE REAÇÕES
         public int LikesCount { get; set; }
         public int DislikesCount { get; set; }
 
+        // RELACIONAMENTOS
         public virtual Usuario Usuario { get; set; } = null!;
-
         public ICollection<Comentario> Comentarios { get; set; }
-
         public ICollection<Reacao> Reacoes { get; set; }
-        
+
+        // PROPRIEDADES NÃO MAPEADAS
         [NotMapped]
         public ICollection<Conversa> Conversas { get; set; }
 
         [NotMapped]
         public Comentario Comentario { get; set; }
+
         [NotMapped]
         public Usuario UsuarioLogado { get; set; }
     }
 
+    // ENUMS
     public enum Categoria
     {
         [Display(Name = "Esporte e Lazer")]
@@ -77,10 +84,10 @@ namespace conectabairro.Models
         [Display(Name = "Pendente")]
         Pendente,
 
+        [Display(Name = "Resolvido")]
+        Resolvido,
+
         [Display(Name = "Em andamento")]
         EmAandamento,
-
-        [Display(Name = "Resolvido")]
-        Resolvido
     }
 }

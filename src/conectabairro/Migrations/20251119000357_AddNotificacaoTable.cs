@@ -5,35 +5,28 @@
 namespace conectabairro.Migrations
 {
     /// <inheritdoc />
-    public partial class teste : Migration
+    public partial class AddNotificacaoTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            
-
             migrationBuilder.UpdateData(
                 table: "Usuario",
                 keyColumn: "UsuarioId",
                 keyValue: 1,
                 column: "PasswordHash",
-                value: "$2a$13$qWvN8ZENXpEfrl6N9Mv34.V91a68hEXuqodm8q9WhQUh8lJFjKIcu");
-
-           
+                value: "$2a$13$ZTcMO7gOMe9PDCO1kGAhI.BenYhERgqZElUU41AorjFFVq53dsaIK");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            
-
             migrationBuilder.UpdateData(
                 table: "Usuario",
                 keyColumn: "UsuarioId",
                 keyValue: 1,
                 column: "PasswordHash",
-                value: "$2a$13$shwrzAdaQXuYGGfolQlWI.avL5M/TIEDl/3oGiXVG.d6V7DFlBaci");
-
+                value: "$2a$13$eARnFlVAG5g/Kpw.J2yk6.TkH6VdJq.30q4MiOvuGZlotoAwNoFYi");
         }
     }
 }

@@ -98,17 +98,16 @@
                 initials = initials.ToUpper();
             }
 
-            // Determina se a mensagem é do usuário atual ou do outro participante
-            var isCurrentUser = msg.RemetenteUsuarioId == Model.UsuarioLogado.UsuarioId;
-            var alignmentClass = isCurrentUser ? "justify-content-end" : "justify-content-start";
-            var bubbleClass = isCurrentUser ? "right" : "left";
+            var eUsuarioAtual = msg.RemetenteUsuarioId == Model.UsuarioLogado.UsuarioId;
+            var classeAlinhamento = eUsuarioAtual ? "justify-content-end" : "justify-content-start";
+            var classePosicaoConversa = eUsuarioAtual ? "right" : "left";
 
-            <div class="d-flex w-100 @alignmentClass">
-                <div class="d-flex @(isCurrentUser ? "flex-row-reverse" : "")">
+            <div class="d-flex w-100 @classeAlinhamento">
+                <div class="d-flex @(eUsuarioAtual ? "flex-row-reverse" : "")">
 
-                    <div class="p-1 @(isCurrentUser ? "ml-2" : "mr-2") d-flex align-items-start">
+                    <div class="p-1 @(eUsuarioAtual ? "ml-2" : "mr-2") d-flex align-items-start">
                         <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 30px; height: 30px;">
-                            @if (isCurrentUser) 
+                            @if (eUsuarioAtual) 
                             { 
                                 @initials
 
@@ -133,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="message-bubble @bubbleClass">
+                    <div class="message-bubble @classePosicaoConversa">
                         <small class="font-weight-bold d-block mb-1"><strong>@msg.Remetente.Nome</strong></small>
                         <p class="mb-0">@msg.Conteudo</p>
                         <small class="text-muted" style="font-size: 0.7em;">@msg.DataEnvio.ToString("HH:mm")</small>
