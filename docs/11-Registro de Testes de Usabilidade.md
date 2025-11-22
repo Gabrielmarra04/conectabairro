@@ -6,8 +6,8 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 - Usuário 1: 22 anos, nível superior incompleto, estudante de biomedicina
 - Usuário 2: 41 anos, nível superior completo, servidor público
 - Usuário 3: 44 anos, nível médio completo, conhecimentos básicos em tecnologia
-- Usuário 4: 
-- Usuário 5:
+- Usuário 4: 66 anos, aposentada, baixo conhecimento em tecnologia
+- Usuário 5: 37 anos, nível superior completo, empresária
 - Usuário 6:
 - Usuário 7:
 - Usuário 8:
@@ -87,6 +87,19 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   |       15seg        |            5                    |      Sim        |        Não             |                              |                     |      
 | Usuário 2   |       20seg        |            7                    |      Sim        |        Não             |            Poderia ter mais reações   |                     |      
 | Usuário 3   |       20seg        |            8                    |      Sim        |        Não             |            achei ótimo somente os 2 tipos de interação, mais limitado |                     |  
+| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+
+
+**Cenário 7**: ONG monitora publicações de saúde e solicita troca de endereço     
+| **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
+|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
+| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
+| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
+| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
