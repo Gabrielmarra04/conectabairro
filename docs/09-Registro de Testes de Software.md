@@ -84,7 +84,11 @@ https://github.com/user-attachments/assets/4c7cd9a9-91a9-46a2-a60b-6a64e203ebff
 | **Caso de Teste** 	| **CT11 – Verificar se o usuário recebe notificações ao interagir.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-06 - A aplicação deve enviar notificações referentes a alterações de status, comentários e curtidas. |
-|Registro de evidência | |
+|Registro de evidência |Teste no vídeo abaixo: CT11 Verificar o modal do registro de notificações |
+
+https://github.com/user-attachments/assets/5f0574ee-c46b-4ac9-83fb-6e229e1c9342
+
+
 
 | **Caso de Teste** 	| **CT12 – 	Validar a busca e filtro de publicações.** 	|
 |:---:	|:---:	|
