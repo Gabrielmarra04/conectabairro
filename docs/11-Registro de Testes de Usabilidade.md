@@ -6,7 +6,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 - Usuário 1: 22 anos, nível superior incompleto, estudante de biomedicina
 - Usuário 2: 41 anos, nível superior completo, servidor público
 - Usuário 3: 44 anos, nível médio completo, conhecimentos básicos em tecnologia
-- Usuário 4: 66 anos, aposentada, baixo conhecimento em tecnologia
+- Usuário 4: 66 anos, aposentada, conhecimentos básicos em tecnologia
 - Usuário 5: 38 anos, nível superior completo, empreendedora
 - Usuário 6:
 - Usuário 7:
@@ -22,7 +22,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   | 5:20min            |  11                             |      Sim        |         Não            | Parece uma rede social, não achei difícil          |      
 | Usuário 2   | 7:50min            |  16                             |      Sim        |         Não            | Não tive dificuldades        |                     |  
 | Usuário 3   | 12:20min           |  26                             |      Sim        |         Não            | Achei legal ter categorias diferentes   |                     | 
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 4   | 9:34min            |  30                             |      Sim        |         Não            |  Interessante, consegui fazer um anúncio |                     | 
 | Usuário 5   | 4:23min            |  17                             |        Sim      |         Não            | Achei legal, bem intuitivo                         |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
@@ -36,7 +36,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 2   | 5:20min            |  11                             |      Sim        |        Não             | Inicialmente não tinha entendido que para alterar o Status precisava editar  o post. |                     |      
 | Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |  4m18              | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
+| Usuário 5   |  4:18m             | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
