@@ -8,7 +8,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 - Usuário 3: 44 anos, nível médio completo, conhecimentos básicos em tecnologia
 - Usuário 4: 66 anos, aposentada, conhecimentos básicos em tecnologia
 - Usuário 5: 38 anos, nível superior completo, empreendedora
-- Usuário 6:
+- Usuário 6: 46 anos, nível superior completo, conhecimento básico em tecnologia
 - Usuário 7:
 - Usuário 8:
   
@@ -24,7 +24,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 3   | 12:20min           |  26                             |      Sim        |         Não            | Achei legal ter categorias diferentes   |                     | 
 | Usuário 4   | 9:34min            |  30                             |      Sim        |         Não            |  Interessante, consegui fazer um anúncio |                     | 
 | Usuário 5   | 4:23min            |  17                             |        Sim      |         Não            | Achei legal, bem intuitivo                         |                     | 
-| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   | 4:45min            |  20                             |      Sim        |         Não            |      Fácil e intuitivo               | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
@@ -50,7 +50,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 3   | 3:10min            |    15                           |     Sim         |       Não              |  Pensei que para adicionar um valor, teria um campo específico  |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   | 2:15min            |    9                            |     Sim         |       Não              |     Achei tranquilo          |                     | 
-| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |   2min             |    7                            |      Sim        |       Não              |      Fácil                    |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
@@ -63,7 +63,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 3   |                    |                                 |                 |                        |                              |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |   24seg            |             4                   |    Sim           |      Não             |    Fácil de enviar mensagem    |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
