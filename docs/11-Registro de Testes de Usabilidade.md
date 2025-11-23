@@ -35,7 +35,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   | 2min               |  7                              |      Sim        |        Não             | Pensei que para editar tinha que clicar no Status dentro do Post. |                     |      
 | Usuário 2   | 5:20min            |  11                             |      Sim        |        Não             | Inicialmente não tinha entendido que para alterar o Status precisava editar  o post. |                     |      
 | Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 4   |  ----              |      ----                       |        ----     |      ----              |                              |                     | 
 | Usuário 5   |  4:18m             | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
@@ -48,7 +48,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   | 2min               |    7                            |     Sim         |       Não              |  Queria ter adicionado mais fotos |                     |      
 | Usuário 2   | 2:30min            |    8                            |     Sim         |       Não              |  Muito tranquilo, sem erros  |                     |      
 | Usuário 3   | 3:10min            |    15                           |     Sim         |       Não              |  Pensei que para adicionar um valor, teria um campo específico  |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 4   |  3:00min           |    16                           |       Sim       |       Sim              |                              |                     | 
 | Usuário 5   | 2:15min            |    9                            |     Sim         |       Não              |     Achei tranquilo          |                     | 
 | Usuário 6   |   2min             |    7                            |      Sim        |       Não              |      Fácil                    |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
@@ -58,11 +58,11 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 **Cenário 4**: Enviar mensagem em resposta a um anúncio.         
 | **Usuário**  | **Tempo Total** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 1   |        ------      |           ------                |         -----   |       ------           |                              |                     |      
+| Usuário 2   |        ------      |             ------              |       ------    |         ------         |         ------               |                     |      
+| Usuário 3   |        ------      |            ------               |    -----        |     ------             |       ------                 |                     |  
+| Usuário 4   |          55seg     |               12                |       sim       |      sim               |      Tranquilo                 |                     | 
+| Usuário 5   |         ------     |               ------                   |                 |                        |                              |                     | 
 | Usuário 6   |   24seg            |             4                   |    Sim           |      Não             |    Fácil de enviar mensagem    |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
@@ -74,7 +74,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   |   30seg            |             5                   |       Sim       |          Não           | Interessante essa possibilidade  |                     |      
 | Usuário 2   |   40seg            |             6                   |       Sim       |          Não           |                              |                     |      
 | Usuário 3   |   43seg            |             6                   |       Sim       |          Não           | Muito importante para evitar problemas  |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 4   |   -----            |          -----                  |       -----     |     -----              |    -----                     |                     | 
 | Usuário 5   |   35 seg           |             5                   |        Sim      |          Não           |      Bom                     |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
@@ -87,7 +87,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 1   |       15seg        |            5                    |      Sim        |        Não             |                              |                     |      
 | Usuário 2   |       20seg        |            7                    |      Sim        |        Não             |            Poderia ter mais reações   |                     |      
 | Usuário 3   |       20seg        |            8                    |      Sim        |        Não             |            achei ótimo somente os 2 tipos de interação, mais limitado |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 4   |       35seg        |            10                   |       Sim       |     Não                |      Interessante                        |                     | 
 | Usuário 5   |       18seg        |            8                    |      Sim        |         Não            |      Achei legal essa possibilidade                        |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
