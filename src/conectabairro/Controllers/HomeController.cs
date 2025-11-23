@@ -2,6 +2,7 @@ using conectabairro.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System.Diagnostics;
 using System.Security.Claims;
 
@@ -361,6 +362,61 @@ namespace conectabairro.Controllers
 
             return RedirectToAction(nameof(ChatPost), new { id = conversa.PostId });
         }
+
+        // ÁREA DO ADMIN (Gerenciar solicitações)
+
+        [HttpGet]
+        public async Task<IActionResult> GerenciarSolicitacoes()
+        {
+            var solicitacoes = await _context.SolicitacoesEdicao
+                .Include(s => s.Usuario)
+                .Where(s => s.Status == "Pendente")
+                .OrderByDescending(s => s.DataSolicitacao)
+                .ToListAsync();
+            return View(solicitacoes);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AprovarSolicitacao(int id)
+        {
+            var solicitacao = await _context.SolicitacoesEdicao.FindAsync(id);
+
+            if (solicitacao == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios.FindAsync(solicitacao.UsuarioId);
+            if (usuario != null)
+            {
+                usuario.Rua = solicitacao.NovaRua;
+                usuario.Bairro = solicitacao.NovoBairro;
+                usuario.Cidade = solicitacao.NovaCidade;
+                usuario.Estado = solicitacao.NovoEstado;
+
+                solicitacao.Status = "Aprovado";
+
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(GerenciarSolicitacoes));
+        }
+
+        [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> RejeitarSolicitacao(int id)
+            {
+                var solicitacao = await _context.SolicitacoesEdicao.FindAsync(id);
+
+                if (solicitacao != null)
+                {
+                    solicitacao.Status = "Rejeitado";
+                    await _context.SaveChangesAsync();
+
+                }
+                return RedirectToAction(nameof(GerenciarSolicitacoes));
+            }
+
 
         public IActionResult Privacy()
         {

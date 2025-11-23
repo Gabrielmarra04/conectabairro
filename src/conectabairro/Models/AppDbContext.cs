@@ -24,6 +24,8 @@ namespace conectabairro.Models
 
         public DbSet<Notificacao> Notifications { get; set; }
 
+        public DbSet<SolicitacaoEdicao> SolicitacoesEdicao { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
