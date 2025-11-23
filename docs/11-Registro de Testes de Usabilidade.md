@@ -9,7 +9,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 - Usuário 4: 66 anos, aposentada, conhecimentos básicos em tecnologia
 - Usuário 5: 38 anos, nível superior completo, empreendedora
 - Usuário 6: 46 anos, nível superior completo, conhecimento básico em tecnologia
-- Usuário 7:
+- Usuário 7: 32 anos, nível superior completo, conhecimentos básicos em tecnologia
 - Usuário 8:
   
 ## Tabela de registro dos testes de usabilidade  
@@ -25,7 +25,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   | 9:34min            |  30                             |      Sim        |         Não            |  Interessante, consegui fazer um anúncio |                     | 
 | Usuário 5   | 4:23min            |  17                             |        Sim      |         Não            | Achei legal, bem intuitivo                         |                     | 
 | Usuário 6   | 4:45min            |  20                             |      Sim        |         Não            |      Fácil e intuitivo               | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   | 4:02min            |  13                             |      sim        |         Não            |     Organizado e intuitivo           |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -37,8 +37,8 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
 | Usuário 4   |  ----              |      ----                       |        ----     |      ----              |                              |                     | 
 | Usuário 5   |  4:18m             | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
-| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |           |                              |              |                   |                          |                     | 
+| Usuário 7   |  1:33min           |  9                               |     SIm         |        Não            | Não achou intuitivo e faltou informações                             |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -51,8 +51,8 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |  3:00min           |    16                           |       Sim       |       Sim              |                              |                     | 
 | Usuário 5   | 2:15min            |    9                            |     Sim         |       Não              |     Achei tranquilo          |                     | 
 | Usuário 6   |   2min             |    7                            |      Sim        |       Não              |      Fácil                    |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |     1:55min        |     8                            |    Sim         |   Não                  |       Fácil                       |                     | 
+| Usuário 8   |                    |                                 |                 |                       |                              |                     | 
 
 
 **Cenário 4**: Enviar mensagem em resposta a um anúncio.         
@@ -64,7 +64,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |          55seg     |               12                |       sim       |      sim               |      Tranquilo                 |                     | 
 | Usuário 5   |         ------     |               ------                   |                 |                        |                              |                     | 
 | Usuário 6   |   24seg            |             4                   |    Sim           |      Não             |    Fácil de enviar mensagem    |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   15seg            |              3                  |      Sim           |  Não                      |       Tranquilo         |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -77,7 +77,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |   -----            |          -----                  |       -----     |     -----              |    -----                     |                     | 
 | Usuário 5   |   35 seg           |             5                   |        Sim      |          Não           |      Bom                     |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   10 seg           |              3                  |      Sim         |        Não            |    Fácil e ótima função para evitar problemas                          |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -90,7 +90,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |       35seg        |            10                   |       Sim       |     Não                |      Interessante                        |                     | 
 | Usuário 5   |       18seg        |            8                    |      Sim        |         Não            |      Achei legal essa possibilidade                        |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |       16seg        |             2                   |      Sim        |        Não                |   Básico, porém útil                           |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
