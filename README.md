@@ -24,13 +24,13 @@ O objetivo deste trabalho é desenvolver uma aplicação web voltada para integr
 ## Instruções de Instalação, Execução e Acesso
 
 **Acesso rápido (produção)**
-* URL da aplicação: https://seu-dominio.com/caminho
-* Status: online / instável / em manutenção (atualize conforme o caso)
-* Ambiente: produção / homologação
+* URL da aplicação: https://conectabairro20251113201007-behhf6hjdmfgc3ga.eastus2-01.azurewebsites.net/Usuarios/Login
+* Status: online
+* Ambiente: Produção
 
 **Usuário(s) de teste (se houver):**
-* Login: usuario_teste
-* Senha: senha_teste
+* Login: admin@a
+* Senha: Senha123
 
 # Documentação
 
