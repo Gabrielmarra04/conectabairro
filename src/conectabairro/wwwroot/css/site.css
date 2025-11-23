@@ -10,11 +10,14 @@
     }
 }
 
+/* **************
+   CORREÇÃO AQUI
+   ************** */
 body {
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-    padding-top: 65px;
+    padding-top: 65px; /* Mantém espaço do topo */
 }
+
+/* ========================== */
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
@@ -39,13 +42,18 @@ body {
     padding-left: 0;
 }
 
+/* ---------------------------
+REMOVIDO O FIXO DO FOOTER
+--------------------------- */
+/*
 .footer-fixo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1030;
-    background-color: #f8f9fa;
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 1030;
+background-color: #f8f9fa;
 }
+*/
 
 .details-container {
     background-color: #ffffff;
@@ -92,14 +100,15 @@ body {
         border-color: #ced4da;
     }
 
-
 header i,
 header svg {
     color: #006587 !important;
     fill: #006587 !important;
 }
 
-
+/* ---------------------------------
+DARK MODE
+--------------------------------- */
 .dark-mode {
     background-color: #121212 !important;
     color: #f5f5f5 !important;
@@ -115,20 +124,19 @@ header svg {
             color: #ffffff !important;
         }
 
-    
     .dark-mode svg,
     .dark-mode i {
         color: #ffffff !important;
         fill: #ffffff !important;
     }
 
-    
     .dark-mode header i,
     .dark-mode header svg {
         color: #006587 !important;
         fill: #006587 !important;
     }
 
+    /* AQUI: removido fixo também para o dark mode */
     .dark-mode .footer-fixo {
         background-color: #1e1e1e !important;
         color: #ffffff !important;
@@ -298,19 +306,12 @@ header svg {
         color: #ffffff !important;
     }
 
-    .dark-mode .user-avatar {
-        background-color: #444 !important;
-        color: #ffffff !important;
-    }
-
     .dark-mode .notification-icon i,
     .dark-mode .notification-icon svg {
         color: #006587 !important;
         fill: #006587 !important;
     }
 
-
-   
     .dark-mode .modal-content {
         background-color: #2b2b2b !important;
         color: #ffffff !important;
@@ -340,4 +341,3 @@ header svg {
     .dark-mode .modal-backdrop.show {
         opacity: 0.8 !important;
     }
-

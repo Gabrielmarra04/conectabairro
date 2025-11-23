@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/conectabairro.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
 </head>
-<body>
+
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
             <div class="container-fluid">
@@ -83,13 +83,10 @@
                             {
                                 var parts = fullName.Trim().Split(' ');
                                 if (parts.Length > 0 && !string.IsNullOrWhiteSpace(parts[0]))
-                                {
                                     initials += parts[0][0];
-                                }
+
                                 if (parts.Length > 1 && !string.IsNullOrWhiteSpace(parts.Last()))
-                                {
                                     initials += parts.Last()[0];
-                                }
 
                                 initials = initials.ToUpper();
                             }
@@ -135,17 +132,12 @@
         </nav>
     </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <!-- ÁREA PRINCIPAL -->
+    <main class="container flex-fill pt-4 mt-5">
+        @RenderBody()
+    </main>
 
-    <footer class="border-top footer text-muted footer-fixo">
-        <div class="container">
-            &copy; 2025 - ConectaBairro - Puc Minas 2025
-        </div>
-    </footer>
+  
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -186,12 +178,9 @@
               </div>
 
               <div class="modal-body">
-
-                  <!-- Aqui serão carregadas as notificações -->
                   <div id="lista-notificacoes">
                       <p>Carregando notificações...</p>
                   </div>
-
               </div>
 
               <div class="modal-footer">
@@ -205,7 +194,6 @@
     <script>
         document.getElementById("modalNotificacoes")
             .addEventListener("shown.bs.modal", function () {
-
                 fetch("/Notificacao/IndexPartial")
                     .then(response => response.text())
                     .then(html => {
