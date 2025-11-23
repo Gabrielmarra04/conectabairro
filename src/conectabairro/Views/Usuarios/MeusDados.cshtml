@@ -6,6 +6,15 @@
 
 <h2 class="mb-4 mt-5 pt-3">Meus Dados</h2>
 
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        <i class="bi bi-check-circle-fill"></i>
+        <strong>@TempData["MensagemSucesso"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@* --------------------------------------------- *@
 <h4>Confira seus dados e edite quando quiser!</h4>
 
 <div class="details-container">

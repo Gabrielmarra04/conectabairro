@@ -19,7 +19,7 @@
     }
 </style>
 
-<h1>Editar - Usuário @Model.Nome</h1>
+<h1 class="mb-4 mt-5 pt-3">Editar - Usuário @Model.Nome</h1>
 
 <div class="fake-modal">
 <form asp-action="Edit" asp-controller="Usuarios"> 
@@ -58,8 +58,6 @@
                 <span asp-validation-for="Bairro" class="text-danger"></span>
             </div>
 
-        </div>
-
 
                 <div class="col-md-6 form-group mb-3">
                 <label asp-for="Cidade" class="control-label"></label>
@@ -90,9 +88,9 @@
                     <span asp-validation-for="RazaoSocial" class="text-danger"></span>
                </div>
         </div>
-    
 
-<hr />
+
+        </div> <hr />
 
             <div class="form-group" style="display: flex; justify-content: flex-end; align-items: center;">
             <a href="@(ViewBag.ReturnUrl ?? Url.Action("Index"))" class="btn btn-secondary">Voltar</a>

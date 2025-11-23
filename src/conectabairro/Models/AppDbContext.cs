@@ -22,6 +22,8 @@ namespace conectabairro.Models
 
         public DbSet<Reacao> Reacoes { get; set; }
 
+        public DbSet<SolicitacaoEdicao> SolicitacoesEdicao { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

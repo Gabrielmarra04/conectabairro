@@ -19,12 +19,17 @@ namespace conectabairro.Controllers
             _context = context;
         }
 
-
         [Authorize(Policy = "RequerAdmin")]
-        // GET: Usuarios
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Usuarios.ToListAsync());
+            ViewData["CurrentFilter"] = searchString;
+            var usuarios = from u in _context.Usuarios select u;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                usuarios = usuarios.Where(u => u.Nome.Contains(searchString) || u.Bairro.Contains(searchString));
+            }
+            return View(await usuarios.ToListAsync());
         }
 
         [AllowAnonymous]
@@ -319,13 +324,51 @@ public async Task<IActionResult> MeusDados()
                 if (usuarioExistente == null)
                     return NotFound();
 
+                // Busca uma CÓPIA dos dados originais (sem rastreamento) apenas para comparar o endereço antigo com o novo
+                var dadosOriginais = await _context.Usuarios.AsNoTracking().FirstOrDefaultAsync(u => u.UsuarioId == id);
+
+                // Verifica se houve alteração nos campos de endereço
+                bool mudouEndereco =
+                    usuario.Rua != dadosOriginais.Rua ||
+                    usuario.Bairro != dadosOriginais.Bairro ||
+                    usuario.Cidade != dadosOriginais.Cidade ||
+                    usuario.Estado != dadosOriginais.Estado;
+
+                if (mudouEndereco)
+                {
+                    //Se mudou, NÃO atualiza agora
+                    // Cria uma solicitação para o Admin aprovar.
+                    var solicitacao = new SolicitacaoEdicao
+                    {
+                        UsuarioId = usuario.UsuarioId,
+                        NovaRua = usuario.Rua,
+                        NovoBairro = usuario.Bairro,
+                        NovaCidade = usuario.Cidade,
+                        NovoEstado = usuario.Estado,
+                        Status = "Pendente",
+                        DataSolicitacao = DateTime.Now,
+                    };
+
+                    _context.SolicitacoesEdicao.Add(solicitacao);
+
+                    //Mensagem avisando que foi pra análise
+                    TempData["MensagemSucesso"] = "Endereço enviado para aprovação!";
+                }
+                else
+                {
+                    //Se não mudou o endereço, mantém o que já estava e atualiza normalmente
+                    usuarioExistente.Rua = usuario.Rua;
+                    usuarioExistente.Bairro = usuario.Bairro;
+                    usuarioExistente.Cidade = usuario.Cidade;
+                    usuarioExistente.Estado = usuario.Estado;   
+
+                    if (TempData["MensagemSucesso"] == null)
+                       TempData["MensagemSucesso"] = "Usuário atualizado com sucesso!";
+                }
+
                 usuarioExistente.Nome = usuario.Nome;
                 usuarioExistente.Email = usuario.Email;
                 usuarioExistente.Telefone = usuario.Telefone;
-                usuarioExistente.Rua = usuario.Rua;
-                usuarioExistente.Bairro = usuario.Bairro;
-                usuarioExistente.Cidade = usuario.Cidade;
-                usuarioExistente.Estado = usuario.Estado;
                 usuarioExistente.Cnpj = usuario.Cnpj;
                 usuarioExistente.RazaoSocial = usuario.RazaoSocial;
 
@@ -338,13 +381,12 @@ public async Task<IActionResult> MeusDados()
 
                 if (User.HasClaim("TipoUsuario", "Admin")) // Verifica se o usuário logado é um Administrador
                 {
-                    TempData["MensagemSucesso"] = "Usuário atualizado com sucesso!"; 
                     return RedirectToAction("Index", "Usuarios"); // Se for administrador direciona para a área administrativa (lista de usuários)
                 }
                 else
                 {
-                    TempData["MensagemSucesso"] = "Seus dados foram atualizados com sucesso!"; 
-                    return RedirectToAction("Index", "Home"); //Se for qualquer outro tipo de usuário, retorna para o feed.
+
+                    return RedirectToAction("MeusDados", "Usuarios");
                 } 
 
 
@@ -399,24 +441,6 @@ public async Task<IActionResult> MeusDados()
         private bool UsuarioExists(int id)
         {
             return _context.Usuarios.Any(e => e.UsuarioId == id);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Index(string searchString)
-        {
-            ViewData["CurrentFilter"] = searchString;
-
-            var usuarios = from u in _context.Usuarios
-                           select u;
-
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                usuarios = usuarios.Where(u => u.Nome.Contains(searchString)
-                                            || u.Bairro.Contains(searchString)); 
-            }
-
-            return View(await usuarios.ToListAsync());
-        }
-
+}
     }
 }
