@@ -23,7 +23,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 2   | 7:50min            |  16                             |      Sim        |         Não            | Não tive dificuldades        |                     |  
 | Usuário 3   | 12:20min           |  26                             |      Sim        |         Não            | Achei legal ter categorias diferentes   |                     | 
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   | 4:23min            |  17                             |        Sim      |         Não            | Achei legal, bem intuitivo                         |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
@@ -36,7 +36,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 2   | 5:20min            |  11                             |      Sim        |        Não             | Inicialmente não tinha entendido que para alterar o Status precisava editar  o post. |                     |      
 | Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |  4m18              | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
@@ -47,9 +47,9 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 |-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
 | Usuário 1   | 2min               |    7                            |     Sim         |       Não              |  Queria ter adicionado mais fotos |                     |      
 | Usuário 2   | 2:30min            |    8                            |     Sim         |       Não              |  Muito tranquilo, sem erros  |                     |      
-| Usuário 3   | 3:10min               |    15                           |     Sim         |       Não              |  Pensei que para adicionar um valor, teria um campo específico  |                     |  
+| Usuário 3   | 3:10min            |    15                           |     Sim         |       Não              |  Pensei que para adicionar um valor, teria um campo específico  |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   | 2:15min            |    9                            |     Sim         |       Não              |     Achei tranquilo          |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
@@ -75,7 +75,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 2   |   40seg            |             6                   |       Sim       |          Não           |                              |                     |      
 | Usuário 3   |   43seg            |             6                   |       Sim       |          Não           | Muito importante para evitar problemas  |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |   35 seg           |             5                   |        Sim      |          Não           |      Bom                     |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
@@ -88,7 +88,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 2   |       20seg        |            7                    |      Sim        |        Não             |            Poderia ter mais reações   |                     |      
 | Usuário 3   |       20seg        |            8                    |      Sim        |        Não             |            achei ótimo somente os 2 tipos de interação, mais limitado |                     |  
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 5   |       18seg        |            8                    |      Sim        |         Não            |      Achei legal essa possibilidade                        |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 7   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
