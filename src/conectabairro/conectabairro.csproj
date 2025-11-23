@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>3df47a35-4d17-4d19-9c5a-1d9b18863fb4</UserSecretsId>
+    <UserSecretsId>a7a94737-259a-414c-917e-34dfbd81d383</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +13,10 @@
     <Compile Remove="Views\Home\CriarPost.cs" />
     <Compile Remove="Views\Home\DetalharPost.cshtml.cs" />
     <Compile Remove="Views\Usuarios\EsqueciSenha.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Notificacao\IndexPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

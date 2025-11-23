@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using conectabairro.Models;
 
@@ -11,9 +12,11 @@ using conectabairro.Models;
 namespace conectabairro.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251119000357_AddNotificacaoTable")]
+    partial class AddNotificacaoTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -217,42 +220,6 @@ namespace conectabairro.Migrations
                     b.ToTable("Reacao");
                 });
 
-            modelBuilder.Entity("conectabairro.Models.SolicitacaoEdicao", b =>
-                {
-                    b.Property<int>("SolicitacaoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SolicitacaoId"));
-
-                    b.Property<DateTime>("DataSolicitacao")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("NovaCidade")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NovaRua")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NovoBairro")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NovoEstado")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("SolicitacaoId");
-
-                    b.HasIndex("UsuarioId");
-
-                    b.ToTable("SolicitacoesEdicao");
-                });
-
             modelBuilder.Entity("conectabairro.Models.Usuario", b =>
                 {
                     b.Property<int>("UsuarioId")
@@ -362,7 +329,7 @@ namespace conectabairro.Migrations
                         .IsRequired();
 
                     b.HasOne("conectabairro.Models.Posts", "Post")
-                        .WithMany("Conversas")
+                        .WithMany()
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -423,17 +390,6 @@ namespace conectabairro.Migrations
                     b.Navigation("Post");
                 });
 
-            modelBuilder.Entity("conectabairro.Models.SolicitacaoEdicao", b =>
-                {
-                    b.HasOne("conectabairro.Models.Usuario", "Usuario")
-                        .WithMany()
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Usuario");
-                });
-
             modelBuilder.Entity("conectabairro.Models.Conversa", b =>
                 {
                     b.Navigation("Mensagens");
@@ -442,8 +398,6 @@ namespace conectabairro.Migrations
             modelBuilder.Entity("conectabairro.Models.Posts", b =>
                 {
                     b.Navigation("Comentarios");
-
-                    b.Navigation("Conversas");
 
                     b.Navigation("Reacoes");
                 });

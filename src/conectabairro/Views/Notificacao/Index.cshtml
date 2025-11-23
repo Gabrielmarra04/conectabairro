@@ -1,0 +1,42 @@
+﻿@model IEnumerable<conectabairro.Models.Notificacao>
+
+@{
+    ViewData["Title"] = "Notificações";
+}
+
+<h1>Notificações</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Criar Nova Notificação</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.UserId)</th>
+            <th>@Html.DisplayNameFor(model => model.Message)</th>
+            <th>@Html.DisplayNameFor(model => model.IsRead)</th>
+            <th>@Html.DisplayNameFor(model => model.CreatedAt)</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserId</td>
+                <td>@item.Message</td>
+                <td>
+                    @(item.IsRead ? "Lida" : "Não lida")
+                </td>
+                <td>@item.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+
+                <td>
+                    <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a class="btn btn-sm btn-info" asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                    <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
