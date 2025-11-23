@@ -15,7 +15,7 @@
 |RF-011| O sistema deve permitir que o administrador exclua comentários feitos pelos usuários. |  |  |
 |RF-012| O sistema deve permitir que o administrador desative contas de usuários por meio de exclusão lógica, alterando o status do perfil em vez de realizar a exclusão física. |  |  |
 |RF-013| A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador. | Migration: AdicionarSolicitacoes. Models: SolicitacaoEdicao.cs, AppDbContext.cs (adição do DbSet)., Controller: UsuariosController.cs (Implementacão da lógica condicional no método Edit para separar atualização de perfil vs. solicitação de endereço. Views: Views/Usuarios/Edit.cshtml| Luiz Felipe Liquer  |
-|RF-014| O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.	 |  | Luiz Felipe Liquer |
+|RF-014| O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário.	 | Migrations:AdicionadoSolicitacoesEdicao, Models: SolicitacaoEdicao.cs, Usuarios.cs (atualização). DbSetSolicitacoesEdicao, Controllers: HomeController.cs (Métodos GerenciarSolicitacoes), UsuariosController.cs (lógica de envio da solicitação), Views: Link de navegação de solicitações  | Luiz Felipe Liquer |
 |RF-015| O sistema deve permitir que o usuário, após efetuar o login, tenha acesso ao feed geral com todas as publicações e alertas criados. |  |  |
 |RF-016| O sistema deve exibir os comentários adicionados ao Post, ao expandi-lo |  |  |
 |RF-017| 	O sistema deve exibir a data de criação do Post ao expandi-lo |  |  |
