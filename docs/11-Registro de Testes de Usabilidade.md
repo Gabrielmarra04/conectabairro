@@ -103,7 +103,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   18seg            |               4                 |      Sim        |       Não              |    Simples, porém faltam informações adicionais para o usuário se localizar                          |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
