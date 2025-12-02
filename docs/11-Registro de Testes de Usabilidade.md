@@ -110,7 +110,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 ## Relatório dos testes de usabilidade 
 
 
-Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
+**- Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post** 
 
 Taxa de Sucesso: 100% (7/7 usuários) - Tempo médio: 6 min 20s - Erros médios: 0 - Taxa de abandono: 0%
 
@@ -118,7 +118,7 @@ Principais feedbacks:
 - Sistema intuitivo e semelhante a redes sociais
 - Facilidade de navegação
 - Gostaram da divisão por categorias
-
+  
 
 Cenário 2 – Administrador atualiza Status de demanda
 
