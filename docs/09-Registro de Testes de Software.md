@@ -119,6 +119,17 @@ https://github.com/user-attachments/assets/35d68ff4-3aca-4646-9b1e-bd00b04d344a
 https://github.com/user-attachments/assets/810a1671-a240-47b5-9095-463f5c5e3c7b
 
 
+| **Caso de Teste** 	| **CT22 – Verificar se o usuário consegue alternar entre modo escuro/claro.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RNF-04 - A aplicação deve oferecer opção de alternância para modo escuro.. |
+|Registro de evidência | Teste no vídeo abaixo: Teste CT-22 Modo escuro|
+
+
+https://github.com/user-attachments/assets/0861e57a-e5d4-4553-b09b-7b363c4ecc91
+
+
+
+
 ## Relatório de testes de software
 
 **- Caso de Teste CT01, CT02 e CT03.** <br/>
