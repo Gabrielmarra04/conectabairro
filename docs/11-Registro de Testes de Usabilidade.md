@@ -110,7 +110,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 ## Relatório dos testes de usabilidade 
 
 
--Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
+- Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
 
 Taxa de Sucesso: 100% (7/7 usuários)
 Tempo médio: 6 min 20s
@@ -123,7 +123,7 @@ Facilidade de navegação
 Gostaram da divisão por categorias
 
 
--Cenário 2 – Administrador atualiza Status de demanda
+- Cenário 2 – Administrador atualiza Status de demanda
 
 Taxa de Sucesso: 5/6 usuários
 Tempo médio: 4 min 38s
@@ -136,7 +136,7 @@ Usuários tentaram clicar no próprio status, não no botão de edição
 Layout não deixa claro o fluxo
 Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa concluir
 
--Cenário 3 – Criar e publicar anúncio
+- Cenário 3 – Criar e publicar anúncio
 
 Taxa de Sucesso: 100%
 Tempo médio: 2 min 24s
@@ -149,7 +149,7 @@ Falta campo explícito para “valor”
 Processo considerado fácil e rápido
 
 
--Cenário 4 – Enviar mensagem em resposta a anúncio
+- Cenário 4 – Enviar mensagem em resposta a anúncio
 
 Taxa de Sucesso: 3/3 usuários que participaram
 Tempo médio: 31 segundos
@@ -160,7 +160,7 @@ Comentário relevante:
 Processo considerado rápido e simples
 
 
--Cenário 5 – Moderação (Administrador)
+- Cenário 5 – Moderação (Administrador)
 
 Taxa de Sucesso: 5/5
 Tempo médio: 32 segundos
@@ -172,7 +172,8 @@ Considerado importante e funcional
 Fácil de usar
 
 
--Cenário 6 – Interações e Notificações
+
+- Cenário 6 – Interações e Notificações
 
 Taxa de Sucesso: 6/6
 Tempo médio: 20 segundos
@@ -184,7 +185,8 @@ Usuários pediram mais reações
 Interações consideradas básicas, porém úteis
 
 
--Cenário 7 – ONG monitora publicação e solicita troca de endereço
+
+- Cenário 7 – ONG monitora publicação e solicita troca de endereço
 
 Taxa de Sucesso: 1/1 usuário participante
 Tempo: 18 segundos
@@ -194,7 +196,8 @@ Feedback:
 Falta de informações adicionais para localização
 
 
-## ANÁLISE GERAL E PADRÕES IDENTIFICADOS
+
+## Análise geral e padrões identificados
 
 Principais dificuldades:
 
@@ -213,34 +216,30 @@ Informações insuficientes em cenários que envolvem “localização” ou con
 
 ## Tarefas concluídas sem problemas
 
-Cenários: 1, 3, 4, 5, 6
-Usuários elogiaram a intuitividade e rapidez da interface.
+Cenários: 1, 3, 4, 5, 6 - Usuários elogiaram a intuitividade e rapidez da interface.
+
+
+## Classificação dos problemas por prioridade
+
+Críticos (impedem o uso):
+Alterar Status exige uma foto nova:
+-Impede conclusão da tarefa para alguns usuários.
+Fluxo de edição de Status não é claro:
+-Usuários abandonam por não conseguir encontrar a ação.
+
+Moderados dificultam a experiência):
+-Falta campo específico para “valor” ao criar anúncio
+-Falta de informações adicionais (contexto, localização)
+-Interações limitadas (poucos tipos de reações)
+
+Leves (não prejudicam o uso, mas podem melhorar):
+-Possibilidade de anexar mais fotos no anúncio
+-Layout poderia evidenciar melhor botões e áreas clicáveis
+-Melhorar descrições e textos orientativos
+
+
+## Propostas de melhorias
 
 
 
-
-O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
-Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
-Deve incluir: 
-- Taxa de sucesso por cenário
-- Tempo médio para completar cada cenário
-- Número médio de erros cometidos por tarefa
-- Taxa de abandono (usuários que não conseguiram concluir a tarefa do cenário)
-- Feedback qualitativo
-  
-A partir disso, organize os resultados e identifique padrões:
-- Principais dificuldades enfrentadas pelos usuários.
-- Quais tarefas foram concluídas sem problemas e quais apresentaram falhas.
-- Sugestões de melhorias para interface, navegação e acessibilidade.
-
-Dica: Agrupe problemas em níveis de prioridade:
-- Crítico: Impede o uso do sistema.
-- Moderado: Dificulta a experiência, mas não impede o uso.
-- Leve: Pode ser melhorado, mas não compromete a usabilidade.
-
-Apresente propostas de ações para corrigir os problemas críticos e recorrentes identificados e proponha melhorias incrementais para otimizar a experiência do usuário.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+## Conclusão
