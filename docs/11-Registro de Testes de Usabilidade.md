@@ -112,10 +112,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 
 - Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
 
-Taxa de Sucesso: 100% (7/7 usuários)
-Tempo médio: 6 min 20s
-Erros médios: 0
-Taxa de abandono: 0%
+Taxa de Sucesso: 100% (7/7 usuários) - Tempo médio: 6 min 20s - Erros médios: 0 - Taxa de abandono: 0%
 
 Principais feedbacks:
 Sistema intuitivo e semelhante a redes sociais
@@ -125,10 +122,7 @@ Gostaram da divisão por categorias
 
 - Cenário 2 – Administrador atualiza Status de demanda
 
-Taxa de Sucesso: 5/6 usuários
-Tempo médio: 4 min 38s
-Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema)
-Taxa de abandono: 16% (1 usuário não conseguiu concluir)
+Taxa de Sucesso: 5/6 usuários - Tempo médio: 4 min 38s - Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema) - Taxa de abandono: 16% (1 usuário não conseguiu concluir)
 
 Padrões observados:
 Forte dificuldade em entender como alterar o status
@@ -138,10 +132,7 @@ Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa conc
 
 - Cenário 3 – Criar e publicar anúncio
 
-Taxa de Sucesso: 100%
-Tempo médio: 2 min 24s
-Erros médios: Muito baixo (apenas 1 erro registrado)
-Taxa de abandono: 0%
+Taxa de Sucesso: 100% - Tempo médio: 2 min 24s - Erros médios: Muito baixo (apenas 1 erro registrado) - Taxa de abandono: 0%
 
 Principais comentários:
 Desejo de adicionar mais fotos
@@ -151,10 +142,7 @@ Processo considerado fácil e rápido
 
 - Cenário 4 – Enviar mensagem em resposta a anúncio
 
-Taxa de Sucesso: 3/3 usuários que participaram
-Tempo médio: 31 segundos
-Erros médios: 1 erro isolado
-Taxa de abandono: 0%
+Taxa de Sucesso: 3/3 usuários que participaram - Tempo médio: 31 segundos - Erros médios: 1 erro isolado - Taxa de abandono: 0%
 
 Comentário relevante:
 Processo considerado rápido e simples
@@ -162,10 +150,7 @@ Processo considerado rápido e simples
 
 - Cenário 5 – Moderação (Administrador)
 
-Taxa de Sucesso: 5/5
-Tempo médio: 32 segundos
-Erros médios: 0
-Taxa de abandono: 0%
+Taxa de Sucesso: 5/5 - Tempo médio: 32 segundos - Erros médios: 0 - Taxa de abandono: 0%
 
 Feedbacks:
 Considerado importante e funcional
@@ -175,10 +160,7 @@ Fácil de usar
 
 - Cenário 6 – Interações e Notificações
 
-Taxa de Sucesso: 6/6
-Tempo médio: 20 segundos
-Erros médios: 0
-Taxa de abandono: 0%
+Taxa de Sucesso: 6/6 - Tempo médio: 20 segundos - Erros médios: 0 - Taxa de abandono: 0%
 
 Feedbacks:
 Usuários pediram mais reações
@@ -188,9 +170,7 @@ Interações consideradas básicas, porém úteis
 
 - Cenário 7 – ONG monitora publicação e solicita troca de endereço
 
-Taxa de Sucesso: 1/1 usuário participante
-Tempo: 18 segundos
-Erros médios: 0
+Taxa de Sucesso: 1/1 usuário participante - Tempo: 18 segundos - Erros médios: 0
 
 Feedback:
 Falta de informações adicionais para localização
