@@ -119,6 +119,23 @@ https://github.com/user-attachments/assets/35d68ff4-3aca-4646-9b1e-bd00b04d344a
 https://github.com/user-attachments/assets/810a1671-a240-47b5-9095-463f5c5e3c7b
 
 
+
+| **Caso de Teste** 	| **CT18 – Validar solicitação de troca de endereço.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-013 - A aplicação deve permitir que o usuário solicite a troca de endereço para o administrador. |
+|Registro de evidência | Teste no vídeo abaixo: Teste CT-18 Solicitação de troca de endereço.|
+
+https://github.com/user-attachments/assets/43329daf-05fb-4786-b361-d0f6a92bed1f
+
+
+| **Caso de Teste** 	| **CT19 – Validar alteração de endereço pelo administrador.** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-014 - O sistema deve permitir somente ao administrador realizar a alteração de endereço do usuário. |
+|Registro de evidência | Teste no vídeo abaixo: Teste CT-19 Validar troca de endereço.|
+
+https://github.com/user-attachments/assets/f59828f0-65fb-45a7-b524-b30db883be9e
+
+
 | **Caso de Teste** 	| **CT22 – Verificar se o usuário consegue alternar entre modo escuro/claro.** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RNF-04 - A aplicação deve oferecer opção de alternância para modo escuro.. |
