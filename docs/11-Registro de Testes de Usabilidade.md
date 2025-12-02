@@ -109,6 +109,116 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 
 ## Relatório dos testes de usabilidade 
 
+
+-Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
+
+Taxa de Sucesso: 100% (7/7 usuários)
+Tempo médio: 6 min 20s
+Erros médios: 0
+Taxa de abandono: 0%
+
+Principais feedbacks:
+Sistema intuitivo e semelhante a redes sociais
+Facilidade de navegação
+Gostaram da divisão por categorias
+
+
+-Cenário 2 – Administrador atualiza Status de demanda
+
+Taxa de Sucesso: 5/6 usuários
+Tempo médio: 4 min 38s
+Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema)
+Taxa de abandono: 16% (1 usuário não conseguiu concluir)
+
+Padrões observados:
+Forte dificuldade em entender como alterar o status
+Usuários tentaram clicar no próprio status, não no botão de edição
+Layout não deixa claro o fluxo
+Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa concluir
+
+-Cenário 3 – Criar e publicar anúncio
+
+Taxa de Sucesso: 100%
+Tempo médio: 2 min 24s
+Erros médios: Muito baixo (apenas 1 erro registrado)
+Taxa de abandono: 0%
+
+Principais comentários:
+Desejo de adicionar mais fotos
+Falta campo explícito para “valor”
+Processo considerado fácil e rápido
+
+
+-Cenário 4 – Enviar mensagem em resposta a anúncio
+
+Taxa de Sucesso: 3/3 usuários que participaram
+Tempo médio: 31 segundos
+Erros médios: 1 erro isolado
+Taxa de abandono: 0%
+
+Comentário relevante:
+Processo considerado rápido e simples
+
+
+-Cenário 5 – Moderação (Administrador)
+
+Taxa de Sucesso: 5/5
+Tempo médio: 32 segundos
+Erros médios: 0
+Taxa de abandono: 0%
+
+Feedbacks:
+Considerado importante e funcional
+Fácil de usar
+
+
+-Cenário 6 – Interações e Notificações
+
+Taxa de Sucesso: 6/6
+Tempo médio: 20 segundos
+Erros médios: 0
+Taxa de abandono: 0%
+
+Feedbacks:
+Usuários pediram mais reações
+Interações consideradas básicas, porém úteis
+
+
+-Cenário 7 – ONG monitora publicação e solicita troca de endereço
+
+Taxa de Sucesso: 1/1 usuário participante
+Tempo: 18 segundos
+Erros médios: 0
+
+Feedback:
+Falta de informações adicionais para localização
+
+
+## ANÁLISE GERAL E PADRÕES IDENTIFICADOS
+
+Principais dificuldades:
+
+Cenário 2 foi o mais problemático:
+- Usuários não identificavam onde alterar o status
+- Fluxo pouco intuitivo
+- Exigência inesperada de nova imagem para salvar a edição
+
+Campos pouco claros:
+- Falta campo dedicado para “valor” no anúncio
+- Falta clareza sobre onde clicar para editar algo
+
+Informações insuficientes em cenários que envolvem “localização” ou contexto da ação.
+
+
+
+## Tarefas concluídas sem problemas
+
+Cenários: 1, 3, 4, 5, 6
+Usuários elogiaram a intuitividade e rapidez da interface.
+
+
+
+
 O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
 Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
 Deve incluir: 
