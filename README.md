@@ -11,7 +11,6 @@ O objetivo deste trabalho é desenvolver uma aplicação web voltada para integr
 
 ## Integrantes
 
-* Emanuel Moreira Reis
 * Gabriel Yuri
 * João Vitor Macedo
 * Luiz Felipe Ribeiro Liquer
