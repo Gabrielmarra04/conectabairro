@@ -109,6 +109,52 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 
 ## Relatório dos testes de usabilidade 
 
+
+## Objetivo do Teste
+
+Avaliar a eficiência, facilidade de uso, navegação e clareza das funcionalidades do sistema de Gestão de Manutenções para Hotéis, identificando problemas, coletando sugestões e medindo o desempenho dos usuários ao realizar tarefas específicas.
+
+
+- Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post
+
+Taxa de Sucesso: 100% (7/7 usuários)
+Tempo médio: 6 min 20s
+Erros médios: 0
+Taxa de abandono: 0%
+
+Principais feedbacks:
+Sistema intuitivo e semelhante a redes sociais
+Facilidade de navegação
+Gostaram da divisão por categorias
+
+
+- Cenário 2 – Administrador atualiza Status de demanda
+
+Taxa de Sucesso: 5/6 usuários
+Tempo médio: 4 min 38s
+Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema)
+Taxa de abandono: 16% (1 usuário não conseguiu concluir)
+
+Padrões observados:
+Forte dificuldade em entender como alterar o status
+Usuários tentaram clicar no próprio status, não no botão de edição
+Layout não deixa claro o fluxo
+Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa concluir
+
+- Cenário 3 – Criar e publicar anúncio
+
+Taxa de Sucesso: 100%
+Tempo médio: 2 min 24s
+Erros médios: Muito baixo (apenas 1 erro registrado)
+Taxa de abandono: 0%
+
+Principais comentários:
+Desejo de adicionar mais fotos
+Falta campo explícito para “valor”
+Processo considerado fácil e rápido
+
+
+
 O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
 Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
 Deve incluir: 
