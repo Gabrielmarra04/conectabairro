@@ -9,7 +9,7 @@ O registro de testes de usabilidade é um documento ou planilha onde são coleta
 - Usuário 4: 66 anos, aposentada, conhecimentos básicos em tecnologia
 - Usuário 5: 38 anos, nível superior completo, empreendedora
 - Usuário 6: 46 anos, nível superior completo, conhecimento básico em tecnologia
-- Usuário 7:
+- Usuário 7: 32 anos, nível superior completo, conhecimentos básicos em tecnologia
 - Usuário 8:
   
 ## Tabela de registro dos testes de usabilidade  
@@ -25,7 +25,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   | 9:34min            |  30                             |      Sim        |         Não            |  Interessante, consegui fazer um anúncio |                     | 
 | Usuário 5   | 4:23min            |  17                             |        Sim      |         Não            | Achei legal, bem intuitivo                         |                     | 
 | Usuário 6   | 4:45min            |  20                             |      Sim        |         Não            |      Fácil e intuitivo               | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   | 4:02min            |  13                             |      sim        |         Não            |     Organizado e intuitivo           |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -37,8 +37,8 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 3   | 8min               |  20                             |      Sim        |        Não             | Não entendi direito como fazia para alterar o Status |                     |  
 | Usuário 4   |  ----              |      ----                       |        ----     |      ----              |                              |                     | 
 | Usuário 5   |  4:18m             | 17                              |      Não        |        Não             | Achei que falta informação e quando atualiza o status pede pra colocar uma outra foto, nao deixando salvar  
-| Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 6   |           |                              |              |                   |                          |                     | 
+| Usuário 7   |  1:33min           |  9                               |     SIm         |        Não            | Não achou intuitivo e faltou informações                             |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -51,8 +51,8 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |  3:00min           |    16                           |       Sim       |       Sim              |                              |                     | 
 | Usuário 5   | 2:15min            |    9                            |     Sim         |       Não              |     Achei tranquilo          |                     | 
 | Usuário 6   |   2min             |    7                            |      Sim        |       Não              |      Fácil                    |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 8   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |     1:55min        |     8                            |    Sim         |   Não                  |       Fácil                       |                     | 
+| Usuário 8   |                    |                                 |                 |                       |                              |                     | 
 
 
 **Cenário 4**: Enviar mensagem em resposta a um anúncio.         
@@ -64,7 +64,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |          55seg     |               12                |       sim       |      sim               |      Tranquilo                 |                     | 
 | Usuário 5   |         ------     |               ------                   |                 |                        |                              |                     | 
 | Usuário 6   |   24seg            |             4                   |    Sim           |      Não             |    Fácil de enviar mensagem    |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   15seg            |              3                  |      Sim           |  Não                      |       Tranquilo         |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -77,7 +77,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |   -----            |          -----                  |       -----     |     -----              |    -----                     |                     | 
 | Usuário 5   |   35 seg           |             5                   |        Sim      |          Não           |      Bom                     |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   10 seg           |              3                  |      Sim         |        Não            |    Fácil e ótima função para evitar problemas                          |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -90,7 +90,7 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |       35seg        |            10                   |       Sim       |     Não                |      Interessante                        |                     | 
 | Usuário 5   |       18seg        |            8                    |      Sim        |         Não            |      Achei legal essa possibilidade                        |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |       16seg        |             2                   |      Sim        |        Não                |   Básico, porém útil                           |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
@@ -103,34 +103,122 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 | Usuário 4   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 5   |                    |                                 |                 |                        |                              |                     | 
 | Usuário 6   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 7   |                    |                                 |                 |                        |                              |                     | 
+| Usuário 7   |   18seg            |               4                 |      Sim        |       Não              |    Simples, porém faltam informações adicionais para o usuário se localizar                          |                     | 
 | Usuário 8   |                    |                                 |                 |                        |                              |                     | 
 
 
 ## Relatório dos testes de usabilidade 
 
-O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
-Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
-Deve incluir: 
-- Taxa de sucesso por cenário
-- Tempo médio para completar cada cenário
-- Número médio de erros cometidos por tarefa
-- Taxa de abandono (usuários que não conseguiram concluir a tarefa do cenário)
-- Feedback qualitativo
+
+**- Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post** 
+
+Taxa de Sucesso: 100% (7/7 usuários) - Tempo médio: 6 min 20s - Erros médios: 0 - Taxa de abandono: 0%
+
+Principais feedbacks:
+- Sistema intuitivo e semelhante a redes sociais
+- Facilidade de navegação
+- Gostaram da divisão por categorias
   
-A partir disso, organize os resultados e identifique padrões:
-- Principais dificuldades enfrentadas pelos usuários.
-- Quais tarefas foram concluídas sem problemas e quais apresentaram falhas.
-- Sugestões de melhorias para interface, navegação e acessibilidade.
 
-Dica: Agrupe problemas em níveis de prioridade:
-- Crítico: Impede o uso do sistema.
-- Moderado: Dificulta a experiência, mas não impede o uso.
-- Leve: Pode ser melhorado, mas não compromete a usabilidade.
+Cenário 2 – Administrador atualiza Status de demanda
 
-Apresente propostas de ações para corrigir os problemas críticos e recorrentes identificados e proponha melhorias incrementais para otimizar a experiência do usuário.
+Taxa de Sucesso: 5/6 usuários - Tempo médio: 4 min 38s - Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema) - Taxa de abandono: 16% (1 usuário não conseguiu concluir)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+Padrões observados:
+- Dificuldade em entender como alterar o status
+- Usuários tentaram clicar no próprio status, não no botão de edição
+- Layout não deixa claro o fluxo
+- Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa concluir
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Cenário 3 – Criar e publicar anúncio
+
+Taxa de Sucesso: 100% - Tempo médio: 2 min 24s - Erros médios: Muito baixo (apenas 1 erro registrado) - Taxa de abandono: 0%
+
+Principais comentários:
+- Desejo de adicionar mais fotos
+- Falta campo explícito para “valor”
+- Processo considerado fácil e rápido
+
+
+Cenário 4 – Enviar mensagem em resposta a anúncio
+
+Taxa de Sucesso: 3/3 usuários que participaram - Tempo médio: 31 segundos - Erros médios: 1 erro isolado - Taxa de abandono: 0%
+
+Comentário relevante:
+- Processo considerado rápido e simples
+
+
+Cenário 5 – Moderação (Administrador)
+
+Taxa de Sucesso: 5/5 - Tempo médio: 32 segundos - Erros médios: 0 - Taxa de abandono: 0%
+
+Feedbacks:
+Considerado importante e funcional
+Fácil de usar
+
+
+Cenário 6 – Interações e Notificações
+
+Taxa de Sucesso: 6/6 - Tempo médio: 20 segundos - Erros médios: 0 - Taxa de abandono: 0%
+
+Feedbacks:
+Usuários pediram mais reações
+Interações consideradas básicas, porém úteis
+
+
+Cenário 7 – ONG monitora publicação e solicita troca de endereço
+
+Taxa de Sucesso: 1/1 usuário participante - Tempo: 18 segundos - Erros médios: 0
+
+Feedback:
+Falta de informações adicionais para localização
+
+
+
+## Análise geral e padrões identificados
+
+Principais dificuldades:
+
+Cenário 2 foi o mais problemático:
+- Usuários não identificavam onde alterar o status
+- Fluxo pouco intuitivo
+- Exigência inesperada de nova imagem para salvar a edição
+
+Campos pouco claros:
+- Falta campo dedicado para “valor” no anúncio
+- Falta clareza sobre onde clicar para editar algo
+
+Informações insuficientes em cenários que envolvem “localização” ou contexto da ação.
+
+
+
+## Tarefas concluídas sem problemas
+
+- Cenários: 1, 3, 4, 5, 6 
+- Usuários elogiaram a intuitividade e rapidez da interface.
+
+
+## Classificação dos problemas por prioridade
+
+Críticos (impedem o uso):
+Alterar Status exige uma foto nova:
+- Impede conclusão da tarefa para alguns usuários.
+Fluxo de edição de Status não é claro:
+- Usuários abandonam por não conseguir encontrar a ação.
+
+Moderados dificultam a experiência):
+- Falta campo específico para “valor” ao criar anúncio
+- Falta de informações adicionais (contexto, localização)
+- Interações limitadas (poucos tipos de reações)
+
+Leves (não prejudicam o uso, mas podem melhorar):
+- Possibilidade de anexar mais fotos no anúncio
+- Layout poderia evidenciar melhor botões e áreas clicáveis
+- Melhorar descrições e textos orientativos
+
+
+## Propostas de melhorias
+
+
+
+## Conclusão

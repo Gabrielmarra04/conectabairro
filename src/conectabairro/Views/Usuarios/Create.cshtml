@@ -63,7 +63,7 @@
 
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <label asp-for="Nome" class="form-label fw-bold">Nome</label>
+                        <label asp-for="Nome" class="form-label fw-bold">Nome *</label>
                         <input asp-for="Nome" class="form-control form-control-lg" placeholder="Digite aqui o seu nome" required />
                         <span asp-validation-for="Nome" class="text-danger"></span>
                     </div>
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="col-md-6 mb-3">
-                        <label asp-for="TipoUsuarios" class="form-label fw-bold">Tipo de usuário</label>
+                        <label asp-for="TipoUsuarios" class="form-label fw-bold">Tipo de usuário *</label>
                         <select asp-for="TipoUsuarios" id="TipoUsuarioSelect" class="form-control form-control-lg" required>
                             <option value="">Selecionar</option>
                             @foreach (var tipo in Html.GetEnumSelectList<TipoUsuario>())
@@ -90,44 +90,44 @@
                     </div>
 
                     <div id="usuarioCnpj" class="col-md-6 mb-3" style="display:none;">
-                        <label asp-for="Cnpj" class="form-label fw-bold">CNPJ</label>
+                        <label asp-for="Cnpj" class="form-label fw-bold">CNPJ *</label>
                         <input asp-for="Cnpj" id="Cnpj" class="form-control form-control-lg" placeholder="Digite aqui o CNPJ" />
                         <span asp-validation-for="Cnpj" class="text-danger"></span>
                     </div>
 
                     <div id="usuarioRazaoSocial" class="col-12 mb-3" style="display:none;">
-                        <label asp-for="RazaoSocial" class="form-label fw-bold">Razão Social</label>
+                        <label asp-for="RazaoSocial" class="form-label fw-bold">Razão Social *</label>
                         <input asp-for="RazaoSocial" id="RazaoSocial" class="form-control form-control-lg" placeholder="Digite aqui a Razão Social" />
                         <span asp-validation-for="RazaoSocial" class="text-danger"></span>
                     </div>
 
                     <div class="col-12 mb-3">
-                        <label asp-for="Rua" class="form-label fw-bold">Rua</label>
+                        <label asp-for="Rua" class="form-label fw-bold">Rua *</label>
                         <input asp-for="Rua" class="form-control form-control-lg" placeholder="Digite aqui a sua rua" required />
                         <span asp-validation-for="Rua" class="text-danger"></span>
                     </div>
                     <div class="col-12 mb-3">
-                        <label asp-for="Bairro" class="form-label fw-bold">Bairro</label>
+                        <label asp-for="Bairro" class="form-label fw-bold">Bairro *</label>
                         <input asp-for="Bairro" class="form-control form-control-lg" placeholder="Digite aqui o seu bairro" required />
                         <span asp-validation-for="Bairro" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="Cidade" class="form-label fw-bold">Cidade</label>
+                        <label asp-for="Cidade" class="form-label fw-bold">Cidade *</label>
                         <input asp-for="Cidade" class="form-control form-control-lg" placeholder="Digite aqui a sua cidade" required />
                         <span asp-validation-for="Cidade" class="text-danger"></span>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label asp-for="Estado" class="form-label fw-bold">Estado</label>
+                        <label asp-for="Estado" class="form-label fw-bold">Estado *</label>
                         <input asp-for="Estado" class="form-control form-control-lg" placeholder="Digite aqui o seu Estado" required />
                         <span asp-validation-for="Estado" class="text-danger"></span>
                     </div>
                     <div class="col-12 mb-3">
-                        <label asp-for="Email" class="form-label fw-bold">Email</label>
+                        <label asp-for="Email" class="form-label fw-bold">Email *</label>
                         <input type="email" asp-for="Email" class="form-control form-control-lg" placeholder="Digite aqui o seu email" required />
                         <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="col-12 mb-4">
-                        <label asp-for="PasswordHash" class="form-label fw-bold">Senha</label>
+                        <label asp-for="PasswordHash" class="form-label fw-bold">Senha *</label>
                         <input type="password" asp-for="PasswordHash" class="form-control form-control-lg" placeholder="Digite aqui a sua senha" required />
                         <span asp-validation-for="PasswordHash" class="text-danger"></span>
                     </div>
