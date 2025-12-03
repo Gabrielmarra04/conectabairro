@@ -1,24 +1,33 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
-
 ## Título do Projeto
 
-ConectaBairro
+**ConectaBairro**
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+<img width="1959" height="615" alt="logo colorida" src="https://github.com/user-attachments/assets/c092ef10-ebb2-414f-ab42-c296919a12b4" /> <br/>
+<br/>
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+O **conceito da marca** "Conecta Bairro" busca uma forte conexão e harmonia entre o símbolo (iconografia) e o nome. 
+
+Na **iconografia**, temos o pino de localização, um ícone padrão em mapas que ancora a marca a um espaço geográfico específico. Integrado a ele, há um ícone de rede/conexão, transmitindo diretamente a ideia de "Conectando a comunidade local".
+
+Na **tipografia**, utilizamos uma fonte sem serifa, moderna, arredondada e amigável, que confere um visual de modernidade, tecnologia e acessibilidade.
+
+Na **paleta de cores**, utilizamos dois tons que transmitem confiança e tecnologia: o azul-escuro (em "Conecta"), que representa a plataforma confiável e segura, e o verde-água (em "Bairro"), que representa os usuários e a comunidade (simbolizando comunicação, energia e inovação).
+
+<img width="971" height="210" alt="Screenshot_1" src="https://github.com/user-attachments/assets/1f150c01-6507-4df7-a406-358015d35607" /><br/>
+<br/>
+
+<img width="1853" height="480" alt="Screenshot_2" src="https://github.com/user-attachments/assets/17e098f2-f73b-48cc-9b7c-a28396cfb9be" /> <br/>
+<br/>
+
 
 ## Conjunto de Slides (Estrutura)
 
 
-Segue arquivo PDF com apresentação em Slide do sistema. [Conecta Bairro.pdf](https://github.com/user-attachments/files/23918012/Conecta.Bairro.pdf)
+Segue arquivo PowerPoint para apresentação em Slide do sistema. [Conecta Bairro.pptx](https://github.com/user-attachments/files/23918084/Conecta.Bairro.pptx)
 
 
 ## Vídeo de apresentação - Etapa 01
