@@ -112,10 +112,14 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 
 ### **Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post** 
 
-- Taxa de Sucesso: 100% (7/7 usuários)
-- Tempo médio: 6 min 20s
-- Erros médios: 0
-- Taxa de abandono: 0%
+
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (7/7 usuários) |
+| **Tempo médio**          | 6min 20s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Principais feedbacks:
 - Sistema intuitivo e semelhante a redes sociais
@@ -125,10 +129,13 @@ Principais feedbacks:
 
 ### **Cenário 2 – Administrador atualiza Status de demanda**
 
-- Taxa de Sucesso: 5/6 usuários
-- Tempo médio: 4 min 38s
-- Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema)
-- Taxa de abandono: 16% (1 usuário não conseguiu concluir)
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 4/6 usuários válidos|
+| **Tempo médio**          | 4min 38s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 1 usuário não conseguiu concluir|
+
 
 Padrões observados:
 - Dificuldade em entender como alterar o status
@@ -138,10 +145,13 @@ Padrões observados:
 
 ### **Cenário 3 – Criar e publicar anúncio**
 
-- Taxa de Sucesso: 100%
-- Tempo médio: 2 min 24s
-- Erros médios: Muito baixo (apenas 1 erro registrado)
-- Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100%|
+| **Tempo médio**          | 2min 24s |
+| **Número médio de erros**| Muito baixo (1 erro isolado) |
+| **Taxa de abandono**     | 0% |
+
 
 Principais comentários:
 - Desejo de adicionar mais fotos
@@ -151,10 +161,13 @@ Principais comentários:
 
 ### **Cenário 4 – Enviar mensagem em resposta a anúncio**
 
-- Taxa de Sucesso: 3/3 usuários que participaram
-- Tempo médio: 31 segundos
-- Erros médios: 1 erro isolado
-- Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (3 usuários válidos) |
+| **Tempo médio**          | 31s |
+| **Número médio de erros**| 1 erro isolado |
+| **Taxa de abandono**     | 0% |
+
 
 Comentário relevante:
 - Processo considerado rápido e simples
@@ -162,10 +175,13 @@ Comentário relevante:
 
 ### **Cenário 5 – Moderação (Administrador)**
 
-- Taxa de Sucesso: 5/5
-- Tempo médio: 32 segundos
-- Erros médios: 0 
-- Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (5/5) |
+| **Tempo médio**          | 32s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedbacks:
 Considerado importante e funcional
@@ -174,7 +190,13 @@ Fácil de usar
 
 ### **Cenário 6 – Interações e Notificações**
 
-Taxa de Sucesso: 6/6 - Tempo médio: 20 segundos - Erros médios: 0 - Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (6/6) |
+| **Tempo médio**          | 20s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedbacks:
 Usuários pediram mais reações
@@ -183,7 +205,13 @@ Interações consideradas básicas, porém úteis
 
 ### **Cenário 7 – ONG monitora publicação e solicita troca de endereço**
 
-Taxa de Sucesso: 1/1 usuário participante - Tempo: 18 segundos - Erros médios: 0
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (1/1) |
+| **Tempo médio**          | 18s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedback:
 Falta de informações adicionais para localização
