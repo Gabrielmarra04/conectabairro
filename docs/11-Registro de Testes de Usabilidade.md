@@ -110,9 +110,16 @@ Para registrar os indicadores de cada cenário, é preciso manter a coerência c
 ## Relatório dos testes de usabilidade 
 
 
-**- Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post** 
+### **Cenário 1 – Cadastro, Login, Acesso ao Feed e Criação de Post** 
 
-Taxa de Sucesso: 100% (7/7 usuários) - Tempo médio: 6 min 20s - Erros médios: 0 - Taxa de abandono: 0%
+
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (7/7 usuários) |
+| **Tempo médio**          | 6min 20s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Principais feedbacks:
 - Sistema intuitivo e semelhante a redes sociais
@@ -120,9 +127,15 @@ Principais feedbacks:
 - Gostaram da divisão por categorias
   
 
-Cenário 2 – Administrador atualiza Status de demanda
+### **Cenário 2 – Administrador atualiza Status de demanda**
 
-Taxa de Sucesso: 5/6 usuários - Tempo médio: 4 min 38s - Erros médios: 0 (apesar das dificuldades, não ocorreram erros de sistema) - Taxa de abandono: 16% (1 usuário não conseguiu concluir)
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 4/6 usuários válidos|
+| **Tempo médio**          | 4min 38s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 1 usuário não conseguiu concluir|
+
 
 Padrões observados:
 - Dificuldade em entender como alterar o status
@@ -130,9 +143,15 @@ Padrões observados:
 - Layout não deixa claro o fluxo
 - Um usuário relatou que o sistema pede uma foto nova ao salvar e não deixa concluir
 
-Cenário 3 – Criar e publicar anúncio
+### **Cenário 3 – Criar e publicar anúncio**
 
-Taxa de Sucesso: 100% - Tempo médio: 2 min 24s - Erros médios: Muito baixo (apenas 1 erro registrado) - Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100%|
+| **Tempo médio**          | 2min 24s |
+| **Número médio de erros**| Muito baixo (1 erro isolado) |
+| **Taxa de abandono**     | 0% |
+
 
 Principais comentários:
 - Desejo de adicionar mais fotos
@@ -140,35 +159,59 @@ Principais comentários:
 - Processo considerado fácil e rápido
 
 
-Cenário 4 – Enviar mensagem em resposta a anúncio
+### **Cenário 4 – Enviar mensagem em resposta a anúncio**
 
-Taxa de Sucesso: 3/3 usuários que participaram - Tempo médio: 31 segundos - Erros médios: 1 erro isolado - Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (3 usuários válidos) |
+| **Tempo médio**          | 31s |
+| **Número médio de erros**| 1 erro isolado |
+| **Taxa de abandono**     | 0% |
+
 
 Comentário relevante:
 - Processo considerado rápido e simples
 
 
-Cenário 5 – Moderação (Administrador)
+### **Cenário 5 – Moderação (Administrador)**
 
-Taxa de Sucesso: 5/5 - Tempo médio: 32 segundos - Erros médios: 0 - Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (5/5) |
+| **Tempo médio**          | 32s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedbacks:
 Considerado importante e funcional
 Fácil de usar
 
 
-Cenário 6 – Interações e Notificações
+### **Cenário 6 – Interações e Notificações**
 
-Taxa de Sucesso: 6/6 - Tempo médio: 20 segundos - Erros médios: 0 - Taxa de abandono: 0%
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (6/6) |
+| **Tempo médio**          | 20s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedbacks:
 Usuários pediram mais reações
 Interações consideradas básicas, porém úteis
 
 
-Cenário 7 – ONG monitora publicação e solicita troca de endereço
+### **Cenário 7 – ONG monitora publicação e solicita troca de endereço**
 
-Taxa de Sucesso: 1/1 usuário participante - Tempo: 18 segundos - Erros médios: 0
+| Métrica                   | Resultado |
+|---------------------------|-----------|
+| **Taxa de sucesso**      | 100% (1/1) |
+| **Tempo médio**          | 18s |
+| **Número médio de erros**| 0 |
+| **Taxa de abandono**     | 0% |
+
 
 Feedback:
 Falta de informações adicionais para localização
@@ -200,18 +243,18 @@ Informações insuficientes em cenários que envolvem “localização” ou con
 
 ## Classificação dos problemas por prioridade
 
-Críticos (impedem o uso):
+*Críticos (impedem o uso):*
 Alterar Status exige uma foto nova:
 - Impede conclusão da tarefa para alguns usuários.
 Fluxo de edição de Status não é claro:
 - Usuários abandonam por não conseguir encontrar a ação.
 
-Moderados dificultam a experiência):
+*Moderados dificultam a experiência):*
 - Falta campo específico para “valor” ao criar anúncio
 - Falta de informações adicionais (contexto, localização)
 - Interações limitadas (poucos tipos de reações)
 
-Leves (não prejudicam o uso, mas podem melhorar):
+*Leves (não prejudicam o uso, mas podem melhorar):*
 - Possibilidade de anexar mais fotos no anúncio
 - Layout poderia evidenciar melhor botões e áreas clicáveis
 - Melhorar descrições e textos orientativos
@@ -219,6 +262,36 @@ Leves (não prejudicam o uso, mas podem melhorar):
 
 ## Propostas de melhorias
 
+### Conclusão do módulo de notificações
+
+Problema: módulo não finalizado, impossibilitando o usuário de receber notificações.
+Solução proposta: Finalizar o desenvolvimento do fluxo completo de notificações.
+
+Inserir notificações claras no frontend para ações como:
+- Curtidas
+- Comentários
+- Mensagem
+- Alterações de status do post
+
+### Ajuste na edição de post: manter anexo existente
+
+Problema: ao editar o Post, o usuário é obrigado a reenviar a foto, mesmo que não queira mudar.
+Solução proposta: Permitir edição parcial sem exigir novo upload.
+
+### Exibir contagem de curtidas diretamente no feed
+
+Problema: usuário curta um post mas não vê o total no feed.
+Solução proposta: Adicionar contador de curtidas ao card do Post.
+Atualizar valor em tempo real após interação.
+
+
+### Permitir múltiplas imagens e vídeos curtos no Post
+
+Expandir o recurso para até 3 imagens ou 1 vídeo curto.
 
 
 ## Conclusão
+
+O sistema demonstrou boa estrutura geral e facilidade em tarefas básicas, porém ainda apresenta pontos que afetam diretamente a experiência em tarefas mais complexas, como inserir, editar e principalmente excluir post.
+
+Os testes forneceram informações valiosas que permitirão aplicar melhorias significativas na interface, deixando o fluxo mais intuitivo e seguro. Após as correções propostas, recomenda-se executar uma nova rodada de testes para validar as mudanças.
