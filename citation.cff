@@ -1,29 +1,24 @@
 message: Please cite this software using these metadata.
-title:
+title: ConectaBairro
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Marra Baba 
+    given-names: Gabriel Yuri
+  - family-names: Macedo 
+    given-names: João Vitor
+  - family-names: Felipe Ribeiro Liquer
+    given-names: Luiz 
+  - family-names: Magalhães
+    given-names: Nathaliene Cristina
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: de Nardin
+    given-names: Luciana
+
 keywords:
-  - 
-  - 
+  - Comunidade 
+  - Comunicação
+  - Prefeitura
 repository-code: 
 version: 1.0.0
-date-released: 2023-10-31
+
+date-released: 2025-12-09
