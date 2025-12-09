@@ -11,14 +11,13 @@ authors:
     given-names: Nathaliene Cristina
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: de Nardin
+    family-names: De Nardin
     given-names: Luciana
-
 keywords:
   - Comunidade 
   - Comunicação
   - Prefeitura
-repository-code: 
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-2-e2-proj-int-t5-conectabairro
 version: 1.0.0
-
 date-released: 2025-12-09
+
