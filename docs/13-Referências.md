@@ -1,4 +1,3 @@
-@@ -1,11 +1,11 @@
 # Referências
 
 > - BAUMAN, Zygmunt. Comunidade: a busca por segurança no mundo atual. Tradução de Plínio Dentzien. Rio de Janeiro: Jorge Zahar Editor, 2003. Disponível em: https://www.academia.edu/36034750/BAUMAN_Zygmund_Comunidade_a_busca_por_seguran%C3%A7a_no_mundo_atual. Acesso em: 25 ago. 2025.
