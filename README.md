@@ -24,7 +24,7 @@ O objetivo deste trabalho é desenvolver uma aplicação web voltada para integr
 
 **Acesso rápido (produção)**
 * URL da aplicação: https://conectabairro20251113201007-behhf6hjdmfgc3ga.eastus2-01.azurewebsites.net/Usuarios/Login
-* Status: online
+* Status: offline
 * Ambiente: Produção
 
 **Usuário(s) de teste (se houver):**
